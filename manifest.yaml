@@ -1,0 +1,1811 @@
+# Internal Medicine Guidelines — Manifest
+#
+# Source of truth for `references/guidelines/`. The generator reads this and
+# produces the OKF bundle. NEVER edit files under `references/` by hand —
+# edit this manifest and regenerate.
+#
+# Schema:
+#   systems.<slug>.title              # display name
+#   systems.<slug>.description        # optional one-liner
+#   systems.<slug>.topics.<slug>:     # one entry per condition
+#     title:                          # condition display name
+#     society:                        # default issuing body (overridable per version)
+#     versions:                       # list, most recent first
+#       - year:                       # integer; OMIT for living / non-versioned docs
+#         society:                    # overrides topic-level society if different
+#         title:                      # full guideline name
+#         notes:                      # free-text carried from the original index
+#         source:                     # OPTIONAL: format-keyed map (see below)
+#           <format>:                 #   format = pdf | epub | html | xml | docx | ...
+#             url:                    #     OPTIONAL: publisher URL for THIS format
+#             local:                  #     OPTIONAL: bundle-relative path once downloaded
+#         url:                        # OPTIONAL: canonical reference URL (DOI / landing page)
+#         pmid:                       # OPTIONAL: PubMed ID (string) when known
+#
+#   study_guides:                     # cross-cutting curated lists
+#     <slug>:
+#       title:
+#       description:
+#       entries:                      # list of links to topics
+#         - label:
+#           topic:                    # /<system>/<topic>/
+#
+# Implicit rules:
+#   - Latest `year` per topic = current. Other year entries = superseded.
+#   - An entry without `year` is a living / non-versioned guideline.
+#   - The ⭐ "recently updated" convention has been dropped — `year` carries it.
+
+systems:
+  cardiology:
+    title: Cardiology
+    description: Society guidelines for cardiovascular conditions.
+    topics:
+      hypertension:
+        high_yield: true
+        title: Hypertension
+        society: AHA/ACC
+        versions:
+          - year: 2025
+            title: 2025 AHA/ACC Multisociety Guideline for High Blood Pressure in Adults
+            notes: Uses PREVENT risk calculator; 130/80 threshold.
+            url: https://www.ahajournals.org/doi/10.1161/CIR.0000000000001356
+            source:
+              pdf:
+                local: /sources/cardiology/hypertension/2025-aha-acc.pdf
+                url: https://www.ahajournals.org/doi/pdf/10.1161/CIR.0000000000001356
+              html:
+                url: https://www.ahajournals.org/doi/full/10.1161/CIR.0000000000001356
+              epub:
+                local: /sources/cardiology/hypertension/2025-aha-acc.epub
+          - year: 2017
+            url: https://www.ahajournals.org/doi/10.1161/hyp.0000000000000066
+            source:
+              pdf:
+                local: /sources/cardiology/hypertension/2017-aha-acc.pdf
+                url: https://www.ahajournals.org/doi/pdf/10.1161/hyp.0000000000000066
+              html:
+                url: https://www.ahajournals.org/doi/full/10.1161/hyp.0000000000000066
+              epub:
+                local: /sources/cardiology/hypertension/2017-aha-acc.epub
+      dyslipidemia:
+        high_yield: true
+        title: Dyslipidemia / cholesterol
+        society: ACC/AHA
+        versions:
+          - year: 2026
+            title: 2026 ACC/AHA Multisociety Guideline on the Management of Dyslipidemia
+            notes: Restores LDL-C goals; universal Lp(a) testing.
+            url: https://www.ahajournals.org/doi/10.1161/CIR.0000000000001423
+            source:
+              pdf:
+                local: /sources/cardiology/dyslipidemia/2026-acc-aha.pdf
+                url: https://www.ahajournals.org/doi/pdf/10.1161/CIR.0000000000001423
+              html:
+                url: https://www.ahajournals.org/doi/full/10.1161/CIR.0000000000001423
+              epub:
+                local: /sources/cardiology/dyslipidemia/2026-acc-aha.epub
+          - year: 2018
+            title: 2018 Blood Cholesterol Guideline
+            url: https://www.ahajournals.org/doi/10.1161/CIR.0000000000000625
+            source:
+              pdf:
+                local: /sources/cardiology/dyslipidemia/2018-acc-aha.pdf
+                url: https://www.ahajournals.org/doi/pdf/10.1161/CIR.0000000000000625
+              html:
+                url: https://www.ahajournals.org/doi/full/10.1161/CIR.0000000000000625
+              epub:
+                local: /sources/cardiology/dyslipidemia/2018-acc-aha.epub
+      acs:
+        high_yield: true
+        title: Acute coronary syndrome (STEMI + NSTE-ACS)
+        society: ACC/AHA/ACEP/NAEMSP/SCAI
+        versions:
+          - year: 2025
+            title: 2025 ACC/AHA/ACEP/NAEMSP/SCAI ACS Guideline
+            notes: Consolidates prior STEMI and NSTEMI documents.
+            url: https://www.ahajournals.org/doi/10.1161/CIR.0000000000001309
+            source:
+              pdf:
+                local: /sources/cardiology/acs/2025-acc-aha-acep-naemsp-scai.pdf
+                url: https://www.ahajournals.org/doi/pdf/10.1161/CIR.0000000000001309
+              html:
+                url: https://www.ahajournals.org/doi/full/10.1161/CIR.0000000000001309
+              epub:
+                local: /sources/cardiology/acs/2025-acc-aha-acep-naemsp-scai.epub
+      chronic-coronary-disease:
+        title: Chronic coronary disease (stable IHD)
+        society: AHA/ACC
+        versions:
+          - year: 2023
+            title: 2023 AHA/ACC Multisociety Chronic Coronary Disease Guideline
+            url: https://www.ahajournals.org/doi/10.1161/CIR.0000000000001168
+            source:
+              pdf:
+                local: /sources/cardiology/chronic-coronary-disease/2023-aha-acc.pdf
+                url: https://www.ahajournals.org/doi/pdf/10.1161/CIR.0000000000001168
+              html:
+                url: https://www.ahajournals.org/doi/full/10.1161/CIR.0000000000001168
+              epub:
+                local: /sources/cardiology/chronic-coronary-disease/2023-aha-acc.epub
+      heart-failure:
+        high_yield: true
+        title: Heart failure
+        society: AHA/ACC/HFSA
+        versions:
+          - year: 2022
+            title: 2022 AHA/ACC/HFSA Heart Failure Guideline
+            notes: Stage A–D; GDMT "four pillars".
+            url: https://www.ahajournals.org/doi/10.1161/CIR.0000000000001063
+            source:
+              pdf:
+                local: /sources/cardiology/heart-failure/2022-aha-acc-hfsa.pdf
+                url: https://www.ahajournals.org/doi/pdf/10.1161/CIR.0000000000001063
+              html:
+                url: https://www.ahajournals.org/doi/full/10.1161/CIR.0000000000001063
+              epub:
+                local: /sources/cardiology/heart-failure/2022-aha-acc-hfsa.epub
+      atrial-fibrillation:
+        high_yield: true
+        title: Atrial fibrillation
+        society: ACC/AHA/ACCP/HRS
+        versions:
+          - year: 2023
+            title: 2023 ACC/AHA/ACCP/HRS AF Guideline
+            notes: New staging; early rhythm control; CHA₂DS₂-VASc.
+            url: https://www.ahajournals.org/doi/10.1161/CIR.0000000000001193
+            source:
+              pdf:
+                local: /sources/cardiology/atrial-fibrillation/2023-acc-aha-accp-hrs.pdf
+                url: https://www.ahajournals.org/doi/pdf/10.1161/CIR.0000000000001193
+              html:
+                url: https://www.ahajournals.org/doi/full/10.1161/CIR.0000000000001193
+              epub:
+                local: /sources/cardiology/atrial-fibrillation/2023-acc-aha-accp-hrs.epub
+      chest-pain:
+        title: Chest pain evaluation
+        society: AHA/ACC
+        versions:
+          - year: 2021
+            title: 2021 AHA/ACC Chest Pain Guideline
+            url: https://www.ahajournals.org/doi/pdf/10.1161/CIR.0000000000001029
+            source:
+              pdf:
+                local: /sources/cardiology/chest-pain/2021-aha-acc.pdf
+              html:
+                url: https://www.ahajournals.org/doi/full/10.1161/CIR.0000000000001029
+              epub:
+                local: /sources/cardiology/chest-pain/2021-aha-acc.epub
+      coronary-revascularization:
+        title: Coronary revascularization
+        society: ACC/AHA/SCAI
+        versions:
+          - year: 2021
+            title: 2021 ACC/AHA/SCAI Revascularization Guideline
+            url: https://www.ahajournals.org/doi/10.1161/CIR.0000000000001038
+            source:
+              pdf:
+                local: /sources/cardiology/coronary-revascularization/2021-acc-aha-scai.pdf
+                url: https://www.ahajournals.org/doi/pdf/10.1161/CIR.0000000000001038
+              html:
+                url: https://www.ahajournals.org/doi/full/10.1161/CIR.0000000000001038
+              epub:
+                local: /sources/cardiology/coronary-revascularization/2021-acc-aha-scai.epub
+      valvular-heart-disease:
+        title: Valvular heart disease
+        society: ACC/AHA
+        versions:
+          - year: 2020
+            title: 2020 ACC/AHA VHD Guideline
+            url: https://www.ahajournals.org/doi/10.1161/CIR.0000000000000923
+            source:
+              pdf:
+                local: /sources/cardiology/valvular-heart-disease/2020-acc-aha.pdf
+                url: https://www.ahajournals.org/doi/pdf/10.1161/CIR.0000000000000923
+              html:
+                url: https://www.ahajournals.org/doi/full/10.1161/CIR.0000000000000923
+              epub:
+                local: /sources/cardiology/valvular-heart-disease/2020-acc-aha.epub
+      primary-prevention-cvd:
+        title: Primary prevention of CVD
+        society: ACC/AHA
+        versions:
+          - year: 2019
+            title: 2019 ACC/AHA Primary Prevention Guideline
+            url: https://www.ahajournals.org/doi/10.1161/CIR.0000000000000678
+            source:
+              pdf:
+                local: /sources/cardiology/primary-prevention-cvd/2019-acc-aha.pdf
+                url: https://www.ahajournals.org/doi/pdf/10.1161/CIR.0000000000000678
+              html:
+                url: https://www.ahajournals.org/doi/full/10.1161/CIR.0000000000000678
+              epub:
+                local: /sources/cardiology/primary-prevention-cvd/2019-acc-aha.epub
+      peripheral-artery-disease:
+        title: Peripheral artery disease
+        society: ACC/AHA
+        versions:
+          - year: 2024
+            title: 2024 ACC/AHA PAD Guideline
+            url: https://www.ahajournals.org/doi/10.1161/CIR.0000000000001251
+            source:
+              pdf:
+                local: /sources/cardiology/peripheral-artery-disease/2024-acc-aha.pdf
+                url: https://www.ahajournals.org/doi/pdf/10.1161/CIR.0000000000001251
+              html:
+                url: https://www.ahajournals.org/doi/full/10.1161/CIR.0000000000001251
+              epub:
+                local: /sources/cardiology/peripheral-artery-disease/2024-acc-aha.epub
+      thoracic-aortic-disease:
+        title: Thoracic aortic disease
+        society: ACC/AHA
+        versions:
+          - year: 2022
+            title: 2022 ACC/AHA Aortic Disease Guideline
+            url: https://www.ahajournals.org/doi/10.1161/CIR.0000000000001106
+            source:
+              pdf:
+                local: /sources/cardiology/thoracic-aortic-disease/2022-acc-aha.pdf
+                url: https://www.ahajournals.org/doi/pdf/10.1161/CIR.0000000000001106
+              html:
+                url: https://www.ahajournals.org/doi/full/10.1161/CIR.0000000000001106
+              epub:
+                local: /sources/cardiology/thoracic-aortic-disease/2022-acc-aha.epub
+      bradycardia:
+        title: Bradycardia / conduction delay
+        society: ACC/AHA/HRS
+        versions:
+          - year: 2018
+            title: 2018 ACC/AHA/HRS Bradycardia Guideline
+            url: https://www.ahajournals.org/doi/10.1161/CIR.0000000000000628
+            source:
+              pdf:
+                local: /sources/cardiology/bradycardia/2018-acc-aha-hrs.pdf
+                url: https://www.ahajournals.org/doi/pdf/10.1161/CIR.0000000000000628
+              html:
+                url: https://www.ahajournals.org/doi/full/10.1161/CIR.0000000000000628
+              epub:
+                local: /sources/cardiology/bradycardia/2018-acc-aha-hrs.epub
+      ventricular-arrhythmias:
+        title: Ventricular arrhythmias / SCD
+        society: AHA/ACC/HRS
+        versions:
+          - year: 2017
+            title: 2017 AHA/ACC/HRS VA/SCD Guideline
+            url: https://www.ahajournals.org/doi/10.1161/CIR.0000000000000549
+            source:
+              pdf:
+                local: /sources/cardiology/ventricular-arrhythmias/2017-aha-acc-hrs.pdf
+                url: https://www.ahajournals.org/doi/pdf/10.1161/CIR.0000000000000549
+              html:
+                url: https://www.ahajournals.org/doi/full/10.1161/CIR.0000000000000549
+              epub:
+                local: /sources/cardiology/ventricular-arrhythmias/2017-aha-acc-hrs.epub
+      syncope:
+        title: Syncope
+        society: ACC/AHA/HRS
+        versions:
+          - year: 2017
+            title: 2017 ACC/AHA/HRS Syncope Guideline
+
+            url: https://www.ahajournals.org/doi/10.1161/cir.0000000000000499
+            source:
+              pdf:
+                local: /sources/cardiology/syncope/2017-acc-aha-hrs.pdf
+                url: https://www.ahajournals.org/doi/pdf/10.1161/cir.0000000000000499
+              html:
+                url: https://www.ahajournals.org/doi/full/10.1161/cir.0000000000000499
+              epub:
+                local: /sources/cardiology/syncope/2017-acc-aha-hrs.epub
+  pulmonary:
+    title: Pulmonary & Critical Care
+    description: Society guidelines for pulmonary and critical care conditions.
+    topics:
+      asthma:
+        high_yield: true
+        title: Asthma
+        society: GINA
+        versions:
+          - year: 2026
+            title: GINA 2026 — Global Strategy for Asthma Management and Prevention
+            notes: Updated annually.
+            url: https://ginasthma.org/wp-content/uploads/2026/05/GINA-2026-Strategy-Report-WMS.pdf
+            source:
+              pdf:
+                local: /sources/pulmonary/asthma/2026-gina.pdf
+          - year: 2020
+            society: NAEPP/NHLBI
+            title: NAEPP/NHLBI 2020 Focused Updates
+            notes: US adjunct to GINA.
+            url: https://www.jacionline.org/article/S0091-6749(20)31404-4/fulltext
+            source:
+              pdf:
+                local: /sources/pulmonary/asthma/2020-naepp-nhlbi.pdf
+              html:
+                url: https://www.jacionline.org/article/S0091-6749(20)31404-4/fulltext
+              pmc:
+                url: https://pmc.ncbi.nlm.nih.gov/articles/PMC7924476/
+                local: /sources/pulmonary/asthma/2020-naepp-nhlbi.html
+      copd:
+        high_yield: true
+        title: COPD
+        society: GOLD
+        versions:
+          - year: 2026
+            title: GOLD 2026 — Global Strategy for Prevention, Diagnosis and Management of COPD
+            notes: Updated annually.
+            url: https://goldcopd.org/wp-content/uploads/2026/01/GOLD-REPORT-2026-v1.3-8Dec2025_WMV2.pdf
+            source:
+              pdf:
+                local: /sources/pulmonary/copd/2026-gold.pdf
+      cap:
+        high_yield: true
+        title: Community-acquired pneumonia
+        society: ATS/IDSA
+        versions:
+          - year: 2025
+            title: 2025 ATS/IDSA CAP Guideline
+            notes: Updates the 2019 document.
+            url: https://academic.oup.com/ajrccm/article/212/1/24/8435770
+            source:
+              pdf:
+                local: /sources/pulmonary/cap/2025-ats-idsa.pdf
+              html:
+                url: https://academic.oup.com/ajrccm/article/212/1/24/8435770
+          - year: 2019
+            url: https://www.atsjournals.org/doi/10.1164/rccm.201908-1581ST
+            source:
+              pdf:
+                local: /sources/pulmonary/cap/2019-ats-idsa.pdf
+              html:
+                url: https://academic.oup.com/ajrccm/article/200/7/e45/200727
+              pmc:
+                url: https://pmc.ncbi.nlm.nih.gov/articles/PMC6812437/
+                local: /sources/pulmonary/cap/2019-ats-idsa.html
+      hap-vap:
+        title: Hospital-acquired / ventilator-associated pneumonia
+        society: IDSA/ATS
+        versions:
+          - year: 2016
+            title: 2016 IDSA/ATS HAP/VAP Guideline
+            url: https://www.thoracic.org/statements/resources/tb-opi/hap-vap-guidelines-2016.pdf
+            source:
+              pdf:
+                local: /sources/pulmonary/hap-vap/2016-idsa-ats.pdf
+              html:
+                url: https://academic.oup.com/cid/article/63/5/e61/2237650
+      sepsis:
+        high_yield: true
+        title: Sepsis & septic shock
+        society: SCCM/ESICM
+        versions:
+          - year: 2021
+            title: Surviving Sepsis Campaign 2021
+            notes: Current international reference.
+            url: https://www.sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-guidelines-2021
+            source:
+              pdf:
+                local: /sources/pulmonary/sepsis/2021-sccm-esicm.pdf
+              html:
+                url: https://journals.lww.com/ccmjournal/fulltext/2021/11000/surviving_sepsis_campaign__international.21.aspx
+              pmc:
+                url: https://pmc.ncbi.nlm.nih.gov/articles/PMC8486643/
+                local: /sources/pulmonary/sepsis/2021-sccm-esicm.html
+              epub:
+                local: /sources/pulmonary/sepsis/2021-sccm-esicm.epub
+      pe-vte-acute:
+        title: Pulmonary embolism / VTE (acute)
+        versions:
+          - year: 2021
+            society: CHEST
+            title: CHEST 2021 Antithrombotic Therapy for VTE
+            url: https://journal.chestnet.org/article/S0012-3692(21)01506-3/fulltext
+            source:
+              pdf:
+                local: /sources/pulmonary/pe-vte-acute/2021-chest.pdf
+              html:
+                url: https://journal.chestnet.org/article/S0012-3692(21)01506-3/fulltext
+          - year: 2020
+            society: ASH
+            title: ASH 2020 VTE panels
+            url: https://www.hematology.org/-/media/hematology/files/clinicians/guidelines/vte/ash-vte-treatment_pdf.pdf
+            source:
+              pdf:
+                local: /sources/pulmonary/pe-vte-acute/2020-ash.pdf
+              html:
+                url: https://ashpublications.org/bloodadvances/article/4/19/4693/463998
+              pmc:
+                url: https://pmc.ncbi.nlm.nih.gov/articles/PMC7556153/
+                local: /sources/pulmonary/pe-vte-acute/2020-ash.html
+          - year: 2019
+            society: ESC
+            title: ESC 2019 Acute PE Guideline
+            url: https://academic.oup.com/eurheartj/article/41/4/543/5556136
+            source:
+              pdf:
+                local: /sources/pulmonary/pe-vte-acute/2019-esc.pdf
+              html:
+                url: https://academic.oup.com/eurheartj/article/41/4/543/5556136
+      ards:
+        title: ARDS
+        society: ATS/ESICM/SCCM
+        versions:
+          - year: 2023
+            title: 2023 ATS/ESICM/SCCM ARDS Guideline
+            url: https://pmc.ncbi.nlm.nih.gov/articles/PMC10354163/
+            source:
+              pdf:
+                local: /sources/pulmonary/ards/2023-ats-esicm-sccm.pdf
+      pulmonary-hypertension:
+        title: Pulmonary hypertension
+        society: ESC/ERS
+        versions:
+          - year: 2022
+            title: 2022 ESC/ERS PH Guideline
+            url: https://academic.oup.com/eurheartj/article/43/38/3618/6673929
+            source:
+              pdf:
+                local: /sources/pulmonary/pulmonary-hypertension/2022-esc-ers.pdf
+              html:
+                url: https://academic.oup.com/eurheartj/article/43/38/3618/6673929
+      ipf:
+        title: Idiopathic pulmonary fibrosis
+        society: ATS/ERS/JRS/ALAT
+        versions:
+          - year: 2022
+            title: 2022 ATS/ERS/JRS/ALAT IPF Guideline
+            url: https://www.atsjournals.org/doi/pdf/10.1164/rccm.202202-0399ST
+            source:
+              pdf:
+                local: /sources/pulmonary/ipf/2022-ats-ers-jrs-alat.pdf
+              html:
+                url: https://academic.oup.com/ajrccm/article/205/9/e18/200689
+              pmc:
+                url: https://pmc.ncbi.nlm.nih.gov/articles/PMC9851481/
+                local: /sources/pulmonary/ipf/2022-ats-ers-jrs-alat.html
+      osa:
+        title: Obstructive sleep apnea
+        society: AASM
+        versions:
+          - title: AASM clinical practice guidelines
+
+            url: https://aasm.org/clinical-resources/practice-standards/practice-guidelines/
+            source:
+              pdf:
+                local: /sources/pulmonary/osa/aasm.pdf
+  gi-hepatology:
+    title: Gastroenterology & Hepatology
+    description: Society guidelines for GI and liver conditions.
+    topics:
+      gerd:
+        title: GERD
+        society: ACG
+        versions:
+          - year: 2022
+            title: ACG 2022 GERD Guideline
+            url: https://journals.lww.com/ajg/fulltext/2022/01000/acg_clinical_guideline_for_the_diagnosis_and.14.aspx
+            source:
+              pdf:
+                local: /sources/gi-hepatology/gerd/2022-acg.pdf
+              html:
+                url: https://journals.lww.com/ajg/fulltext/2022/01000/acg_clinical_guideline_for_the_diagnosis_and.14.aspx
+              pmc:
+                url: https://pmc.ncbi.nlm.nih.gov/articles/PMC8754510/
+              epub:
+                local: /sources/gi-hepatology/gerd/2022-acg.epub
+      h-pylori:
+        title: H. pylori / peptic ulcer
+        society: ACG
+        versions:
+          - year: 2024
+            title: ACG 2024 Treatment of H. pylori Infection
+            url: https://journals.lww.com/ajg/fulltext/2024/09000/acg_clinical_guideline__treatment_of_helicobacter.13.aspx
+            source:
+              pdf:
+                local: /sources/gi-hepatology/h-pylori/2024-acg.pdf
+              html:
+                url: https://journals.lww.com/ajg/fulltext/2024/09000/acg_clinical_guideline__treatment_of_helicobacter.13.aspx
+              epub:
+                local: /sources/gi-hepatology/h-pylori/2024-acg.epub
+      acute-pancreatitis:
+        title: Acute pancreatitis
+        society: ACG
+        versions:
+          - year: 2024
+            title: ACG 2024 Acute Pancreatitis Guideline
+            notes: Plus AGA.
+            url: https://journals.lww.com/ajg/fulltext/2024/03000/american_college_of_gastroenterology_guidelines_.14.aspx
+            source:
+              pdf:
+                local: /sources/gi-hepatology/acute-pancreatitis/2024-acg.pdf
+              html:
+                url: https://journals.lww.com/ajg/fulltext/2024/03000/american_college_of_gastroenterology_guidelines_.14.aspx
+              epub:
+                local: /sources/gi-hepatology/acute-pancreatitis/2024-acg.epub
+      c-difficile:
+        high_yield: true
+        title: C. difficile infection
+        versions:
+          - year: 2021
+            society: IDSA/SHEA
+            title: IDSA/SHEA 2021 Focused Update
+            notes: Fidaxomicin preferred.
+            url: https://www.idsociety.org/globalassets/idsa/practice-guidelines/cdi-2021-focused-update.pdf
+            source:
+              pdf:
+                local: /sources/gi-hepatology/c-difficile/2021-idsa-shea.pdf
+              html:
+                url: https://academic.oup.com/cid/article/73/5/e1029/6298219
+          - year: 2021
+            society: ACG
+            title: ACG 2021 C. difficile Guideline
+            url: https://journals.lww.com/ajg/fulltext/2021/06000/acg_clinical_guidelines__prevention,_diagnosis,.12.aspx
+            source:
+              pdf:
+                local: /sources/gi-hepatology/c-difficile/2021-acg.pdf
+              html:
+                url: https://journals.lww.com/ajg/fulltext/2021/06000/acg_clinical_guidelines__prevention,_diagnosis,.12.aspx
+              epub:
+                local: /sources/gi-hepatology/c-difficile/2021-acg.epub
+      ulcerative-colitis:
+        title: Ulcerative colitis
+        society: ACG
+        versions:
+          - year: 2025
+            title: ACG 2025 UC in Adults
+            notes: Plus AGA.
+            url: https://journals.lww.com/ajg/fulltext/2025/06000/acg_clinical_guideline_update__ulcerative_colitis.13.aspx
+            source:
+              pdf:
+                local: /sources/gi-hepatology/ulcerative-colitis/2025-acg.pdf
+              html:
+                url: https://journals.lww.com/ajg/fulltext/2025/06000/acg_clinical_guideline_update__ulcerative_colitis.13.aspx
+              epub:
+                local: /sources/gi-hepatology/ulcerative-colitis/2025-acg.epub
+          - year: 2019
+            url: https://journals.lww.com/ajg/fulltext/2019/03000/acg_clinical_guideline__ulcerative_colitis_in.10.aspx
+            source:
+              pdf:
+                local: /sources/gi-hepatology/ulcerative-colitis/2019-acg.pdf
+              html:
+                url: https://journals.lww.com/ajg/fulltext/2019/03000/acg_clinical_guideline__ulcerative_colitis_in.10.aspx
+              epub:
+                local: /sources/gi-hepatology/ulcerative-colitis/2019-acg.epub
+      crohns:
+        title: Crohn's disease
+        society: ACG
+        versions:
+          - year: 2018
+            title: ACG 2018 Crohn's Guideline
+            notes: Plus AGA management guidelines.
+            url: https://journals.lww.com/ajg/fulltext/2018/04000/acg_clinical_guideline__management_of_crohn_s.10.aspx
+            source:
+              pdf:
+                local: /sources/gi-hepatology/crohns/2018-acg.pdf
+              html:
+                url: https://journals.lww.com/ajg/fulltext/2018/04000/acg_clinical_guideline__management_of_crohn_s.10.aspx
+              epub:
+                local: /sources/gi-hepatology/crohns/2018-acg.epub
+      upper-gi-bleeding:
+        high_yield: true
+        title: Upper GI bleeding
+        society: ACG
+        versions:
+          - year: 2021
+            title: ACG 2021 Upper GI/Ulcer Bleeding Guideline
+            url: https://journals.lww.com/ajg/fulltext/2021/05000/acg_clinical_guideline__upper_gastrointestinal_and.14.aspx
+            source:
+              pdf:
+                local: /sources/gi-hepatology/upper-gi-bleeding/2021-acg.pdf
+              html:
+                url: https://journals.lww.com/ajg/fulltext/2021/05000/acg_clinical_guideline__upper_gastrointestinal_and.14.aspx
+              epub:
+                local: /sources/gi-hepatology/upper-gi-bleeding/2021-acg.epub
+      ibs:
+        title: Irritable bowel syndrome
+        society: ACG
+        versions:
+          - year: 2021
+            title: ACG 2021 IBS Guideline
+            url: https://journals.lww.com/ajg/fulltext/2021/01000/acg_clinical_guideline__management_of_irritable.11.aspx
+            source:
+              pdf:
+                local: /sources/gi-hepatology/ibs/2021-acg.pdf
+              html:
+                url: https://journals.lww.com/ajg/fulltext/2021/01000/acg_clinical_guideline__management_of_irritable.11.aspx
+              epub:
+                local: /sources/gi-hepatology/ibs/2021-acg.epub
+      celiac:
+        title: Celiac disease
+        society: ACG
+        versions:
+          - year: 2023
+            title: ACG 2023 Celiac Guideline
+            url: https://journals.lww.com/ajg/fulltext/2023/01000/american_college_of_gastroenterology_guidelines.17.aspx
+            source:
+              pdf:
+                local: /sources/gi-hepatology/celiac/2023-acg.pdf
+              html:
+                url: https://journals.lww.com/ajg/fulltext/2023/01000/american_college_of_gastroenterology_guidelines.17.aspx
+              epub:
+                local: /sources/gi-hepatology/celiac/2023-acg.epub
+      hepatitis-c:
+        title: Hepatitis C
+        society: AASLD/IDSA
+        versions:
+          - title: AASLD/IDSA HCV Guidance
+            url: https://www.hcvguidelines.org
+            source:
+              pdf:
+                local: /sources/gi-hepatology/hepatitis-c/aasld-idsa.pdf
+      hepatitis-b:
+        title: Hepatitis B
+        society: AASLD
+        versions:
+          - year: 2018
+            title: AASLD 2018 Hepatitis B Guidance
+            notes: Plus updates.
+            url: https://onlinelibrary.wiley.com/doi/pdf/10.1002/hep.29800
+            source:
+              pdf:
+                local: /sources/gi-hepatology/hepatitis-b/2018-aasld.pdf
+              html:
+                url: https://onlinelibrary.wiley.com/doi/full/10.1002/hep.29800
+              pmc:
+                url: https://pmc.ncbi.nlm.nih.gov/articles/PMC5975958/
+      cirrhosis-ascites:
+        high_yield: true
+        title: Cirrhosis — ascites / SBP / HRS
+        society: AASLD
+        versions:
+          - year: 2021
+            title: AASLD 2021 Guidance
+            url: https://onlinelibrary.wiley.com/doi/full/10.1002/hep.31884
+            source:
+              pdf:
+                local: /sources/gi-hepatology/cirrhosis-ascites/2021-aasld.pdf
+              html:
+                url: https://onlinelibrary.wiley.com/doi/full/10.1002/hep.31884
+      portal-hypertension:
+        title: Portal hypertension / varices
+        versions:
+          - year: 2024
+            society: AASLD
+            title: AASLD 2024 Guidance
+            url: https://journals.lww.com/hep/fulltext/2024/05000/aasld_practice_guidance_on_risk_stratification_and.22.aspx
+            source:
+              pdf:
+                local: /sources/gi-hepatology/portal-hypertension/2024-aasld.pdf
+              html:
+                url: https://journals.lww.com/hep/fulltext/2024/05000/aasld_practice_guidance_on_risk_stratification_and.22.aspx
+              epub:
+                local: /sources/gi-hepatology/portal-hypertension/2024-aasld.epub
+          - year: 2022
+            society: Baveno VII
+            title: Baveno VII 2022 Consensus
+            url: https://www.journal-of-hepatology.eu/article/S0168-8278(21)02299-6/fulltext
+            source:
+              pdf:
+                local: /sources/gi-hepatology/portal-hypertension/2022-baveno-vii.pdf
+              html:
+                url: https://www.journal-of-hepatology.eu/article/S0168-8278(21)02299-6/fulltext
+              pmc:
+                url: https://pmc.ncbi.nlm.nih.gov/articles/PMC11090185/
+      masld:
+        title: MASLD (formerly NAFLD)
+        society: AASLD
+        versions:
+          - year: 2023
+            title: AASLD 2023 MASLD Guidance
+            url: https://journals.lww.com/hep/fulltext/2023/05000/aasld_practice_guidance_on_the_clinical_assessment.31.aspx
+            source:
+              pdf:
+                local: /sources/gi-hepatology/masld/2023-aasld.pdf
+              html:
+                url: https://journals.lww.com/hep/fulltext/2023/05000/aasld_practice_guidance_on_the_clinical_assessment.31.aspx
+              epub:
+                local: /sources/gi-hepatology/masld/2023-aasld.epub
+      hcc:
+        title: Hepatocellular carcinoma
+        society: AASLD
+        versions:
+          - year: 2023
+            title: AASLD 2023 HCC Guidance
+
+            url: https://www.aasld.org/practice-guidelines/management-hepatocellular-carcinoma
+            source:
+              pdf:
+                local: /sources/gi-hepatology/hcc/2023-aasld.pdf
+              html:
+                url: https://journals.lww.com/hep/fulltext/2023/12000/aasld_practice_guidance_on_prevention,_diagnosis,.27.aspx
+              epub:
+                local: /sources/gi-hepatology/hcc/2023-aasld.epub
+  nephrology:
+    title: Nephrology
+    description: KDIGO and related kidney guidelines.
+    topics:
+      ckd:
+        high_yield: true
+        title: Chronic kidney disease
+        society: KDIGO
+        versions:
+          - year: 2024
+            title: KDIGO 2024 CKD Guideline
+            notes: SGLT2i, finerenone, GLP-1.
+            url: https://kdigo.org/wp-content/uploads/2024/03/KDIGO-2024-CKD-Guideline.pdf
+            source:
+              pdf:
+                local: /sources/nephrology/ckd/2024-kdigo.pdf
+              html:
+                url: https://www.kidney-international.org/article/S0085-2538(23)00766-4/fulltext
+          - year: 2012
+            url: https://kdigo.org/wp-content/uploads/2017/02/KDIGO_2012_CKD_GL.pdf
+            source:
+              pdf:
+                local: /sources/nephrology/ckd/2012-kdigo.pdf
+              html:
+                url: https://www.sciencedirect.com/journal/kidney-international-supplements/vol/3/issue/1
+      aki:
+        high_yield: true
+        title: Acute kidney injury
+        society: KDIGO
+        versions:
+          - year: 2012
+            title: KDIGO 2012 AKI Guideline
+            notes: Still the reference.
+            url: https://kdigo.org/wp-content/uploads/2016/10/KDIGO-2012-AKI-Guideline-English.pdf
+            source:
+              pdf:
+                local: /sources/nephrology/aki/2012-kdigo.pdf
+              html:
+                url: https://www.sciencedirect.com/journal/kidney-international-supplements/vol/2/issue/1
+      bp-in-ckd:
+        title: Blood pressure in CKD
+        society: KDIGO
+        versions:
+          - year: 2021
+            title: KDIGO 2021 BP in CKD Guideline
+            url: https://kdigo.org/wp-content/uploads/2016/10/KDIGO-2021-BP-GL.pdf
+            source:
+              pdf:
+                local: /sources/nephrology/bp-in-ckd/2021-kdigo.pdf
+              html:
+                url: https://www.kidney-international.org/article/S0085-2538(20)31270-9/fulltext
+      diabetes-in-ckd:
+        title: Diabetes in CKD
+        society: KDIGO
+        versions:
+          - year: 2022
+            title: KDIGO 2022 Diabetes in CKD Guideline
+            url: https://kdigo.org/wp-content/uploads/2022/10/KDIGO-2022-Clinical-Practice-Guideline-for-Diabetes-Management-in-CKD.pdf
+            source:
+              pdf:
+                local: /sources/nephrology/diabetes-in-ckd/2022-kdigo.pdf
+      glomerular-diseases:
+        title: Glomerular diseases
+        society: KDIGO
+        versions:
+          - year: 2021
+            title: KDIGO 2021 Glomerular Diseases Guideline
+            url: https://kdigo.org/wp-content/uploads/2017/02/KDIGO-Glomerular-Diseases-Guideline-2021-English.pdf
+            source:
+              pdf:
+                local: /sources/nephrology/glomerular-diseases/2021-kdigo.pdf
+      ckd-mbd:
+        title: CKD-mineral & bone disorder
+        society: KDIGO
+        versions:
+          - year: 2017
+            title: KDIGO 2017 CKD-MBD Update
+            url: https://kdigo.org/wp-content/uploads/2017/02/2017-KDIGO-CKD-MBD-GL-Update.pdf
+            source:
+              pdf:
+                local: /sources/nephrology/ckd-mbd/2017-kdigo.pdf
+      hyponatremia:
+        title: Hyponatremia
+        versions:
+          - year: 2017
+            society: JASN
+            title: Hoorn & Zietse 2017 — Diagnosis and Treatment of Hyponatremia (compilation review)
+            notes: JASN review compiling the 2014 European (ERBP/ESICM/ESE) and 2013 US expert panel guidelines into a single practical reference. Replaces the inaccessible 2014 European primary guideline as the working source.
+            url: https://doi.org/10.1681/ASN.2016101139
+            source:
+              pdf:
+                local: /sources/nephrology/hyponatremia/2017-jasn.pdf
+              html:
+                url: https://journals.lww.com/jasn/fulltext/2017/05000/diagnosis_and_treatment_of_hyponatremia_.6.aspx
+              pmc:
+                url: https://pmc.ncbi.nlm.nih.gov/articles/PMC5407738/
+          - year: 2013
+            society: US expert panel
+            title: 2013 US Expert Panel on Hyponatremia
+
+            url: https://www.amjmed.com/article/S0002-9343(13)00605-0/fulltext
+            source:
+              html:
+                url: https://www.amjmed.com/article/S0002-9343(13)00605-0/fulltext
+              pdf:
+                local: /sources/nephrology/hyponatremia/2013-us-expert-panel.pdf
+  endocrinology:
+    title: Endocrinology
+    description: ADA, ATA, Endocrine Society and related guidelines.
+    topics:
+      diabetes:
+        high_yield: true
+        title: Diabetes mellitus
+        society: ADA
+        versions:
+          - year: 2026
+            title: ADA Standards of Care in Diabetes — 2026
+            notes: Updated annually; the core IM diabetes reference.
+            url: https://diabetesjournals.org/care/issue/49/Supplement_1
+            source:
+              pdf:
+                local: /sources/endocrinology/diabetes/2026-ada.pdf
+              html:
+                url: https://diabetesjournals.org/care/issue/49/Supplement_1
+      dka-hhs:
+        high_yield: true
+        title: Hyperglycemic crises (DKA / HHS)
+        society: ADA/EASD
+        versions:
+          - year: 2024
+            title: 2024 ADA/EASD Consensus on Hyperglycemic Crises
+            url: https://diabetesjournals.org/care/article/47/8/1257/156808/Hyperglycemic-Crises-in-Adults-With-Diabetes-A
+            source:
+              pdf:
+                local: /sources/endocrinology/dka-hhs/2024-ada-easd.pdf
+              html:
+                url: https://diabetesjournals.org/care/article/47/8/1257/156808/Hyperglycemic-Crises-in-Adults-With-Diabetes-A
+              pmc:
+                url: https://pmc.ncbi.nlm.nih.gov/articles/PMC11272983/
+      hypothyroidism:
+        high_yield: true
+        title: Hypothyroidism
+        society: ATA
+        versions:
+          - year: 2014
+            title: ATA 2014 Hypothyroidism Treatment Guideline
+            url: https://www.liebertpub.com/doi/10.1089/thy.2014.0028
+            source:
+              pdf:
+                local: /sources/endocrinology/hypothyroidism/2014-ata.pdf
+              html:
+                url: https://www.liebertpub.com/doi/10.1089/thy.2014.0028
+              pmc:
+                url: https://pmc.ncbi.nlm.nih.gov/articles/PMC4267409/
+              epub:
+                local: /sources/endocrinology/hypothyroidism/2014-ata.epub
+      hyperthyroidism:
+        high_yield: true
+        title: Hyperthyroidism / thyrotoxicosis
+        society: ATA
+        versions:
+          - year: 2016
+            title: ATA 2016 Hyperthyroidism Guideline
+            url: https://www.liebertpub.com/doi/full/10.1089/thy.2016.0229
+            source:
+              pdf:
+                local: /sources/endocrinology/hyperthyroidism/2016-ata.pdf
+              html:
+                url: https://www.liebertpub.com/doi/full/10.1089/thy.2016.0229
+              epub:
+                local: /sources/endocrinology/hyperthyroidism/2016-ata.epub
+      thyroid-nodules:
+        title: Thyroid nodules & differentiated cancer
+        society: ATA
+        versions:
+          - year: 2015
+            title: ATA 2015 Guideline
+            url: https://www.liebertpub.com/doi/10.1089/thy.2015.0020
+            source:
+              pdf:
+                local: /sources/endocrinology/thyroid-nodules/2015-ata.pdf
+              html:
+                url: https://www.liebertpub.com/doi/10.1089/thy.2015.0020
+              epub:
+                local: /sources/endocrinology/thyroid-nodules/2015-ata.epub
+      osteoporosis:
+        title: Osteoporosis
+        versions:
+          - year: 2023
+            society: ACP
+            title: ACP 2023 Pharmacologic Treatment of Osteoporosis
+            url: https://www.acponline.org/sites/default/files/acp-policy-library/guidelines/pharmacologic_treatment_of_primary_osteoporosis_to_prevent_fractures_in_adults_2023.pdf
+            source:
+              pdf:
+                local: /sources/endocrinology/osteoporosis/2023-acp.pdf
+              html:
+                url: https://www.acpjournals.org/doi/full/10.7326/M22-1034
+          - year: 2020
+            society: Endocrine Society
+            title: Endocrine Society 2020 Postmenopausal Osteoporosis Guideline
+            url: https://academic.oup.com/jcem/article/105/3/587/5739968
+            source:
+              html:
+                url: https://academic.oup.com/jcem/article/105/3/587/5739968
+              pdf:
+                local: /sources/endocrinology/osteoporosis/2020-endocrine-society.pdf
+          - year: 2020
+            society: AACE/ACE
+            title: AACE/ACE 2020 Osteoporosis Guideline
+            url: https://www.endocrinepractice.org/article/S1530-891X(20)42827-7/fulltext
+            source:
+              pdf:
+                local: /sources/endocrinology/osteoporosis/2020-aace-ace.pdf
+              html:
+                url: https://www.endocrinepractice.org/article/S1530-891X(20)42827-7/fulltext
+          - society: Bone Health & Osteoporosis Foundation
+            title: BHOF Clinician's Guide
+            url: https://link.springer.com/article/10.1007/s00198-021-05900-y
+            source:
+              pdf:
+                local: /sources/endocrinology/osteoporosis/bone-health-and-osteoporosis-foundation.pdf
+              html:
+                url: https://link.springer.com/article/10.1007/s00198-021-05900-y
+                local: /sources/endocrinology/osteoporosis/bone-health-and-osteoporosis-foundation.html
+      adrenal-insufficiency:
+        title: Adrenal insufficiency
+        society: Endocrine Society
+        versions:
+          - year: 2016
+            title: Endocrine Society 2016 Adrenal Insufficiency Guideline
+            url: https://academic.oup.com/jcem/article/101/2/364/2810222
+            source:
+              pdf:
+                local: /sources/endocrinology/adrenal-insufficiency/2016-endocrine-society.pdf
+              html:
+                url: https://academic.oup.com/jcem/article/101/2/364/2810222
+      primary-aldosteronism:
+        title: Primary aldosteronism
+        society: Endocrine Society
+        versions:
+          - year: 2016
+            title: Endocrine Society 2016 Primary Aldosteronism Guideline
+            url: https://academic.oup.com/jcem/article/101/5/1889/2804729
+            source:
+              pdf:
+                local: /sources/endocrinology/primary-aldosteronism/2016-endocrine-society.pdf
+              html:
+                url: https://academic.oup.com/jcem/article/101/5/1889/2804729
+      cushings:
+        title: Cushing's syndrome
+        society: Endocrine Society
+        versions:
+          - year: 2015
+            title: Endocrine Society 2015 Cushing's Syndrome Guideline
+            notes: With Pituitary Society.
+            url: https://academic.oup.com/jcem/article/100/8/2807/2836065
+            source:
+              pdf:
+                local: /sources/endocrinology/cushings/2015-endocrine-society.pdf
+              html:
+                url: https://academic.oup.com/jcem/article/100/8/2807/2836065
+      male-hypogonadism:
+        title: Male hypogonadism
+        society: Endocrine Society
+        versions:
+          - year: 2018
+            title: Endocrine Society 2018 Testosterone Guideline
+            url: https://academic.oup.com/jcem/article/103/5/1715/4939465
+            source:
+              pdf:
+                local: /sources/endocrinology/male-hypogonadism/2018-endocrine-society.pdf
+              html:
+                url: https://academic.oup.com/jcem/article/103/5/1715/4939465
+      obesity:
+        title: Obesity
+        versions:
+          - year: 2022
+            society: AGA
+            title: AGA 2022 Pharmacologic Management of Obesity
+            url: https://www.gastrojournal.org/article/S0016-5085(22)01026-5/fulltext
+            source:
+              html:
+                url: https://www.gastrojournal.org/article/S0016-5085(22)01026-5/fulltext
+              pdf:
+                local: /sources/endocrinology/obesity/2022-aga.pdf
+          - year: 2016
+            society: AACE/ACE
+            title: AACE/ACE 2016 Obesity Guideline
+
+            url: https://pro.aace.com/files/obesity/final-appendix.pdf
+            source:
+              pdf:
+                local: /sources/endocrinology/obesity/2016-aace-ace.pdf
+  infectious-diseases:
+    title: Infectious Diseases
+    description: IDSA, CDC, and international ID guidelines.
+    topics:
+      hiv:
+        high_yield: true
+        title: HIV (antiretroviral therapy)
+        versions:
+          - society: HHS/DHHS
+            title: HHS Guidelines for ARV in Adults & Adolescents
+            url: https://clinicalinfo.hiv.gov/sites/default/files/guidelines/documents/adult-adolescent-arv/guidelines-adult-adolescent-arv.pdf
+            source:
+              pdf:
+                local: /sources/infectious-diseases/hiv/hhs-dhhs.pdf
+              html:
+                url: https://clinicalinfo.hiv.gov/en/guidelines/hiv-clinical-guidelines-adult-and-adolescent-arv
+                local: /sources/infectious-diseases/hiv/hhs-dhhs.html
+          - year: 2024
+            society: IAS-USA
+            title: IAS-USA 2024 Recommendations
+            url: https://jamanetwork.com/journals/jama/fullarticle/2827545
+            source:
+              pdf:
+                local: /sources/infectious-diseases/hiv/2024-ias-usa.pdf
+              html:
+                url: https://jamanetwork.com/journals/jama/fullarticle/2827545
+            pmid: '39616496'
+      infective-endocarditis:
+        title: Infective endocarditis
+        versions:
+          - year: 2023
+            society: AHA
+            title: AHA 2023 IE Update
+            url: https://www.ahajournals.org/doi/10.1161/CIR.0000000000001180
+            source:
+              pdf:
+                local: /sources/infectious-diseases/infective-endocarditis/2023-aha.pdf
+                url: https://www.ahajournals.org/doi/pdf/10.1161/CIR.0000000000001180
+              html:
+                url: https://www.ahajournals.org/doi/full/10.1161/CIR.0000000000001180
+              epub:
+                local: /sources/infectious-diseases/infective-endocarditis/2023-aha.epub
+          - year: 2023
+            society: ESC
+            title: ESC 2023 IE Guideline
+            url: https://academic.oup.com/eurheartj/article/44/39/3948/7243107
+            source:
+              pdf:
+                local: /sources/infectious-diseases/infective-endocarditis/2023-esc.pdf
+              html:
+                url: https://academic.oup.com/eurheartj/article/44/39/3948/7243107
+          - year: 2023
+            society: Duke-ISCVID
+            title: Duke-ISCVID 2023 Diagnostic Criteria
+            url: https://academic.oup.com/cid/article/77/4/518/7151107
+            source:
+              pdf:
+                local: /sources/infectious-diseases/infective-endocarditis/2023-duke-iscvid.pdf
+              html:
+                url: https://academic.oup.com/cid/article/77/4/518/7151107
+          - year: 2015
+            society: AHA
+            title: AHA 2015 IE Guideline
+            url: https://www.idsociety.org/globalassets/idsa/practice-guidelines/infective-endocarditis-in-adults-diagnosis-antimicrobial-therapy-and-management-of-complications.pdf
+            source:
+              pdf:
+                local: /sources/infectious-diseases/infective-endocarditis/2015-aha.pdf
+              html:
+                url: https://www.ahajournals.org/doi/full/10.1161/CIR.0000000000000296
+              epub:
+                local: /sources/infectious-diseases/infective-endocarditis/2015-aha.epub
+      uti:
+        high_yield: true
+        title: Urinary tract infection
+        society: IDSA
+        versions:
+          - year: 2019
+            title: IDSA 2019 Asymptomatic Bacteriuria
+            url: https://www.idsociety.org/globalassets/idsa/practice-guidelines/2019-asymptomatic-bacteriuria.pdf
+            source:
+              pdf:
+                local: /sources/infectious-diseases/uti/2019-idsa.pdf
+              html:
+                url: https://academic.oup.com/cid/article/68/10/e83/5407612
+          - year: 2011
+            title: IDSA 2011 Uncomplicated Cystitis/Pyelonephritis
+            url: https://academic.oup.com/cid/article/52/5/e103/388285
+            source:
+              pdf:
+                local: /sources/infectious-diseases/uti/2011-idsa.pdf
+              html:
+                url: https://academic.oup.com/cid/article/52/5/e103/388285
+      ssti:
+        title: Skin & soft tissue infections
+        society: IDSA
+        versions:
+          - year: 2014
+            title: IDSA 2014 SSTI Guideline
+            url: https://academic.oup.com/cid/article/59/2/e10/2895845
+            source:
+              pdf:
+                local: /sources/infectious-diseases/ssti/2014-idsa.pdf
+              html:
+                url: https://academic.oup.com/cid/article/59/2/e10/2895845
+      antimicrobial-stewardship:
+        title: Antimicrobial stewardship
+        society: IDSA/SHEA
+        versions:
+          - year: 2016
+            title: IDSA/SHEA 2016 Antimicrobial Stewardship Guideline
+            url: https://academic.oup.com/cid/article/62/10/e51/2462846
+            source:
+              pdf:
+                local: /sources/infectious-diseases/antimicrobial-stewardship/2016-idsa-shea.pdf
+              html:
+                url: https://academic.oup.com/cid/article/62/10/e51/2462846
+              pmc:
+                url: https://pmc.ncbi.nlm.nih.gov/articles/PMC5006285/
+                local: /sources/infectious-diseases/antimicrobial-stewardship/2016-idsa-shea.html
+      candidiasis:
+        title: Candidiasis
+        society: IDSA
+        versions:
+          - year: 2016
+            title: IDSA 2016 Candidiasis Guideline
+            url: https://academic.oup.com/cid/article/62/4/e1/2462830
+            source:
+              pdf:
+                local: /sources/infectious-diseases/candidiasis/2016-idsa.pdf
+              html:
+                url: https://academic.oup.com/cid/article/62/4/e1/2462830
+              pmc:
+                url: https://pmc.ncbi.nlm.nih.gov/articles/PMC4725385/
+                local: /sources/infectious-diseases/candidiasis/2016-idsa.html
+      tuberculosis:
+        title: Tuberculosis (active / latent)
+        versions:
+          - year: 2020
+            society: NTCA/CDC
+            title: 2020 NTCA/CDC Latent TB Guideline
+            url: https://www.cdc.gov/mmwr/volumes/69/rr/pdfs/rr6901a1-H.pdf
+            source:
+              pdf:
+                local: /sources/infectious-diseases/tuberculosis/2020-ntca-cdc.pdf
+              html:
+                url: https://www.cdc.gov/mmwr/volumes/69/rr/rr6901a1.htm
+                local: /sources/infectious-diseases/tuberculosis/2020-ntca-cdc.html
+              pmc:
+                url: https://pmc.ncbi.nlm.nih.gov/articles/PMC7041302/
+                local: /sources/infectious-diseases/tuberculosis/2020-ntca-cdc.pmc.html
+          - year: 2016
+            society: ATS/CDC/IDSA
+            title: ATS/CDC/IDSA 2016 TB Treatment Guideline
+            url: https://academic.oup.com/cid/article/63/7/e147/2196792
+            source:
+              pdf:
+                local: /sources/infectious-diseases/tuberculosis/2016-ats-cdc-idsa.pdf
+              html:
+                url: https://academic.oup.com/cid/article/63/7/e147/2196792
+              pmc:
+                url: https://pmc.ncbi.nlm.nih.gov/articles/PMC6590850/
+                local: /sources/infectious-diseases/tuberculosis/2016-ats-cdc-idsa.html
+      sti:
+        title: Sexually transmitted infections
+        society: CDC
+        versions:
+          - year: 2021
+            title: CDC STI Treatment Guidelines 2021
+            url: https://www.cdc.gov/std/treatment-guidelines/STI-Guidelines-2021.pdf
+            source:
+              pdf:
+                local: /sources/infectious-diseases/sti/2021-cdc.pdf
+              html:
+                url: https://www.cdc.gov/mmwr/volumes/70/rr/rr7004a1.htm
+                local: /sources/infectious-diseases/sti/2021-cdc.html
+              pmc:
+                url: https://pmc.ncbi.nlm.nih.gov/articles/PMC8344968/
+                local: /sources/infectious-diseases/sti/2021-cdc.pmc.html
+      adult-immunization:
+        high_yield: true
+        title: Adult immunization
+        society: CDC/ACIP
+        versions:
+          - title: CDC/ACIP Adult Immunization Schedule
+            notes: Updated annually.
+            url: https://www.cdc.gov/vaccines/hcp/imz-schedules/downloads/adult/adult-combined-schedule.pdf
+            source:
+              pdf:
+                local: /sources/infectious-diseases/adult-immunization/cdc-acip.pdf
+              html:
+                url: https://www.cdc.gov/vaccines/hcp/imz-schedules/adult-age.html
+                local: /sources/infectious-diseases/adult-immunization/cdc-acip.html
+      covid-19:
+        title: COVID-19
+        versions:
+          - society: IDSA
+            title: IDSA COVID-19 Treatment Guidelines
+            url: https://www.idsociety.org/practice-guideline/covid-19-guideline-treatment-and-management/
+            source:
+              pdf:
+                local: /sources/infectious-diseases/covid-19/idsa.pdf
+              html:
+                url: https://www.idsociety.org/practice-guideline/covid-19-guideline-treatment-and-management/
+                local: /sources/infectious-diseases/covid-19/idsa.html
+          - society: NIH
+            title: NIH COVID-19 Treatment Guidelines
+
+            url: https://files.covid19treatmentguidelines.nih.gov/guidelines/covid19treatmentguidelines.pdf
+            needs_attention: 'download_failed: tiny_or_missing_file'
+  rheumatology:
+    title: Rheumatology
+    description: ACR and EULAR rheumatologic guidelines.
+    topics:
+      rheumatoid-arthritis:
+        high_yield: true
+        title: Rheumatoid arthritis
+        society: ACR
+        versions:
+          - year: 2021
+            title: ACR 2021 RA Treatment Guideline
+            url: https://assets.contentstack.io/v3/assets/bltee37abb6b278ab2c/blt9e44ccb701e1918c/63360f6775c0be225b8d943a/ra-guideline-2021.pdf
+            source:
+              pdf:
+                local: /sources/rheumatology/rheumatoid-arthritis/2021-acr.pdf
+              html:
+                url: https://acrjournals.onlinelibrary.wiley.com/doi/10.1002/acr.24596
+      gout:
+        high_yield: true
+        title: Gout
+        society: ACR
+        versions:
+          - year: 2020
+            title: ACR 2020 Gout Management Guideline
+            url: https://assets.contentstack.io/v3/assets/bltee37abb6b278ab2c/blt04d52e3b6ff5112f/632cab5b258fb55f6b2186af/gout-guideline-2020.pdf
+            source:
+              pdf:
+                local: /sources/rheumatology/gout/2020-acr.pdf
+              html:
+                url: https://acrjournals.onlinelibrary.wiley.com/doi/10.1002/acr.24180
+      osteoarthritis:
+        title: Osteoarthritis
+        society: ACR/Arthritis Foundation
+        versions:
+          - year: 2019
+            title: ACR/AF 2019 Osteoarthritis Guideline
+            url: https://assets.contentstack.io/v3/assets/bltee37abb6b278ab2c/blt6aa092f0134cac9a/63320f4750c8e90e3bf512c2/osteoarthritis-guideline-2019.pdf
+            source:
+              pdf:
+                local: /sources/rheumatology/osteoarthritis/2019-acr-arthritis-foundation.pdf
+              html:
+                url: https://acrjournals.onlinelibrary.wiley.com/doi/10.1002/acr.24131
+              pmc:
+                url: https://pmc.ncbi.nlm.nih.gov/articles/PMC11488261/
+                local: /sources/rheumatology/osteoarthritis/2019-acr-arthritis-foundation.html
+      anca-vasculitis:
+        title: ANCA-associated vasculitis
+        society: ACR/VF
+        versions:
+          - year: 2021
+            title: ACR/VF 2021 ANCA-Associated Vasculitis Guideline
+            url: https://assets.contentstack.io/v3/assets/bltee37abb6b278ab2c/blt9e4b7f8c646447ec/6331de84763d011cd3e9310e/anca-associated-vasculitis-guideline-2021.pdf
+            source:
+              pdf:
+                local: /sources/rheumatology/anca-vasculitis/2021-acr-vf.pdf
+              html:
+                url: https://acrjournals.onlinelibrary.wiley.com/doi/10.1002/acr.24634
+              pmc:
+                url: https://pmc.ncbi.nlm.nih.gov/articles/PMC12344527/
+                local: /sources/rheumatology/anca-vasculitis/2021-acr-vf.html
+      large-vessel-vasculitis:
+        title: Giant cell arteritis / Takayasu
+        society: ACR/VF
+        versions:
+          - year: 2021
+            title: ACR/VF 2021 Large-Vessel Vasculitis Guideline
+            url: https://assets.contentstack.io/v3/assets/bltee37abb6b278ab2c/blt2da0b446917ba8b8/6331df5f2b80434a8b6920e3/giant-cell-arteritis-takayasu-arteritis-guideline-2021.pdf
+            source:
+              pdf:
+                local: /sources/rheumatology/large-vessel-vasculitis/2021-acr-vf.pdf
+              html:
+                url: https://acrjournals.onlinelibrary.wiley.com/doi/10.1002/acr.24632
+      axial-spondyloarthritis:
+        title: Axial spondyloarthritis
+        society: ACR/SAA/SPARTAN
+        versions:
+          - year: 2019
+            title: ACR/SAA/SPARTAN 2019 Axial Spondyloarthritis Guideline
+            url: https://assets.contentstack.io/v3/assets/bltee37abb6b278ab2c/blt74558fbe6f37b611/6328a49019c64564c313f918/axial-spa-guideline-2019.pdf
+            source:
+              pdf:
+                local: /sources/rheumatology/axial-spondyloarthritis/2019-acr-saa-spartan.pdf
+              html:
+                url: https://acrjournals.onlinelibrary.wiley.com/doi/10.1002/acr.24025
+              pmc:
+                url: https://pmc.ncbi.nlm.nih.gov/articles/PMC6764857/
+                local: /sources/rheumatology/axial-spondyloarthritis/2019-acr-saa-spartan.html
+      psoriatic-arthritis:
+        title: Psoriatic arthritis
+        society: ACR/NPF
+        versions:
+          - year: 2018
+            title: ACR/NPF 2018 Psoriatic Arthritis Guideline
+            url: https://assets.contentstack.io/v3/assets/bltee37abb6b278ab2c/blt62e279f29f7d5435/6332144ffef925355ad7b25a/psoriatic-arthritis-guideline-2018.pdf
+            source:
+              pdf:
+                local: /sources/rheumatology/psoriatic-arthritis/2018-acr-npf.pdf
+              html:
+                url: https://acrjournals.onlinelibrary.wiley.com/doi/10.1002/acr.23789
+              pmc:
+                url: https://pmc.ncbi.nlm.nih.gov/articles/PMC8218333/
+                local: /sources/rheumatology/psoriatic-arthritis/2018-acr-npf.html
+      polymyalgia-rheumatica:
+        title: Polymyalgia rheumatica
+        society: ACR/EULAR
+        versions:
+          - year: 2015
+            title: ACR/EULAR 2015 PMR Guideline
+            url: https://pubmed.ncbi.nlm.nih.gov/26352874/
+            source:
+              pdf:
+                local: /sources/rheumatology/polymyalgia-rheumatica/2015-acr-eular.pdf
+              html:
+                url: https://acrjournals.onlinelibrary.wiley.com/doi/10.1002/art.39333
+            pmid: '26352874'
+      sle:
+        title: SLE / lupus nephritis
+        versions:
+          - society: ACR / EULAR
+            title: ACR / EULAR SLE Guidelines
+            url: https://assets.contentstack.io/v3/assets/bltee37abb6b278ab2c/bltdf97323a3723de0f/lupus-guideline-sle-2025.pdf
+            source:
+              pdf:
+                local: /sources/rheumatology/sle/acr---eular.pdf
+              html:
+                url: https://acrjournals.onlinelibrary.wiley.com/doi/10.1002/acr.25690
+          - year: 2024
+            society: KDIGO
+            title: KDIGO 2024 Lupus Nephritis Guideline
+            url: https://kdigo.org/wp-content/uploads/2024/01/KDIGO-2024-Lupus-Nephritis-Guideline.pdf
+            source:
+              pdf:
+                local: /sources/rheumatology/sle/2024-kdigo.pdf
+              html:
+                url: https://kdigo.org/guidelines/lupus-nephritis/
+                local: /sources/rheumatology/sle/2024-kdigo.html
+      glucocorticoid-induced-osteoporosis:
+        title: Glucocorticoid-induced osteoporosis
+        society: ACR
+        versions:
+          - year: 2017
+            title: ACR 2017 GIOP Guideline
+
+            url: https://assets.contentstack.io/v3/assets/bltee37abb6b278ab2c/blt7dec62190f324362/632ca18219c64564c314132c/goip-guideline-2017.pdf
+            source:
+              pdf:
+                local: /sources/rheumatology/glucocorticoid-induced-osteoporosis/2017-acr.pdf
+              html:
+                url: https://acrjournals.onlinelibrary.wiley.com/doi/10.1002/acr.23279
+  neurology:
+    title: Neurology
+    description: AHA/ASA, AAN, and related neurology guidelines.
+    topics:
+      acute-ischemic-stroke:
+        high_yield: true
+        title: Acute ischemic stroke (early management)
+        society: AHA/ASA
+        versions:
+          - year: 2026
+            title: 2026 AHA/ASA Early Management of AIS
+            url: https://www.ahajournals.org/doi/10.1161/STR.0000000000000513
+            source:
+              pdf:
+                local: /sources/neurology/acute-ischemic-stroke/2026-aha-asa.pdf
+                url: https://www.ahajournals.org/doi/pdf/10.1161/STR.0000000000000513
+              html:
+                url: https://www.ahajournals.org/doi/full/10.1161/STR.0000000000000513
+              epub:
+                local: /sources/neurology/acute-ischemic-stroke/2026-aha-asa.epub
+          - year: 2019
+            url: https://www.ahajournals.org/doi/10.1161/STR.0000000000000211
+            source:
+              pdf:
+                local: /sources/neurology/acute-ischemic-stroke/2019-aha-asa.pdf
+                url: https://www.ahajournals.org/doi/pdf/10.1161/STR.0000000000000211
+              html:
+                url: https://www.ahajournals.org/doi/full/10.1161/STR.0000000000000211
+              epub:
+                local: /sources/neurology/acute-ischemic-stroke/2019-aha-asa.epub
+          - year: 2018
+            url: https://www.ahajournals.org/doi/10.1161/str.0000000000000158
+            source:
+              pdf:
+                local: /sources/neurology/acute-ischemic-stroke/2018-aha-asa.pdf
+                url: https://www.ahajournals.org/doi/pdf/10.1161/str.0000000000000158
+              html:
+                url: https://www.ahajournals.org/doi/full/10.1161/STR.0000000000000158
+              epub:
+                local: /sources/neurology/acute-ischemic-stroke/2018-aha-asa.epub
+      secondary-stroke-prevention:
+        title: Secondary stroke prevention
+        society: AHA/ASA
+        versions:
+          - year: 2021
+            title: 2021 AHA/ASA Stroke/TIA Prevention Guideline
+            url: https://www.ahajournals.org/doi/10.1161/STR.0000000000000375
+            source:
+              pdf:
+                local: /sources/neurology/secondary-stroke-prevention/2021-aha-asa.pdf
+                url: https://www.ahajournals.org/doi/pdf/10.1161/STR.0000000000000375
+              html:
+                url: https://www.ahajournals.org/doi/full/10.1161/STR.0000000000000375
+              epub:
+                local: /sources/neurology/secondary-stroke-prevention/2021-aha-asa.epub
+      ich:
+        title: Intracerebral hemorrhage
+        society: AHA/ASA
+        versions:
+          - year: 2022
+            title: 2022 AHA/ASA ICH Guideline
+            url: https://www.ahajournals.org/doi/10.1161/STR.0000000000000407
+            source:
+              pdf:
+                local: /sources/neurology/ich/2022-aha-asa.pdf
+                url: https://www.ahajournals.org/doi/pdf/10.1161/STR.0000000000000407
+              html:
+                url: https://www.ahajournals.org/doi/full/10.1161/STR.0000000000000407
+              epub:
+                local: /sources/neurology/ich/2022-aha-asa.epub
+      epilepsy:
+        title: Epilepsy / first seizure
+        society: AAN/AES
+        versions:
+          - title: AAN/AES Practice Guidelines
+            url: https://www.neurology.org/doi/10.1212/WNL.0000000000001487
+            source:
+              pdf:
+                local: /sources/neurology/epilepsy/aan-aes.pdf
+                url: https://www.neurology.org/doi/pdf/10.1212/WNL.0000000000001487
+              html:
+                url: https://www.neurology.org/doi/full/10.1212/WNL.0000000000001487
+      status-epilepticus:
+        title: Status epilepticus
+        society: Neurocritical Care Society
+        versions:
+          - title: NCS + AES Status Epilepticus Treatment Guidance
+            url: https://link.springer.com/article/10.1007/s12028-012-9695-z
+            source:
+              pdf:
+                local: /sources/neurology/status-epilepticus/neurocritical-care-society.pdf
+              html:
+                url: https://link.springer.com/article/10.1007/s12028-012-9695-z
+                local: /sources/neurology/status-epilepticus/neurocritical-care-society.html
+      migraine:
+        title: Migraine
+        versions:
+          - year: 2021
+            society: American Headache Society
+            title: AHS 2021 Migraine Consensus
+            notes: Plus AAN.
+            url: https://headachejournal.onlinelibrary.wiley.com/doi/10.1111/head.14153
+            source:
+              pdf:
+                local: /sources/neurology/migraine/2021-american-headache-society.pdf
+              html:
+                url: https://headachejournal.onlinelibrary.wiley.com/doi/10.1111/head.14153
+            pmid: '34160823'
+      multiple-sclerosis:
+        title: Multiple sclerosis (DMTs)
+        society: AAN
+        versions:
+          - year: 2018
+            title: AAN 2018 MS Disease-Modifying Therapy Guideline
+
+            url: https://www.neurology.org/doi/10.1212/WNL.0000000000005347
+            source:
+              pdf:
+                local: /sources/neurology/multiple-sclerosis/2018-aan.pdf
+                url: https://www.neurology.org/doi/pdf/10.1212/WNL.0000000000005347
+              html:
+                url: https://www.neurology.org/doi/full/10.1212/WNL.0000000000005347
+  hematology-oncology:
+    title: Hematology & Oncology
+    description: ASH, CHEST, AABB, and related heme/onc guidelines.
+    topics:
+      vte-treatment:
+        high_yield: true
+        title: VTE treatment & prophylaxis
+        versions:
+          - year: 2021
+            society: CHEST
+            title: CHEST 2021 Antithrombotic Therapy for VTE
+            url: https://journal.chestnet.org/article/S0012-3692(21)01506-3/fulltext
+            source:
+              pdf:
+                local: /sources/hematology-oncology/vte-treatment/2021-chest.pdf
+              html:
+                url: https://journal.chestnet.org/article/S0012-3692(21)01506-3/fulltext
+            pmid: '34352279'
+          - year: 2020
+            society: ASH
+            title: ASH 2020 VTE Panels
+            url: https://ashpublications.org/bloodadvances/article/4/19/4693/463998/American-Society-of-Hematology-2020-Guidelines-for
+            source:
+              pdf:
+                local: /sources/hematology-oncology/vte-treatment/2020-ash.pdf
+              html:
+                url: https://ashpublications.org/bloodadvances/article/4/19/4693/463998/American-Society-of-Hematology-2020-guidelines-for
+              pmc:
+                url: https://pmc.ncbi.nlm.nih.gov/articles/PMC7556153/
+            pmid: '33007077'
+      vte-prophylaxis-medical:
+        title: VTE prophylaxis (hospitalized medical patients)
+        society: ASH
+        versions:
+          - year: 2018
+            title: ASH 2018 VTE Prophylaxis Guideline
+            url: https://ashpublications.org/bloodadvances/article/2/22/3198/16115/American-Society-of-Hematology-2018-guidelines-for
+            source:
+              pdf:
+                local: /sources/hematology-oncology/vte-prophylaxis-medical/2018-ash.pdf
+              html:
+                url: https://ashpublications.org/bloodadvances/article/2/22/3198/16115/American-Society-of-Hematology-2018-guidelines-for
+              pmc:
+                url: https://pmc.ncbi.nlm.nih.gov/articles/PMC6258928/
+      cancer-associated-thrombosis:
+        title: Cancer-associated thrombosis
+        versions:
+          - year: 2022
+            society: ITAC
+            title: ITAC 2022 Cancer-Associated Thrombosis Guideline
+            url: https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(22)00160-7/fulltext
+            source:
+              pdf:
+                local: /sources/hematology-oncology/cancer-associated-thrombosis/2022-itac.pdf
+              html:
+                url: https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(22)00160-7/fulltext
+            pmid: '35772465'
+          - society: ASCO
+            title: ASCO VTE Guideline
+            url: https://ascopubs.org/doi/10.1200/JCO.23.00294
+            source:
+              pdf:
+                local: /sources/hematology-oncology/cancer-associated-thrombosis/asco.pdf
+                url: https://ascopubs.org/doi/pdf/10.1200/JCO.23.00294
+              html:
+                url: https://ascopubs.org/doi/full/10.1200/JCO.23.00294
+            pmid: '37075273'
+      itp:
+        title: Immune thrombocytopenia (ITP)
+        society: ASH
+        versions:
+          - year: 2019
+            title: ASH 2019 ITP Guideline
+            url: https://ashpublications.org/bloodadvances/article/3/23/3829/429213/American-Society-of-Hematology-2019-guidelines-for
+            source:
+              pdf:
+                local: /sources/hematology-oncology/itp/2019-ash.pdf
+              html:
+                url: https://ashpublications.org/bloodadvances/article/3/23/3829/429213/American-Society-of-Hematology-2019-guidelines-for
+              pmc:
+                url: https://pmc.ncbi.nlm.nih.gov/articles/PMC6963252/
+            pmid: '31794604'
+      hit:
+        title: Heparin-induced thrombocytopenia (HIT)
+        society: ASH
+        versions:
+          - year: 2018
+            title: ASH 2018 HIT Guideline
+            url: https://ashpublications.org/bloodadvances/article/2/22/3360/16129/American-Society-of-Hematology-2018-guidelines-for
+            source:
+              pdf:
+                local: /sources/hematology-oncology/hit/2018-ash.pdf
+              html:
+                url: https://ashpublications.org/bloodadvances/article/2/22/3360/16129/American-Society-of-Hematology-2018-guidelines-for
+              pmc:
+                url: https://pmc.ncbi.nlm.nih.gov/articles/PMC6258919/
+            pmid: '30482768'
+      sickle-cell:
+        title: Sickle cell disease
+        versions:
+          - year: 2020
+            society: ASH
+            title: ASH 2014–2020 Sickle Cell Disease Guideline Series
+            url: https://www.hematology.org/education/clinicians/guidelines-and-quality-care/clinical-practice-guidelines/sickle-cell-disease-guidelines
+            source:
+              pdf:
+                local: /sources/hematology-oncology/sickle-cell/2020-ash.pdf
+            notes: 'Pocket-guide series. Primary file (Cardiopulmonary & Kidney Disease) at source.pdf.local. Companion pocket guides in same folder: 2020-ash-chronic-complications.pdf, 2020-ash-hydroxyurea.pdf, 2020-ash-transfusion.pdf.'
+          - year: 2014
+            society: NHLBI
+            title: NHLBI 2014 SCD Guideline
+            url: https://www.nhlbi.nih.gov/sites/default/files/media/docs/Evd-Bsd_SickleCellDis_Rep2014.pdf
+            source:
+              pdf:
+                local: /sources/hematology-oncology/sickle-cell/2014-nhlbi.pdf
+            pmid: '25203083'
+      ida-gi-evaluation:
+        title: Iron-deficiency anemia (GI evaluation)
+        society: AGA
+        versions:
+          - year: 2020
+            title: AGA 2020 GI Evaluation of Iron-Deficiency Anemia
+            url: https://www.gastrojournal.org/article/S0016-5085(20)34847-2/fulltext
+            source:
+              html:
+                url: https://www.gastrojournal.org/article/S0016-5085(20)34847-2/fulltext
+              pdf:
+                local: /sources/hematology-oncology/ida-gi-evaluation/2020-aga.pdf
+            pmid: '32810434'
+      rbc-transfusion:
+        high_yield: true
+        title: RBC transfusion thresholds
+        society: AABB
+        versions:
+          - year: 2023
+            title: AABB 2023 Red Blood Cell Transfusion Guideline
+
+            url: https://jamanetwork.com/journals/jama/article-abstract/2810754
+            source:
+              pdf:
+                local: /sources/hematology-oncology/rbc-transfusion/2023-aabb.pdf
+              html:
+                url: https://jamanetwork.com/journals/jama/fullarticle/2810754
+            pmid: '37824153'
+  preventive-medicine:
+    title: Preventive & Ambulatory Medicine
+    description: USPSTF and ACIP recommendations for screening and prevention.
+    topics:
+      breast-cancer-screening:
+        high_yield: true
+        title: Breast cancer screening
+        society: USPSTF
+        versions:
+          - year: 2024
+            title: USPSTF 2024 Breast Cancer Screening
+            notes: Biennial mammography, ages 40–74 (B).
+            url: https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/breast-cancer-screening
+            source:
+              html:
+                url: https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/breast-cancer-screening
+                local: /sources/preventive-medicine/breast-cancer-screening/2024-uspstf.html
+              pdf:
+                local: /sources/preventive-medicine/breast-cancer-screening/2024-uspstf.pdf
+      colorectal-cancer-screening:
+        high_yield: true
+        title: Colorectal cancer screening
+        society: USPSTF
+        versions:
+          - year: 2021
+            title: USPSTF 2021 Colorectal Cancer Screening
+            notes: Ages 45–75 (lowered from 50).
+            url: https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/colorectal-cancer-screening
+            source:
+              pdf:
+                local: /sources/preventive-medicine/colorectal-cancer-screening/2021-uspstf.pdf
+              html:
+                url: https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/colorectal-cancer-screening
+                local: /sources/preventive-medicine/colorectal-cancer-screening/2021-uspstf.html
+      lung-cancer-screening:
+        high_yield: true
+        title: Lung cancer screening
+        society: USPSTF
+        versions:
+          - year: 2021
+            title: USPSTF 2021 Lung Cancer Screening
+            notes: LDCT ages 50–80, ≥20 pack-years, current/quit <15 yr.
+            url: https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/lung-cancer-screening
+            source:
+              pdf:
+                local: /sources/preventive-medicine/lung-cancer-screening/2021-uspstf.pdf
+              html:
+                url: https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/lung-cancer-screening
+                local: /sources/preventive-medicine/lung-cancer-screening/2021-uspstf.html
+      cervical-cancer-screening:
+        high_yield: true
+        title: Cervical cancer screening
+        society: USPSTF
+        versions:
+          - year: 2024
+            title: USPSTF Cervical Cancer Screening (2024 update)
+            notes: Cytology 21–65 q3y or co-testing/primary HPV 30–65 q5y; HPV self-collection added 2024.
+            url: https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/cervical-cancer-screening
+            source:
+              pdf:
+                local: /sources/preventive-medicine/cervical-cancer-screening/2024-uspstf.pdf
+              html:
+                url: https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/cervical-cancer-screening
+                local: /sources/preventive-medicine/cervical-cancer-screening/2024-uspstf.html
+      prostate-cancer-screening:
+        high_yield: true
+        title: Prostate cancer screening
+        society: USPSTF
+        versions:
+          - year: 2018
+            title: USPSTF 2018 Prostate Cancer Screening
+            notes: Shared decision-making, ages 55–69 (C).
+            url: https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/prostate-cancer-screening
+            source:
+              pdf:
+                local: /sources/preventive-medicine/prostate-cancer-screening/2018-uspstf.pdf
+              html:
+                url: https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/prostate-cancer-screening
+                local: /sources/preventive-medicine/prostate-cancer-screening/2018-uspstf.html
+      statins-primary-prevention:
+        high_yield: true
+        title: Statins / lipid screening (primary prevention)
+        versions:
+          - year: 2026
+            society: ACC/AHA
+            title: 2026 ACC/AHA Dyslipidemia Guideline
+            url: https://www.ahajournals.org/doi/10.1161/CIR.0000000000001423
+            source:
+              pdf:
+                local: /sources/preventive-medicine/statins-primary-prevention/2026-acc-aha.pdf
+                url: https://www.ahajournals.org/doi/pdf/10.1161/CIR.0000000000001423
+              html:
+                url: https://www.ahajournals.org/doi/full/10.1161/CIR.0000000000001423
+          - year: 2022
+            society: USPSTF
+            title: USPSTF 2022 Statin Use for Primary Prevention
+            url: https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/statin-use-in-adults-preventive-medication
+            source:
+              pdf:
+                local: /sources/preventive-medicine/statins-primary-prevention/2022-uspstf.pdf
+              html:
+                url: https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/statin-use-in-adults-preventive-medication
+                local: /sources/preventive-medicine/statins-primary-prevention/2022-uspstf.html
+      aspirin-primary-prevention:
+        high_yield: true
+        title: Aspirin for primary prevention
+        society: USPSTF
+        versions:
+          - year: 2022
+            title: USPSTF 2022 Aspirin for Primary Prevention
+            notes: Individualized, ages 40–59 at higher risk.
+            url: https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/aspirin-to-prevent-cardiovascular-disease-preventive-medication
+            source:
+              pdf:
+                local: /sources/preventive-medicine/aspirin-primary-prevention/2022-uspstf.pdf
+              html:
+                url: https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/aspirin-to-prevent-cardiovascular-disease-preventive-medication
+                local: /sources/preventive-medicine/aspirin-primary-prevention/2022-uspstf.html
+      tobacco-cessation:
+        high_yield: true
+        title: Tobacco cessation
+        society: USPSTF
+        versions:
+          - year: 2021
+            title: USPSTF 2021 Tobacco Cessation
+            url: https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/tobacco-use-in-adults-and-pregnant-women-counseling-and-interventions
+            source:
+              pdf:
+                local: /sources/preventive-medicine/tobacco-cessation/2021-uspstf.pdf
+              html:
+                url: https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/tobacco-use-in-adults-and-pregnant-women-counseling-and-interventions
+                local: /sources/preventive-medicine/tobacco-cessation/2021-uspstf.html
+      depression-anxiety-screening:
+        high_yield: true
+        title: Depression / anxiety screening
+        society: USPSTF
+        versions:
+          - year: 2023
+            title: USPSTF 2023 Depression / Anxiety Screening
+            url: https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/screening-depression-suicide-risk-adults
+            source:
+              pdf:
+                local: /sources/preventive-medicine/depression-anxiety-screening/2023-uspstf.pdf
+              html:
+                url: https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/screening-depression-suicide-risk-adults
+                local: /sources/preventive-medicine/depression-anxiety-screening/2023-uspstf.html
+      adult-immunization-schedule:
+        high_yield: true
+        title: Adult immunization schedule
+        society: CDC/ACIP
+        versions:
+          - title: CDC/ACIP Adult Immunization Schedule
+            notes: Updated annually.
+
+            url: https://www.cdc.gov/vaccines/hcp/imz-schedules/adult-age.html
+            source:
+              pdf:
+                local: /sources/preventive-medicine/adult-immunization-schedule/cdc-acip.pdf
+              html:
+                url: https://www.cdc.gov/vaccines/hcp/imz-schedules/adult-age.html
+                local: /sources/preventive-medicine/adult-immunization-schedule/cdc-acip.html
+study_guides:
+  highest-yield-named-guidelines:
+    title: Highest-yield named guidelines to know cold
+    description: The flagship guidelines an attending will expect on rounds.
+    # entries: auto-derived at build time from topic.high_yield: true.
+    # Do not add an `entries:` list here — it would be ignored and would drift
+    # from the topic flags. The two are guaranteed aligned by construction.
+    bedside_tools:
+      - CHA₂DS₂-VASc / HAS-BLED — AFib anticoagulation
+      - CURB-65 / PSI — pneumonia severity
+      - Wells / PERC — PE
+      - MELD — liver

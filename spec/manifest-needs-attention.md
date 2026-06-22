@@ -1,0 +1,367 @@
+# Manifest source-file gaps
+
+**Section 1 — needs download (no source at all): 1 entries**
+
+### infectious-diseases
+
+- **covid-19** (NIH) — NIH COVID-19 Treatment Guidelines
+  - url: https://files.covid19treatmentguidelines.nih.gov/guidelines/covid19treatmentguidelines.pdf
+  - reason: `download_failed: tiny_or_missing_file`
+
+**Section 2 — alternate formats with URL but not yet downloaded: 112 entries**
+
+These are non-PDF formats (cheaper to extract) whose URLs are known. Download manually and drop into `tmp/`; the import script will move them to the suggested path.
+
+### HTML (102)
+
+- **cardiology/hypertension** (2025 AHA/ACC) — 2025 AHA/ACC Multisociety Guideline for High Blood Pressure in Adults
+  - url: https://www.ahajournals.org/doi/full/10.1161/CIR.0000000000001356
+  - save to: `sources/cardiology/hypertension/2025-aha-acc.html`
+- **cardiology/hypertension** (2017 AHA/ACC) — (no title)
+  - url: https://www.ahajournals.org/doi/full/10.1161/hyp.0000000000000066
+  - save to: `sources/cardiology/hypertension/2017-aha-acc.html`
+- **cardiology/dyslipidemia** (2026 ACC/AHA) — 2026 ACC/AHA Multisociety Guideline on the Management of Dyslipidemia
+  - url: https://www.ahajournals.org/doi/full/10.1161/CIR.0000000000001423
+  - save to: `sources/cardiology/dyslipidemia/2026-acc-aha.html`
+- **cardiology/dyslipidemia** (2018 ACC/AHA) — 2018 Blood Cholesterol Guideline
+  - url: https://www.ahajournals.org/doi/full/10.1161/CIR.0000000000000625
+  - save to: `sources/cardiology/dyslipidemia/2018-acc-aha.html`
+- **cardiology/acs** (2025 ACC/AHA/ACEP/NAEMSP/SCAI) — 2025 ACC/AHA/ACEP/NAEMSP/SCAI ACS Guideline
+  - url: https://www.ahajournals.org/doi/full/10.1161/CIR.0000000000001309
+  - save to: `sources/cardiology/acs/2025-acc-aha-acep-naemsp-scai.html`
+- **cardiology/chronic-coronary-disease** (2023 AHA/ACC) — 2023 AHA/ACC Multisociety Chronic Coronary Disease Guideline
+  - url: https://www.ahajournals.org/doi/full/10.1161/CIR.0000000000001168
+  - save to: `sources/cardiology/chronic-coronary-disease/2023-aha-acc.html`
+- **cardiology/heart-failure** (2022 AHA/ACC/HFSA) — 2022 AHA/ACC/HFSA Heart Failure Guideline
+  - url: https://www.ahajournals.org/doi/full/10.1161/CIR.0000000000001063
+  - save to: `sources/cardiology/heart-failure/2022-aha-acc-hfsa.html`
+- **cardiology/atrial-fibrillation** (2023 ACC/AHA/ACCP/HRS) — 2023 ACC/AHA/ACCP/HRS AF Guideline
+  - url: https://www.ahajournals.org/doi/full/10.1161/CIR.0000000000001193
+  - save to: `sources/cardiology/atrial-fibrillation/2023-acc-aha-accp-hrs.html`
+- **cardiology/chest-pain** (2021 AHA/ACC) — 2021 AHA/ACC Chest Pain Guideline
+  - url: https://www.ahajournals.org/doi/full/10.1161/CIR.0000000000001029
+  - save to: `sources/cardiology/chest-pain/2021-aha-acc.html`
+- **cardiology/coronary-revascularization** (2021 ACC/AHA/SCAI) — 2021 ACC/AHA/SCAI Revascularization Guideline
+  - url: https://www.ahajournals.org/doi/full/10.1161/CIR.0000000000001038
+  - save to: `sources/cardiology/coronary-revascularization/2021-acc-aha-scai.html`
+- **cardiology/valvular-heart-disease** (2020 ACC/AHA) — 2020 ACC/AHA VHD Guideline
+  - url: https://www.ahajournals.org/doi/full/10.1161/CIR.0000000000000923
+  - save to: `sources/cardiology/valvular-heart-disease/2020-acc-aha.html`
+- **cardiology/primary-prevention-cvd** (2019 ACC/AHA) — 2019 ACC/AHA Primary Prevention Guideline
+  - url: https://www.ahajournals.org/doi/full/10.1161/CIR.0000000000000678
+  - save to: `sources/cardiology/primary-prevention-cvd/2019-acc-aha.html`
+- **cardiology/peripheral-artery-disease** (2024 ACC/AHA) — 2024 ACC/AHA PAD Guideline
+  - url: https://www.ahajournals.org/doi/full/10.1161/CIR.0000000000001251
+  - save to: `sources/cardiology/peripheral-artery-disease/2024-acc-aha.html`
+- **cardiology/thoracic-aortic-disease** (2022 ACC/AHA) — 2022 ACC/AHA Aortic Disease Guideline
+  - url: https://www.ahajournals.org/doi/full/10.1161/CIR.0000000000001106
+  - save to: `sources/cardiology/thoracic-aortic-disease/2022-acc-aha.html`
+- **cardiology/bradycardia** (2018 ACC/AHA/HRS) — 2018 ACC/AHA/HRS Bradycardia Guideline
+  - url: https://www.ahajournals.org/doi/full/10.1161/CIR.0000000000000628
+  - save to: `sources/cardiology/bradycardia/2018-acc-aha-hrs.html`
+- **cardiology/ventricular-arrhythmias** (2017 AHA/ACC/HRS) — 2017 AHA/ACC/HRS VA/SCD Guideline
+  - url: https://www.ahajournals.org/doi/full/10.1161/CIR.0000000000000549
+  - save to: `sources/cardiology/ventricular-arrhythmias/2017-aha-acc-hrs.html`
+- **cardiology/syncope** (2017 ACC/AHA/HRS) — 2017 ACC/AHA/HRS Syncope Guideline
+  - url: https://www.ahajournals.org/doi/full/10.1161/cir.0000000000000499
+  - save to: `sources/cardiology/syncope/2017-acc-aha-hrs.html`
+
+- **endocrinology/diabetes** (2026 ADA) — ADA Standards of Care in Diabetes — 2026
+  - url: https://diabetesjournals.org/care/issue/49/Supplement_1
+  - save to: `sources/endocrinology/diabetes/2026-ada.html`
+- **endocrinology/dka-hhs** (2024 ADA/EASD) — 2024 ADA/EASD Consensus on Hyperglycemic Crises
+  - url: https://diabetesjournals.org/care/article/47/8/1257/156808/Hyperglycemic-Crises-in-Adults-With-Diabetes-A
+  - save to: `sources/endocrinology/dka-hhs/2024-ada-easd.html`
+- **endocrinology/hypothyroidism** (2014 ATA) — ATA 2014 Hypothyroidism Treatment Guideline
+  - url: https://www.liebertpub.com/doi/10.1089/thy.2014.0028
+  - save to: `sources/endocrinology/hypothyroidism/2014-ata.html`
+- **endocrinology/hyperthyroidism** (2016 ATA) — ATA 2016 Hyperthyroidism Guideline
+  - url: https://www.liebertpub.com/doi/full/10.1089/thy.2016.0229
+  - save to: `sources/endocrinology/hyperthyroidism/2016-ata.html`
+- **endocrinology/thyroid-nodules** (2015 ATA) — ATA 2015 Guideline
+  - url: https://www.liebertpub.com/doi/10.1089/thy.2015.0020
+  - save to: `sources/endocrinology/thyroid-nodules/2015-ata.html`
+- **endocrinology/osteoporosis** (2023 ACP) — ACP 2023 Pharmacologic Treatment of Osteoporosis
+  - url: https://www.acpjournals.org/doi/full/10.7326/M22-1034
+  - save to: `sources/endocrinology/osteoporosis/2023-acp.html`
+- **endocrinology/osteoporosis** (2020 Endocrine Society) — Endocrine Society 2020 Postmenopausal Osteoporosis Guideline
+  - url: https://academic.oup.com/jcem/article/105/3/587/5739968
+  - save to: `sources/endocrinology/osteoporosis/2020-endocrine-society.html`
+- **endocrinology/osteoporosis** (2020 AACE/ACE) — AACE/ACE 2020 Osteoporosis Guideline
+  - url: https://www.endocrinepractice.org/article/S1530-891X(20)42827-7/fulltext
+  - save to: `sources/endocrinology/osteoporosis/2020-aace-ace.html`
+- **endocrinology/adrenal-insufficiency** (2016 Endocrine Society) — Endocrine Society 2016 Adrenal Insufficiency Guideline
+  - url: https://academic.oup.com/jcem/article/101/2/364/2810222
+  - save to: `sources/endocrinology/adrenal-insufficiency/2016-endocrine-society.html`
+- **endocrinology/primary-aldosteronism** (2016 Endocrine Society) — Endocrine Society 2016 Primary Aldosteronism Guideline
+  - url: https://academic.oup.com/jcem/article/101/5/1889/2804729
+  - save to: `sources/endocrinology/primary-aldosteronism/2016-endocrine-society.html`
+- **endocrinology/cushings** (2015 Endocrine Society) — Endocrine Society 2015 Cushing's Syndrome Guideline
+  - url: https://academic.oup.com/jcem/article/100/8/2807/2836065
+  - save to: `sources/endocrinology/cushings/2015-endocrine-society.html`
+- **endocrinology/male-hypogonadism** (2018 Endocrine Society) — Endocrine Society 2018 Testosterone Guideline
+  - url: https://academic.oup.com/jcem/article/103/5/1715/4939465
+  - save to: `sources/endocrinology/male-hypogonadism/2018-endocrine-society.html`
+- **endocrinology/obesity** (2022 AGA) — AGA 2022 Pharmacologic Management of Obesity
+  - url: https://www.gastrojournal.org/article/S0016-5085(22)01026-5/fulltext
+  - save to: `sources/endocrinology/obesity/2022-aga.html`
+
+- **gi-hepatology/gerd** (2022 ACG) — ACG 2022 GERD Guideline
+  - url: https://journals.lww.com/ajg/fulltext/2022/01000/acg_clinical_guideline_for_the_diagnosis_and.14.aspx
+  - save to: `sources/gi-hepatology/gerd/2022-acg.html`
+- **gi-hepatology/h-pylori** (2024 ACG) — ACG 2024 Treatment of H. pylori Infection
+  - url: https://journals.lww.com/ajg/fulltext/2024/09000/acg_clinical_guideline__treatment_of_helicobacter.13.aspx
+  - save to: `sources/gi-hepatology/h-pylori/2024-acg.html`
+- **gi-hepatology/acute-pancreatitis** (2024 ACG) — ACG 2024 Acute Pancreatitis Guideline
+  - url: https://journals.lww.com/ajg/fulltext/2024/03000/american_college_of_gastroenterology_guidelines_.14.aspx
+  - save to: `sources/gi-hepatology/acute-pancreatitis/2024-acg.html`
+- **gi-hepatology/c-difficile** (2021 IDSA/SHEA) — IDSA/SHEA 2021 Focused Update
+  - url: https://academic.oup.com/cid/article/73/5/e1029/6298219
+  - save to: `sources/gi-hepatology/c-difficile/2021-idsa-shea.html`
+- **gi-hepatology/c-difficile** (2021 ACG) — ACG 2021 C. difficile Guideline
+  - url: https://journals.lww.com/ajg/fulltext/2021/06000/acg_clinical_guidelines__prevention,_diagnosis,.12.aspx
+  - save to: `sources/gi-hepatology/c-difficile/2021-acg.html`
+- **gi-hepatology/ulcerative-colitis** (2025 ACG) — ACG 2025 UC in Adults
+  - url: https://journals.lww.com/ajg/fulltext/2025/06000/acg_clinical_guideline_update__ulcerative_colitis.13.aspx
+  - save to: `sources/gi-hepatology/ulcerative-colitis/2025-acg.html`
+- **gi-hepatology/ulcerative-colitis** (2019 ACG) — (no title)
+  - url: https://journals.lww.com/ajg/fulltext/2019/03000/acg_clinical_guideline__ulcerative_colitis_in.10.aspx
+  - save to: `sources/gi-hepatology/ulcerative-colitis/2019-acg.html`
+- **gi-hepatology/crohns** (2018 ACG) — ACG 2018 Crohn's Guideline
+  - url: https://journals.lww.com/ajg/fulltext/2018/04000/acg_clinical_guideline__management_of_crohn_s.10.aspx
+  - save to: `sources/gi-hepatology/crohns/2018-acg.html`
+- **gi-hepatology/upper-gi-bleeding** (2021 ACG) — ACG 2021 Upper GI/Ulcer Bleeding Guideline
+  - url: https://journals.lww.com/ajg/fulltext/2021/05000/acg_clinical_guideline__upper_gastrointestinal_and.14.aspx
+  - save to: `sources/gi-hepatology/upper-gi-bleeding/2021-acg.html`
+- **gi-hepatology/ibs** (2021 ACG) — ACG 2021 IBS Guideline
+  - url: https://journals.lww.com/ajg/fulltext/2021/01000/acg_clinical_guideline__management_of_irritable.11.aspx
+  - save to: `sources/gi-hepatology/ibs/2021-acg.html`
+- **gi-hepatology/celiac** (2023 ACG) — ACG 2023 Celiac Guideline
+  - url: https://journals.lww.com/ajg/fulltext/2023/01000/american_college_of_gastroenterology_guidelines.17.aspx
+  - save to: `sources/gi-hepatology/celiac/2023-acg.html`
+- **gi-hepatology/hepatitis-b** (2018 AASLD) — AASLD 2018 Hepatitis B Guidance
+  - url: https://onlinelibrary.wiley.com/doi/full/10.1002/hep.29800
+  - save to: `sources/gi-hepatology/hepatitis-b/2018-aasld.html`
+- **gi-hepatology/cirrhosis-ascites** (2021 AASLD) — AASLD 2021 Guidance
+  - url: https://onlinelibrary.wiley.com/doi/full/10.1002/hep.31884
+  - save to: `sources/gi-hepatology/cirrhosis-ascites/2021-aasld.html`
+- **gi-hepatology/portal-hypertension** (2024 AASLD) — AASLD 2024 Guidance
+  - url: https://journals.lww.com/hep/fulltext/2024/05000/aasld_practice_guidance_on_risk_stratification_and.22.aspx
+  - save to: `sources/gi-hepatology/portal-hypertension/2024-aasld.html`
+- **gi-hepatology/portal-hypertension** (2022 Baveno VII) — Baveno VII 2022 Consensus
+  - url: https://www.journal-of-hepatology.eu/article/S0168-8278(21)02299-6/fulltext
+  - save to: `sources/gi-hepatology/portal-hypertension/2022-baveno-vii.html`
+- **gi-hepatology/masld** (2023 AASLD) — AASLD 2023 MASLD Guidance
+  - url: https://journals.lww.com/hep/fulltext/2023/05000/aasld_practice_guidance_on_the_clinical_assessment.31.aspx
+  - save to: `sources/gi-hepatology/masld/2023-aasld.html`
+- **gi-hepatology/hcc** (2023 AASLD) — AASLD 2023 HCC Guidance
+  - url: https://journals.lww.com/hep/fulltext/2023/12000/aasld_practice_guidance_on_prevention,_diagnosis,.27.aspx
+  - save to: `sources/gi-hepatology/hcc/2023-aasld.html`
+
+- **hematology-oncology/vte-treatment** (2021 CHEST) — CHEST 2021 Antithrombotic Therapy for VTE
+  - url: https://journal.chestnet.org/article/S0012-3692(21)01506-3/fulltext
+  - save to: `sources/hematology-oncology/vte-treatment/2021-chest.html`
+- **hematology-oncology/vte-treatment** (2020 ASH) — ASH 2020 VTE Panels
+  - url: https://ashpublications.org/bloodadvances/article/4/19/4693/463998/American-Society-of-Hematology-2020-guidelines-for
+  - save to: `sources/hematology-oncology/vte-treatment/2020-ash.html`
+- **hematology-oncology/vte-prophylaxis-medical** (2018 ASH) — ASH 2018 VTE Prophylaxis Guideline
+  - url: https://ashpublications.org/bloodadvances/article/2/22/3198/16115/American-Society-of-Hematology-2018-guidelines-for
+  - save to: `sources/hematology-oncology/vte-prophylaxis-medical/2018-ash.html`
+- **hematology-oncology/cancer-associated-thrombosis** (2022 ITAC) — ITAC 2022 Cancer-Associated Thrombosis Guideline
+  - url: https://www.thelancet.com/journals/lanonc/article/PIIS1470-2045(22)00160-7/fulltext
+  - save to: `sources/hematology-oncology/cancer-associated-thrombosis/2022-itac.html`
+- **hematology-oncology/cancer-associated-thrombosis** (ASCO) — ASCO VTE Guideline
+  - url: https://ascopubs.org/doi/full/10.1200/JCO.23.00294
+  - save to: `sources/hematology-oncology/cancer-associated-thrombosis/asco.html`
+- **hematology-oncology/itp** (2019 ASH) — ASH 2019 ITP Guideline
+  - url: https://ashpublications.org/bloodadvances/article/3/23/3829/429213/American-Society-of-Hematology-2019-guidelines-for
+  - save to: `sources/hematology-oncology/itp/2019-ash.html`
+- **hematology-oncology/hit** (2018 ASH) — ASH 2018 HIT Guideline
+  - url: https://ashpublications.org/bloodadvances/article/2/22/3360/16129/American-Society-of-Hematology-2018-guidelines-for
+  - save to: `sources/hematology-oncology/hit/2018-ash.html`
+- **hematology-oncology/ida-gi-evaluation** (2020 AGA) — AGA 2020 GI Evaluation of Iron-Deficiency Anemia
+  - url: https://www.gastrojournal.org/article/S0016-5085(20)34847-2/fulltext
+  - save to: `sources/hematology-oncology/ida-gi-evaluation/2020-aga.html`
+- **hematology-oncology/rbc-transfusion** (2023 AABB) — AABB 2023 Red Blood Cell Transfusion Guideline
+  - url: https://jamanetwork.com/journals/jama/fullarticle/2810754
+  - save to: `sources/hematology-oncology/rbc-transfusion/2023-aabb.html`
+
+- **infectious-diseases/hiv** (2024 IAS-USA) — IAS-USA 2024 Recommendations
+  - url: https://jamanetwork.com/journals/jama/fullarticle/2827545
+  - save to: `sources/infectious-diseases/hiv/2024-ias-usa.html`
+- **infectious-diseases/infective-endocarditis** (2023 AHA) — AHA 2023 IE Update
+  - url: https://www.ahajournals.org/doi/full/10.1161/CIR.0000000000001180
+  - save to: `sources/infectious-diseases/infective-endocarditis/2023-aha.html`
+- **infectious-diseases/infective-endocarditis** (2023 ESC) — ESC 2023 IE Guideline
+  - url: https://academic.oup.com/eurheartj/article/44/39/3948/7243107
+  - save to: `sources/infectious-diseases/infective-endocarditis/2023-esc.html`
+- **infectious-diseases/infective-endocarditis** (2023 Duke-ISCVID) — Duke-ISCVID 2023 Diagnostic Criteria
+  - url: https://academic.oup.com/cid/article/77/4/518/7151107
+  - save to: `sources/infectious-diseases/infective-endocarditis/2023-duke-iscvid.html`
+- **infectious-diseases/infective-endocarditis** (2015 AHA) — AHA 2015 IE Guideline
+  - url: https://www.ahajournals.org/doi/full/10.1161/CIR.0000000000000296
+  - save to: `sources/infectious-diseases/infective-endocarditis/2015-aha.html`
+- **infectious-diseases/uti** (2019 IDSA) — IDSA 2019 Asymptomatic Bacteriuria
+  - url: https://academic.oup.com/cid/article/68/10/e83/5407612
+  - save to: `sources/infectious-diseases/uti/2019-idsa.html`
+- **infectious-diseases/uti** (2011 IDSA) — IDSA 2011 Uncomplicated Cystitis/Pyelonephritis
+  - url: https://academic.oup.com/cid/article/52/5/e103/388285
+  - save to: `sources/infectious-diseases/uti/2011-idsa.html`
+- **infectious-diseases/ssti** (2014 IDSA) — IDSA 2014 SSTI Guideline
+  - url: https://academic.oup.com/cid/article/59/2/e10/2895845
+  - save to: `sources/infectious-diseases/ssti/2014-idsa.html`
+- **infectious-diseases/antimicrobial-stewardship** (2016 IDSA/SHEA) — IDSA/SHEA 2016 Antimicrobial Stewardship Guideline
+  - url: https://academic.oup.com/cid/article/62/10/e51/2462846
+  - save to: `sources/infectious-diseases/antimicrobial-stewardship/2016-idsa-shea.html`
+- **infectious-diseases/candidiasis** (2016 IDSA) — IDSA 2016 Candidiasis Guideline
+  - url: https://academic.oup.com/cid/article/62/4/e1/2462830
+  - save to: `sources/infectious-diseases/candidiasis/2016-idsa.html`
+- **infectious-diseases/tuberculosis** (2016 ATS/CDC/IDSA) — ATS/CDC/IDSA 2016 TB Treatment Guideline
+  - url: https://academic.oup.com/cid/article/63/7/e147/2196792
+  - save to: `sources/infectious-diseases/tuberculosis/2016-ats-cdc-idsa.html`
+
+- **nephrology/ckd** (2024 KDIGO) — KDIGO 2024 CKD Guideline
+  - url: https://www.kidney-international.org/article/S0085-2538(23)00766-4/fulltext
+  - save to: `sources/nephrology/ckd/2024-kdigo.html`
+- **nephrology/ckd** (2012 KDIGO) — (no title)
+  - url: https://www.sciencedirect.com/journal/kidney-international-supplements/vol/3/issue/1
+  - save to: `sources/nephrology/ckd/2012-kdigo.html`
+- **nephrology/aki** (2012 KDIGO) — KDIGO 2012 AKI Guideline
+  - url: https://www.sciencedirect.com/journal/kidney-international-supplements/vol/2/issue/1
+  - save to: `sources/nephrology/aki/2012-kdigo.html`
+- **nephrology/bp-in-ckd** (2021 KDIGO) — KDIGO 2021 BP in CKD Guideline
+  - url: https://www.kidney-international.org/article/S0085-2538(20)31270-9/fulltext
+  - save to: `sources/nephrology/bp-in-ckd/2021-kdigo.html`
+- **nephrology/hyponatremia** (2017 JASN) — Hoorn & Zietse 2017 — Diagnosis and Treatment of Hyponatremia (compilation review)
+  - url: https://journals.lww.com/jasn/fulltext/2017/05000/diagnosis_and_treatment_of_hyponatremia_.6.aspx
+  - save to: `sources/nephrology/hyponatremia/2017-jasn.html`
+- **nephrology/hyponatremia** (2013 US expert panel) — 2013 US Expert Panel on Hyponatremia
+  - url: https://www.amjmed.com/article/S0002-9343(13)00605-0/fulltext
+  - save to: `sources/nephrology/hyponatremia/2013-us-expert-panel.html`
+
+- **neurology/acute-ischemic-stroke** (2026 AHA/ASA) — 2026 AHA/ASA Early Management of AIS
+  - url: https://www.ahajournals.org/doi/full/10.1161/STR.0000000000000513
+  - save to: `sources/neurology/acute-ischemic-stroke/2026-aha-asa.html`
+- **neurology/acute-ischemic-stroke** (2019 AHA/ASA) — (no title)
+  - url: https://www.ahajournals.org/doi/full/10.1161/STR.0000000000000211
+  - save to: `sources/neurology/acute-ischemic-stroke/2019-aha-asa.html`
+- **neurology/acute-ischemic-stroke** (2018 AHA/ASA) — (no title)
+  - url: https://www.ahajournals.org/doi/full/10.1161/STR.0000000000000158
+  - save to: `sources/neurology/acute-ischemic-stroke/2018-aha-asa.html`
+- **neurology/secondary-stroke-prevention** (2021 AHA/ASA) — 2021 AHA/ASA Stroke/TIA Prevention Guideline
+  - url: https://www.ahajournals.org/doi/full/10.1161/STR.0000000000000375
+  - save to: `sources/neurology/secondary-stroke-prevention/2021-aha-asa.html`
+- **neurology/ich** (2022 AHA/ASA) — 2022 AHA/ASA ICH Guideline
+  - url: https://www.ahajournals.org/doi/full/10.1161/STR.0000000000000407
+  - save to: `sources/neurology/ich/2022-aha-asa.html`
+- **neurology/epilepsy** (AAN/AES) — AAN/AES Practice Guidelines
+  - url: https://www.neurology.org/doi/full/10.1212/WNL.0000000000001487
+  - save to: `sources/neurology/epilepsy/aan-aes.html`
+- **neurology/migraine** (2021 American Headache Society) — AHS 2021 Migraine Consensus
+  - url: https://headachejournal.onlinelibrary.wiley.com/doi/10.1111/head.14153
+  - save to: `sources/neurology/migraine/2021-american-headache-society.html`
+- **neurology/multiple-sclerosis** (2018 AAN) — AAN 2018 MS Disease-Modifying Therapy Guideline
+  - url: https://www.neurology.org/doi/full/10.1212/WNL.0000000000005347
+  - save to: `sources/neurology/multiple-sclerosis/2018-aan.html`
+
+- **preventive-medicine/statins-primary-prevention** (2026 ACC/AHA) — 2026 ACC/AHA Dyslipidemia Guideline
+  - url: https://www.ahajournals.org/doi/full/10.1161/CIR.0000000000001423
+  - save to: `sources/preventive-medicine/statins-primary-prevention/2026-acc-aha.html`
+
+- **pulmonary/asthma** (2020 NAEPP/NHLBI) — NAEPP/NHLBI 2020 Focused Updates
+  - url: https://www.jacionline.org/article/S0091-6749(20)31404-4/fulltext
+  - save to: `sources/pulmonary/asthma/2020-naepp-nhlbi.html`
+- **pulmonary/cap** (2025 ATS/IDSA) — 2025 ATS/IDSA CAP Guideline
+  - url: https://academic.oup.com/ajrccm/article/212/1/24/8435770
+  - save to: `sources/pulmonary/cap/2025-ats-idsa.html`
+- **pulmonary/cap** (2019 ATS/IDSA) — (no title)
+  - url: https://academic.oup.com/ajrccm/article/200/7/e45/200727
+  - save to: `sources/pulmonary/cap/2019-ats-idsa.html`
+- **pulmonary/hap-vap** (2016 IDSA/ATS) — 2016 IDSA/ATS HAP/VAP Guideline
+  - url: https://academic.oup.com/cid/article/63/5/e61/2237650
+  - save to: `sources/pulmonary/hap-vap/2016-idsa-ats.html`
+- **pulmonary/sepsis** (2021 SCCM/ESICM) — Surviving Sepsis Campaign 2021
+  - url: https://journals.lww.com/ccmjournal/fulltext/2021/11000/surviving_sepsis_campaign__international.21.aspx
+  - save to: `sources/pulmonary/sepsis/2021-sccm-esicm.html`
+- **pulmonary/pe-vte-acute** (2021 CHEST) — CHEST 2021 Antithrombotic Therapy for VTE
+  - url: https://journal.chestnet.org/article/S0012-3692(21)01506-3/fulltext
+  - save to: `sources/pulmonary/pe-vte-acute/2021-chest.html`
+- **pulmonary/pe-vte-acute** (2020 ASH) — ASH 2020 VTE panels
+  - url: https://ashpublications.org/bloodadvances/article/4/19/4693/463998
+  - save to: `sources/pulmonary/pe-vte-acute/2020-ash.html`
+- **pulmonary/pe-vte-acute** (2019 ESC) — ESC 2019 Acute PE Guideline
+  - url: https://academic.oup.com/eurheartj/article/41/4/543/5556136
+  - save to: `sources/pulmonary/pe-vte-acute/2019-esc.html`
+- **pulmonary/pulmonary-hypertension** (2022 ESC/ERS) — 2022 ESC/ERS PH Guideline
+  - url: https://academic.oup.com/eurheartj/article/43/38/3618/6673929
+  - save to: `sources/pulmonary/pulmonary-hypertension/2022-esc-ers.html`
+- **pulmonary/ipf** (2022 ATS/ERS/JRS/ALAT) — 2022 ATS/ERS/JRS/ALAT IPF Guideline
+  - url: https://academic.oup.com/ajrccm/article/205/9/e18/200689
+  - save to: `sources/pulmonary/ipf/2022-ats-ers-jrs-alat.html`
+
+- **rheumatology/rheumatoid-arthritis** (2021 ACR) — ACR 2021 RA Treatment Guideline
+  - url: https://acrjournals.onlinelibrary.wiley.com/doi/10.1002/acr.24596
+  - save to: `sources/rheumatology/rheumatoid-arthritis/2021-acr.html`
+- **rheumatology/gout** (2020 ACR) — ACR 2020 Gout Management Guideline
+  - url: https://acrjournals.onlinelibrary.wiley.com/doi/10.1002/acr.24180
+  - save to: `sources/rheumatology/gout/2020-acr.html`
+- **rheumatology/osteoarthritis** (2019 ACR/Arthritis Foundation) — ACR/AF 2019 Osteoarthritis Guideline
+  - url: https://acrjournals.onlinelibrary.wiley.com/doi/10.1002/acr.24131
+  - save to: `sources/rheumatology/osteoarthritis/2019-acr-arthritis-foundation.html`
+- **rheumatology/anca-vasculitis** (2021 ACR/VF) — ACR/VF 2021 ANCA-Associated Vasculitis Guideline
+  - url: https://acrjournals.onlinelibrary.wiley.com/doi/10.1002/acr.24634
+  - save to: `sources/rheumatology/anca-vasculitis/2021-acr-vf.html`
+- **rheumatology/large-vessel-vasculitis** (2021 ACR/VF) — ACR/VF 2021 Large-Vessel Vasculitis Guideline
+  - url: https://acrjournals.onlinelibrary.wiley.com/doi/10.1002/acr.24632
+  - save to: `sources/rheumatology/large-vessel-vasculitis/2021-acr-vf.html`
+- **rheumatology/axial-spondyloarthritis** (2019 ACR/SAA/SPARTAN) — ACR/SAA/SPARTAN 2019 Axial Spondyloarthritis Guideline
+  - url: https://acrjournals.onlinelibrary.wiley.com/doi/10.1002/acr.24025
+  - save to: `sources/rheumatology/axial-spondyloarthritis/2019-acr-saa-spartan.html`
+- **rheumatology/psoriatic-arthritis** (2018 ACR/NPF) — ACR/NPF 2018 Psoriatic Arthritis Guideline
+  - url: https://acrjournals.onlinelibrary.wiley.com/doi/10.1002/acr.23789
+  - save to: `sources/rheumatology/psoriatic-arthritis/2018-acr-npf.html`
+- **rheumatology/polymyalgia-rheumatica** (2015 ACR/EULAR) — ACR/EULAR 2015 PMR Guideline
+  - url: https://acrjournals.onlinelibrary.wiley.com/doi/10.1002/art.39333
+  - save to: `sources/rheumatology/polymyalgia-rheumatica/2015-acr-eular.html`
+- **rheumatology/sle** (ACR / EULAR) — ACR / EULAR SLE Guidelines
+  - url: https://acrjournals.onlinelibrary.wiley.com/doi/10.1002/acr.25690
+  - save to: `sources/rheumatology/sle/acr---eular.html`
+- **rheumatology/glucocorticoid-induced-osteoporosis** (2017 ACR) — ACR 2017 GIOP Guideline
+  - url: https://acrjournals.onlinelibrary.wiley.com/doi/10.1002/acr.23279
+  - save to: `sources/rheumatology/glucocorticoid-induced-osteoporosis/2017-acr.html`
+
+### PMC (10)
+
+- **endocrinology/dka-hhs** (2024 ADA/EASD) — 2024 ADA/EASD Consensus on Hyperglycemic Crises
+  - url: https://pmc.ncbi.nlm.nih.gov/articles/PMC11272983/
+  - save to: `sources/endocrinology/dka-hhs/2024-ada-easd.html`
+- **endocrinology/hypothyroidism** (2014 ATA) — ATA 2014 Hypothyroidism Treatment Guideline
+  - url: https://pmc.ncbi.nlm.nih.gov/articles/PMC4267409/
+  - save to: `sources/endocrinology/hypothyroidism/2014-ata.html`
+
+- **gi-hepatology/gerd** (2022 ACG) — ACG 2022 GERD Guideline
+  - url: https://pmc.ncbi.nlm.nih.gov/articles/PMC8754510/
+  - save to: `sources/gi-hepatology/gerd/2022-acg.html`
+- **gi-hepatology/hepatitis-b** (2018 AASLD) — AASLD 2018 Hepatitis B Guidance
+  - url: https://pmc.ncbi.nlm.nih.gov/articles/PMC5975958/
+  - save to: `sources/gi-hepatology/hepatitis-b/2018-aasld.html`
+- **gi-hepatology/portal-hypertension** (2022 Baveno VII) — Baveno VII 2022 Consensus
+  - url: https://pmc.ncbi.nlm.nih.gov/articles/PMC11090185/
+  - save to: `sources/gi-hepatology/portal-hypertension/2022-baveno-vii.html`
+
+- **hematology-oncology/vte-treatment** (2020 ASH) — ASH 2020 VTE Panels
+  - url: https://pmc.ncbi.nlm.nih.gov/articles/PMC7556153/
+  - save to: `sources/hematology-oncology/vte-treatment/2020-ash.html`
+- **hematology-oncology/vte-prophylaxis-medical** (2018 ASH) — ASH 2018 VTE Prophylaxis Guideline
+  - url: https://pmc.ncbi.nlm.nih.gov/articles/PMC6258928/
+  - save to: `sources/hematology-oncology/vte-prophylaxis-medical/2018-ash.html`
+- **hematology-oncology/itp** (2019 ASH) — ASH 2019 ITP Guideline
+  - url: https://pmc.ncbi.nlm.nih.gov/articles/PMC6963252/
+  - save to: `sources/hematology-oncology/itp/2019-ash.html`
+- **hematology-oncology/hit** (2018 ASH) — ASH 2018 HIT Guideline
+  - url: https://pmc.ncbi.nlm.nih.gov/articles/PMC6258919/
+  - save to: `sources/hematology-oncology/hit/2018-ash.html`
+
+- **nephrology/hyponatremia** (2017 JASN) — Hoorn & Zietse 2017 — Diagnosis and Treatment of Hyponatremia (compilation review)
+  - url: https://pmc.ncbi.nlm.nih.gov/articles/PMC5407738/
+  - save to: `sources/nephrology/hyponatremia/2017-jasn.html`

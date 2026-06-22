@@ -1,0 +1,52 @@
+# Pipeline orchestration. Run `just` to see all targets.
+#
+# IMPORTANT: paid targets (`enrich`, `cards`) hit the Anthropic API and cost
+# money. They are deliberately NOT part of any `all-*` chain. Run them
+# explicitly when you mean to.
+
+# Show available targets when run with no arguments.
+default:
+    @just --list
+
+# ── Free, local-only ──────────────────────────────────────────────────────
+
+# Validate manifest.yaml against the Pydantic schema.
+validate:
+    uv run scripts/validate_manifest.py
+
+# Parse sources/**/*.{epub,html,pdf} → sibling .md (epub > html > pdf).
+# Only PDF parsing hits LlamaParse (paid); the rest is local.
+parse:
+    uv run scripts/parse_sources.py
+
+# Build references/guidelines/ skeleton from manifest.yaml. Preserves any
+# existing _source_hash + enriched bodies.
+build:
+    uv run scripts/build_references.py
+
+# Generate spec/manifest-needs-attention.md report.
+report:
+    uv run scripts/needs_attention_report.py
+
+# Package build/cards.jsonl + manifest into build/guidelines.apkg.
+apkg:
+    uv run scripts/build_apkg.py
+
+# Everything free: validate → parse → build → report → apkg.
+# Safe to run any time; never spends money on API.
+all-local: validate parse build report apkg
+
+# ── Paid (Anthropic API spend) ─────────────────────────────────────────────
+
+# Enrich card-eligible concepts with structured bodies via Anthropic batch.
+# Idempotent: skips concepts whose _source_hash matches their current source.
+# Auto-resumes any prior interrupted batches from build/.enrich-state.json.
+# Chunks submissions in groups of 20 to bound exposure per submit.
+enrich:
+    uv run scripts/enrich_references.py
+
+# Generate Anki cloze cards from enriched concepts via Anthropic batch.
+# Idempotent: skips concepts whose body hash + generator_version match.
+# Chunks submissions in groups of 20.
+cards:
+    uv run scripts/generate_cards.py

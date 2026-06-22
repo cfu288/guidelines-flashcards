@@ -1,0 +1,12 @@
+title: Internal Medicine Guidelines
+description: System-by-system index of current society guidelines for internal medicine practice.
+theme: jekyll-theme-cayman
+permalink: pretty
+markdown: kramdown
+# baseurl is for GH Pages project sites (https://<user>.github.io/<repo>/).
+# Override to "" for root-domain hosting (CNAME / user pages):
+#   jekyll serve --baseurl ""
+# All internal links are emitted via {{ ... | relative_url }} so they work either way.
+baseurl: "/guidelines-flashcards"
+exclude:
+  - README.md

@@ -1,0 +1,7 @@
+{
+  "private": true,
+  "dependencies": {
+    "puppeteer-core": "^23.0.0",
+    "js-yaml": "^4.1.0"
+  }
+}

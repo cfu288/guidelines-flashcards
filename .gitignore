@@ -1,0 +1,27 @@
+# Secrets — never commit
+.env
+
+# Generated artifacts (cards.jsonl, .apkg, runtime state) — derivative of
+# copyrighted source material, same reasoning as sources/ and references/.
+build/*
+!build/README.md
+
+# Node deps for the puppeteer helpers
+scripts/node_modules
+
+# Python bytecode
+__pycache__/
+*.pyc
+
+# macOS
+.DS_Store
+
+# Copyrighted source documents — ignore everything under sources/ except the README.
+# The manifest.yaml + download/import scripts reproduce the tree locally.
+sources/*
+!sources/README.md
+
+# Derivative work (verbatim quotes + structured extractions of copyrighted guidelines).
+# Same reasoning as sources/ — regenerable from sources/ + spec/ via the extraction pipeline.
+references/*
+!references/README.md
