@@ -67,7 +67,6 @@ class StudyGuide(BaseModel):
     title: str
     description: Optional[str] = None
     entries: list[StudyGuideEntry] = []
-    bedside_tools: list[str] = []
 
 
 class Manifest(BaseModel):

@@ -296,12 +296,6 @@ def build_study_guides(manifest: Manifest) -> None:
             for e in sg.entries:
                 body.append(f"- [{e.label}]({e.topic})")
 
-        if sg.bedside_tools:
-            body.append("")
-            body.append("# Bedside tools")
-            body.append("")
-            for t in sg.bedside_tools:
-                body.append(f"- {t}")
         write_md(
             sg_dir / f"{slug}.md",
             {

@@ -1804,8 +1804,3 @@ study_guides:
     # entries: auto-derived at build time from topic.high_yield: true.
     # Do not add an `entries:` list here — it would be ignored and would drift
     # from the topic flags. The two are guaranteed aligned by construction.
-    bedside_tools:
-      - CHA₂DS₂-VASc / HAS-BLED — AFib anticoagulation
-      - CURB-65 / PSI — pneumonia severity
-      - Wells / PERC — PE
-      - MELD — liver
