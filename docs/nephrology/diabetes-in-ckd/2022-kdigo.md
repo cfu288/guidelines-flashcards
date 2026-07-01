@@ -8,6 +8,8 @@ permalink: /nephrology/diabetes-in-ckd/2022-kdigo/
 
 **Source:** [canonical](https://kdigo.org/wp-content/uploads/2022/10/KDIGO-2022-Clinical-Practice-Guideline-for-Diabetes-Management-in-CKD.pdf)
 
+**Anki deck:** [Download just this guideline (.apkg)](https://github.com/cfu288/guidelines-flashcards/raw/main/build/decks/nephrology/diabetes-in-ckd/2022-kdigo.apkg) — safe to import alongside the mega deck; GUIDs align so review history is preserved.
+
 # Summary
 
 KDIGO 2022 is a focused update of the 2020 guideline on diabetes management in CKD, with major revisions to Chapter 1 (comprehensive care) and Chapter 4 (glucose-lowering therapies in T2D); chapters on glycemic monitoring/targets, lifestyle, and care delivery remain unchanged. Key updates expand SGLT2i use down to eGFR ≥20 ml/min/1.73 m² and add a new recommendation for nonsteroidal MRA (finerenone) in T2D with albuminuria despite maximally tolerated RAS inhibition. The guideline emphasizes a layered comprehensive approach: lifestyle therapy plus first-line metformin + SGLT2i + RAS inhibitor + statin, with GLP-1 RA and ns-MRA added based on residual risk.

@@ -8,6 +8,8 @@ permalink: /rheumatology/large-vessel-vasculitis/2021-acr-vf/
 
 **Source:** [canonical](https://assets.contentstack.io/v3/assets/bltee37abb6b278ab2c/blt2da0b446917ba8b8/6331df5f2b80434a8b6920e3/giant-cell-arteritis-takayasu-arteritis-guideline-2021.pdf) · [html](https://acrjournals.onlinelibrary.wiley.com/doi/10.1002/acr.24632)
 
+**Anki deck:** [Download just this guideline (.apkg)](https://github.com/cfu288/guidelines-flashcards/raw/main/build/decks/rheumatology/large-vessel-vasculitis/2021-acr-vf.apkg) — safe to import alongside the mega deck; GUIDs align so review history is preserved.
+
 # Summary
 
 ACR/Vasculitis Foundation 2021 guideline on management of giant cell arteritis (GCA) and Takayasu arteritis (TAK), the two principal large-vessel vasculitides. Provides 22 recommendations plus 2 position statements for GCA and 20 recommendations plus 1 position statement for TAK, addressing diagnostic imaging/biopsy, induction and maintenance therapy, monitoring, and surgical management. Notable shifts include endorsement of tocilizumab as a glucocorticoid-sparing agent in GCA and continued preference for temporal artery biopsy (over ultrasound/MRI) in the US, diverging from EULAR. Nearly all recommendations are conditional given low-quality evidence.

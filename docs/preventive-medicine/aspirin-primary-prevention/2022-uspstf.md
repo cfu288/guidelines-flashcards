@@ -8,6 +8,8 @@ permalink: /preventive-medicine/aspirin-primary-prevention/2022-uspstf/
 
 **Source:** [canonical](https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/aspirin-to-prevent-cardiovascular-disease-preventive-medication) · [html](https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/aspirin-to-prevent-cardiovascular-disease-preventive-medication)
 
+**Anki deck:** [Download just this guideline (.apkg)](https://github.com/cfu288/guidelines-flashcards/raw/main/build/decks/preventive-medicine/aspirin-primary-prevention/2022-uspstf.apkg) — safe to import alongside the mega deck; GUIDs align so review history is preserved.
+
 # Summary
 
 USPSTF 2022 recommendation on low-dose aspirin for primary prevention of cardiovascular disease. For adults 40–59 with ≥10% 10-year CVD risk, initiation is an individual decision (Grade C); for adults ≥60, do not initiate aspirin for primary prevention (Grade D). This replaces the 2016 statement: age range lowered from 50 to 40 for shared decision-making, a new D recommendation added for ≥60, and the prior colorectal cancer benefit claim withdrawn due to inadequate evidence.

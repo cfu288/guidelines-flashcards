@@ -8,6 +8,8 @@ permalink: /gi-hepatology/masld/2023-aasld/
 
 **Source:** [canonical](https://journals.lww.com/hep/fulltext/2023/05000/aasld_practice_guidance_on_the_clinical_assessment.31.aspx) · [html](https://journals.lww.com/hep/fulltext/2023/05000/aasld_practice_guidance_on_the_clinical_assessment.31.aspx)
 
+**Anki deck:** [Download just this guideline (.apkg)](https://github.com/cfu288/guidelines-flashcards/raw/main/build/decks/gi-hepatology/masld/2023-aasld.apkg) — safe to import alongside the mega deck; GUIDs align so review history is preserved.
+
 # Summary
 
 AASLD 2023 Practice Guidance updates the 2018 NAFLD document, emphasizing noninvasive risk stratification (FIB-4, VCTE, ELF, MRE) to identify "at-risk" NASH (NASH with ≥F2 fibrosis) and management of metabolic comorbidities. It highlights newer therapeutics with potential NASH benefit (semaglutide, pioglitazone, vitamin E) while noting no agent is FDA-approved for NASH. Pediatric NAFLD and NAFLD-in-diabetes are addressed in separate documents.

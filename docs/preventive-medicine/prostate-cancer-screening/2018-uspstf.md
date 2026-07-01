@@ -8,6 +8,8 @@ permalink: /preventive-medicine/prostate-cancer-screening/2018-uspstf/
 
 **Source:** [canonical](https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/prostate-cancer-screening) · [html](https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/prostate-cancer-screening)
 
+**Anki deck:** [Download just this guideline (.apkg)](https://github.com/cfu288/guidelines-flashcards/raw/main/build/decks/preventive-medicine/prostate-cancer-screening/2018-uspstf.apkg) — safe to import alongside the mega deck; GUIDs align so review history is preserved.
+
 # Summary
 
 USPSTF 2018 recommendation on PSA-based screening for prostate cancer in asymptomatic men. For men 55-69, screening is an individualized decision after shared decision-making about benefits and harms (Grade C, upgraded from D in 2012 based on longer ERSPC follow-up showing reduced prostate cancer mortality and metastatic disease, plus increased use of active surveillance). For men ≥70 years, routine PSA screening is not recommended (Grade D).

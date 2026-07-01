@@ -8,6 +8,8 @@ permalink: /rheumatology/osteoarthritis/2019-acr-arthritis-foundation/
 
 **Source:** [canonical](https://assets.contentstack.io/v3/assets/bltee37abb6b278ab2c/blt6aa092f0134cac9a/63320f4750c8e90e3bf512c2/osteoarthritis-guideline-2019.pdf) · [html](https://acrjournals.onlinelibrary.wiley.com/doi/10.1002/acr.24131) · [pmc](https://pmc.ncbi.nlm.nih.gov/articles/PMC11488261/)
 
+**Anki deck:** [Download just this guideline (.apkg)](https://github.com/cfu288/guidelines-flashcards/raw/main/build/decks/rheumatology/osteoarthritis/2019-acr-arthritis-foundation.apkg) — safe to import alongside the mega deck; GUIDs align so review history is preserved.
+
 # Summary
 
 2019 ACR/Arthritis Foundation guideline updating the 2012 recommendations for management of hand, hip, and knee osteoarthritis using GRADE methodology. Emphasizes multimodal, shared decision-making care with exercise, weight loss, and self-management as foundational, plus topical/oral NSAIDs and intraarticular glucocorticoids as primary pharmacologic options. Notable changes from 2012 include a stronger recommendation against glucosamine, recommendations against hyaluronic acid injections (conditional for knee/CMC, strong for hip), and against TENS, stem cell, and PRP injections.

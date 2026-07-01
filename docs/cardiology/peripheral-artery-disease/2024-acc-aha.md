@@ -8,6 +8,8 @@ permalink: /cardiology/peripheral-artery-disease/2024-acc-aha/
 
 **Source:** [canonical](https://www.ahajournals.org/doi/10.1161/CIR.0000000000001251) · [html](https://www.ahajournals.org/doi/full/10.1161/CIR.0000000000001251) · [pdf](https://www.ahajournals.org/doi/pdf/10.1161/CIR.0000000000001251)
 
+**Anki deck:** [Download just this guideline (.apkg)](https://github.com/cfu288/guidelines-flashcards/raw/main/build/decks/cardiology/peripheral-artery-disease/2024-acc-aha.apkg) — safe to import alongside the mega deck; GUIDs align so review history is preserved.
+
 # Summary
 
 Comprehensive update to the 2016 AHA/ACC PAD guideline covering diagnosis and management of lower extremity peripheral artery disease across four clinical subsets: asymptomatic PAD, chronic symptomatic PAD (claudication), chronic limb-threatening ischemia (CLTI), and acute limb ischemia (ALI). New emphasis on PAD-related risk amplifiers, health disparities, multispecialty team-based care for CLTI, structured exercise (including community/home-based), and incorporation of low-dose rivaroxaban plus aspirin for prevention of MACE/MALE. Reflects evidence from BEST-CLI, BASIL-2, VOYAGER PAD, and COMPASS trials.

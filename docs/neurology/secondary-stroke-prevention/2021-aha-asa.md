@@ -8,6 +8,8 @@ permalink: /neurology/secondary-stroke-prevention/2021-aha-asa/
 
 **Source:** [canonical](https://www.ahajournals.org/doi/10.1161/STR.0000000000000375) · [html](https://www.ahajournals.org/doi/full/10.1161/STR.0000000000000375) · [pdf](https://www.ahajournals.org/doi/pdf/10.1161/STR.0000000000000375)
 
+**Anki deck:** [Download just this guideline (.apkg)](https://github.com/cfu288/guidelines-flashcards/raw/main/build/decks/neurology/secondary-stroke-prevention/2021-aha-asa.apkg) — safe to import alongside the mega deck; GUIDs align so review history is preserved.
+
 # Summary
 
 Comprehensive AHA/ASA guideline on secondary prevention of ischemic stroke and TIA, organized by etiologic subtype with new sections on diagnostic evaluation and systems of care. Emphasizes intensive vascular risk factor management (BP \<130/80, LDL-C \<70 mg/dL), antithrombotic therapy tailored to mechanism, short-term DAPT for minor stroke/high-risk TIA, anticoagulation for AF, and PFO closure in selected patients age 18–60. Replaces 2014 guidelines and adds ESUS, carotid web, FMD, and health equity sections.

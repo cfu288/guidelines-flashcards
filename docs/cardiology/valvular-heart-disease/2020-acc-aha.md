@@ -8,6 +8,8 @@ permalink: /cardiology/valvular-heart-disease/2020-acc-aha/
 
 **Source:** [canonical](https://www.ahajournals.org/doi/10.1161/CIR.0000000000000923) · [html](https://www.ahajournals.org/doi/full/10.1161/CIR.0000000000000923) · [pdf](https://www.ahajournals.org/doi/pdf/10.1161/CIR.0000000000000923)
 
+**Anki deck:** [Download just this guideline (.apkg)](https://github.com/cfu288/guidelines-flashcards/raw/main/build/decks/cardiology/valvular-heart-disease/2020-acc-aha.apkg) — safe to import alongside the mega deck; GUIDs align so review history is preserved.
+
 # Summary
 
 Comprehensive update replacing the 2014 VHD guideline and 2017 focused update, covering diagnosis, staging (A–D), and management of native and prosthetic valve disease in adults. Key changes include expanded TAVI indications across all surgical risk strata, lower thresholds for intervention in regurgitant lesions, formalized Heart Valve Team/Comprehensive Valve Center referral, updated antithrombotic regimens (NOACs permitted in most VHD with AF except rheumatic MS and mechanical valves), and new recommendations for TEER in primary and selected secondary MR.

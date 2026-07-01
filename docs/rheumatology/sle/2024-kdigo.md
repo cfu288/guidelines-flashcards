@@ -8,6 +8,8 @@ permalink: /rheumatology/sle/2024-kdigo/
 
 **Source:** [canonical](https://kdigo.org/wp-content/uploads/2024/01/KDIGO-2024-Lupus-Nephritis-Guideline.pdf) · [html](https://kdigo.org/guidelines/lupus-nephritis/)
 
+**Anki deck:** [Download just this guideline (.apkg)](https://github.com/cfu288/guidelines-flashcards/raw/main/build/decks/rheumatology/sle/2024-kdigo.apkg) — safe to import alongside the mega deck; GUIDs align so review history is preserved.
+
 # Summary
 
 KDIGO 2024 is a focused update of the lupus nephritis chapter from the 2021 Glomerular Diseases Guideline. The update incorporates the FDA/EMA approvals of belimumab and voclosporin as add-on immunosuppressive agents for LN. Recommendations follow GRADE methodology and are supplemented by expert practice points covering diagnosis, induction, maintenance, and special populations.

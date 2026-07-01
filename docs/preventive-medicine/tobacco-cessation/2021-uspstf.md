@@ -8,6 +8,8 @@ permalink: /preventive-medicine/tobacco-cessation/2021-uspstf/
 
 **Source:** [canonical](https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/tobacco-use-in-adults-and-pregnant-women-counseling-and-interventions) · [html](https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/tobacco-use-in-adults-and-pregnant-women-counseling-and-interventions)
 
+**Anki deck:** [Download just this guideline (.apkg)](https://github.com/cfu288/guidelines-flashcards/raw/main/build/decks/preventive-medicine/tobacco-cessation/2021-uspstf.apkg) — safe to import alongside the mega deck; GUIDs align so review history is preserved.
+
 # Summary
 
 USPSTF 2021 recommends clinicians ask all adults, including pregnant persons, about tobacco use, advise cessation, and provide interventions (Grade A). Nonpregnant adults should receive both behavioral counseling and FDA-approved pharmacotherapy (NRT, bupropion SR, varenicline); pregnant persons should receive behavioral counseling. Evidence is insufficient (I statement) for pharmacotherapy in pregnancy and for e-cigarettes as a cessation aid in any adult. Recommendations are consistent with the 2015 statement, with new commentary on e-cigarettes and the 2019 EVALI outbreak.

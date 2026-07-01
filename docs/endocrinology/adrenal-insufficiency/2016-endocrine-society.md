@@ -8,6 +8,8 @@ permalink: /endocrinology/adrenal-insufficiency/2016-endocrine-society/
 
 **Source:** [canonical](https://academic.oup.com/jcem/article/101/2/364/2810222) · [html](https://academic.oup.com/jcem/article/101/2/364/2810222)
 
+**Anki deck:** [Download just this guideline (.apkg)](https://github.com/cfu288/guidelines-flashcards/raw/main/build/decks/endocrinology/adrenal-insufficiency/2016-endocrine-society.apkg) — safe to import alongside the mega deck; GUIDs align so review history is preserved.
+
 # Summary
 
 Endocrine Society 2016 guideline on diagnosis and treatment of primary adrenal insufficiency (PAI), co-sponsored by the European Society of Endocrinology and AACC. Establishes the standard-dose (250 μg) corticotropin stimulation test as the diagnostic gold standard, recommends hydrocortisone or cortisone acetate as first-line glucocorticoid replacement with fludrocortisone for mineralocorticoid replacement, and details adrenal crisis prevention/management with patient education, emergency kits, and stress dosing. Excludes secondary adrenal insufficiency and critical illness-related corticosteroid insufficiency.

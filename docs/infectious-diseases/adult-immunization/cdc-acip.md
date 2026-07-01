@@ -8,6 +8,8 @@ permalink: /infectious-diseases/adult-immunization/cdc-acip/
 
 **Source:** [canonical](https://www.cdc.gov/vaccines/hcp/imz-schedules/downloads/adult/adult-combined-schedule.pdf) · [html](https://www.cdc.gov/vaccines/hcp/imz-schedules/adult-age.html)
 
+**Anki deck:** [Download just this guideline (.apkg)](https://github.com/cfu288/guidelines-flashcards/raw/main/build/decks/infectious-diseases/adult-immunization/cdc-acip.apkg) — safe to import alongside the mega deck; GUIDs align so review history is preserved.
+
 # Summary
 
 2025 CDC/ACIP Adult Immunization Schedule (addendum updated July 2, 2025) for adults aged ≥19 years. Organized by age group (19–26, 27–49, 50–64, ≥65) and by medical condition, covering routine, risk-based, and shared clinical decision-making vaccines including COVID-19, influenza, RSV, Tdap, MMR, varicella, zoster, HPV, pneumococcal, hepatitis A/B, meningococcal, Hib, mpox, and IPV.

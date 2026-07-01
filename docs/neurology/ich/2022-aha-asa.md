@@ -8,6 +8,8 @@ permalink: /neurology/ich/2022-aha-asa/
 
 **Source:** [canonical](https://www.ahajournals.org/doi/10.1161/STR.0000000000000407) · [html](https://www.ahajournals.org/doi/full/10.1161/STR.0000000000000407) · [pdf](https://www.ahajournals.org/doi/pdf/10.1161/STR.0000000000000407)
 
+**Anki deck:** [Download just this guideline (.apkg)](https://github.com/cfu288/guidelines-flashcards/raw/main/build/decks/neurology/ich/2022-aha-asa.apkg) — safe to import alongside the mega deck; GUIDs align so review history is preserved.
+
 # Summary
 
 2022 AHA/ASA guideline for management of spontaneous (nontraumatic, non-structural) intracerebral hemorrhage in adults, updating the 2015 version. Key updates include refined acute BP targets emphasizing smooth sustained control, expanded anticoagulation reversal recommendations (4F-PCC, idarucizumab, andexanet alfa), evidence against prophylactic corticosteroids/hyperosmolar therapy/platelet transfusions/antiseizure prophylaxis, support for minimally invasive hematoma evacuation to reduce mortality, and broader criteria for cerebellar ICH surgery (now including volume >15 mL).

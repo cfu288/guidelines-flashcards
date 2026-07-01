@@ -293,12 +293,23 @@ def render_index(manifest: dict) -> str:
     lines.append("## Anki deck")
     lines.append("")
     lines.append(
-        "[Download `guidelines.apkg`]"
-        "(https://github.com/cfu288/guidelines-flashcards/raw/main/build/guidelines.apkg) — "
-        "cloze cards generated from the references above. In Anki: **File → Import**. "
-        "Card GUIDs are stable, so re-importing a newer build updates notes in place "
-        "and preserves FSRS history."
+        "Two ways in — pick one or mix them, whatever fits your study block. Both use "
+        "stable card IDs, so re-importing a newer build or a different subset updates "
+        "notes in place and preserves your FSRS review history."
     )
+    lines.append("")
+    lines.append(
+        "- **Everything** — "
+        "[`guidelines.apkg`](https://github.com/cfu288/guidelines-flashcards/raw/main/build/guidelines.apkg) "
+        f"({total_versions} guidelines, {total_topics} topics)."
+    )
+    lines.append(
+        "- **Just one guideline** — open any guideline page from the sidebar and click "
+        "**Download just this guideline (.apkg)**. Safe to import alongside the mega "
+        "deck later; the two merge cleanly on card ID with no duplicates."
+    )
+    lines.append("")
+    lines.append("In Anki: **File → Import**.")
     lines.append("")
     lines.append(
         "**Don't grind the whole deck dry.** It's broad on purpose (every topic above, "
@@ -395,6 +406,18 @@ def render_version_page(
     if url_links:
         header_lines.append("**Source:** " + " · ".join(url_links))
         header_lines.append("")
+    # Per-guideline Anki sub-deck (produced by build_apkg.py). Stable GUIDs +
+    # deck IDs mean a user can import this on its own OR alongside the mega
+    # deck without duplicate notes / dupe deck tree / lost FSRS history.
+    subdeck_url = (
+        "https://github.com/cfu288/guidelines-flashcards/raw/main/build/decks/"
+        f"{system_slug}/{topic_slug}/{vslug}.apkg"
+    )
+    header_lines.append(
+        f"**Anki deck:** [Download just this guideline (.apkg)]({subdeck_url}) — "
+        "safe to import alongside the mega deck; GUIDs align so review history is preserved."
+    )
+    header_lines.append("")
     # Extra "\n" gives a blank line between the header block and the body so
     # kramdown renders "# Summary" as its own paragraph, not text-flow.
     return "\n".join(header_lines) + "\n" + body + "\n"

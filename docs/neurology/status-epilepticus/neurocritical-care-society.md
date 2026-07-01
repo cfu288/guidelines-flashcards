@@ -8,6 +8,8 @@ permalink: /neurology/status-epilepticus/neurocritical-care-society/
 
 **Source:** [canonical](https://link.springer.com/article/10.1007/s12028-012-9695-z) · [html](https://link.springer.com/article/10.1007/s12028-012-9695-z)
 
+**Anki deck:** [Download just this guideline (.apkg)](https://github.com/cfu288/guidelines-flashcards/raw/main/build/decks/neurology/status-epilepticus/neurocritical-care-society.apkg) — safe to import alongside the mega deck; GUIDs align so review history is preserved.
+
 # Summary
 
 The 2012 Neurocritical Care Society guideline provides evidence-based and expert-consensus recommendations for evaluation and acute management of status epilepticus (SE) in critically ill adults and children. SE is operationally defined as ≥5 minutes of continuous seizure activity or recurrent seizures without recovery, and treatment is structured into emergent initial therapy (benzodiazepine), urgent control therapy (IV AED), and refractory SE therapy (continuous IV anesthetic infusion with EEG monitoring). The document emphasizes simultaneous diagnostic workup, early cEEG in patients who do not return to baseline, and protocolized escalation to improve outcomes.

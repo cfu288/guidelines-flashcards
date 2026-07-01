@@ -8,6 +8,8 @@ permalink: /preventive-medicine/statins-primary-prevention/2026-acc-aha/
 
 **Source:** [canonical](https://www.ahajournals.org/doi/10.1161/CIR.0000000000001423) · [html](https://www.ahajournals.org/doi/full/10.1161/CIR.0000000000001423) · [pdf](https://www.ahajournals.org/doi/pdf/10.1161/CIR.0000000000001423)
 
+**Anki deck:** [Download just this guideline (.apkg)](https://github.com/cfu288/guidelines-flashcards/raw/main/build/decks/preventive-medicine/statins-primary-prevention/2026-acc-aha.apkg) — safe to import alongside the mega deck; GUIDs align so review history is preserved.
+
 # Summary
 
 The 2026 ACC/AHA dyslipidemia guideline replaces the 2018 cholesterol guideline and broadens scope to include hypertriglyceridemia and elevated Lp(a). Major changes include adoption of the PREVENT-ASCVD risk equations (replacing the Pooled Cohort Equations) with lower treatment thresholds, reinstatement of explicit LDL-C and non–HDL-C goals, universal once-in-a-lifetime Lp(a) measurement, expanded role for apoB testing, and incorporation of newer agents (bempedoic acid, inclisiran, evinacumab, olezarsen) alongside statins, ezetimibe, and PCSK9 mAbs. The guideline emphasizes the "CPR" framework (Calculate–Personalize–Reclassify with CAC) and earlier intervention to reduce lifetime atherogenic lipoprotein exposure.

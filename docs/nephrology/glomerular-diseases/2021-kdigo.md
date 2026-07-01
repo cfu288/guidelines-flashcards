@@ -8,6 +8,8 @@ permalink: /nephrology/glomerular-diseases/2021-kdigo/
 
 **Source:** [canonical](https://kdigo.org/wp-content/uploads/2017/02/KDIGO-Glomerular-Diseases-Guideline-2021-English.pdf)
 
+**Anki deck:** [Download just this guideline (.apkg)](https://github.com/cfu288/guidelines-flashcards/raw/main/build/decks/nephrology/glomerular-diseases/2021-kdigo.apkg) — safe to import alongside the mega deck; GUIDs align so review history is preserved.
+
 # Summary
 
 KDIGO 2021 updates the 2012 glomerulonephritis guideline, covering IgA nephropathy/vasculitis, membranous nephropathy, nephrotic syndrome in children, MCD and FSGS in adults, infection-related GN, MPGN/C3 glomerulopathy, ANCA vasculitis, lupus nephritis, and anti-GBM disease. New features include practice points (consensus guidance where evidence is insufficient), risk-stratified treatment for MN, expanded role of rituximab, and recognition that anti-PLA2R serology can diagnose MN without biopsy. Treatment paradigms shift toward minimizing glucocorticoid exposure and individualized risk-based immunosuppression.

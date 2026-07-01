@@ -8,6 +8,8 @@ permalink: /pulmonary/pulmonary-hypertension/2022-esc-ers/
 
 **Source:** [canonical](https://academic.oup.com/eurheartj/article/43/38/3618/6673929) · [html](https://academic.oup.com/eurheartj/article/43/38/3618/6673929)
 
+**Anki deck:** [Download just this guideline (.apkg)](https://github.com/cfu288/guidelines-flashcards/raw/main/build/decks/pulmonary/pulmonary-hypertension/2022-esc-ers.apkg) — safe to import alongside the mega deck; GUIDs align so review history is preserved.
+
 # Summary
 
 Fourth-edition joint ESC/ERS guideline on diagnosis and treatment of pulmonary hypertension covering all five PH groups, with emphasis on PAH and CTEPH. Key changes from 2015: lowered hemodynamic definition (mPAP >20 mmHg, PVR >2 WU), introduction of exercise PH definition, four-strata follow-up risk model, simplified treatment algorithm distinguishing patients with vs without cardiopulmonary comorbidities, new CTEPD-without-PH concept, and upgraded role of balloon pulmonary angioplasty plus medical therapy in CTEPH.

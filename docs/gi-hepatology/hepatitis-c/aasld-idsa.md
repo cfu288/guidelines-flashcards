@@ -8,6 +8,8 @@ permalink: /gi-hepatology/hepatitis-c/aasld-idsa/
 
 **Source:** [canonical](https://www.hcvguidelines.org)
 
+**Anki deck:** [Download just this guideline (.apkg)](https://github.com/cfu288/guidelines-flashcards/raw/main/build/decks/gi-hepatology/hepatitis-c/aasld-idsa.apkg) — safe to import alongside the mega deck; GUIDs align so review history is preserved.
+
 # Summary
 
 AASLD/IDSA simplified HCV "test and treat" algorithm for initial and follow-up visits in treatment-naive patients without cirrhosis or other complicating conditions. Outlines point-of-care HCV RNA testing, pretreatment labs, criteria triggering specialist referral, and post-treatment SVR assessment. Patients with prior DAA treatment, HBsAg positivity, HCC, or decompensated cirrhosis require specialist referral rather than simplified treatment.

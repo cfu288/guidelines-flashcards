@@ -8,6 +8,8 @@ permalink: /nephrology/ckd/2024-kdigo/
 
 **Source:** [canonical](https://kdigo.org/wp-content/uploads/2024/03/KDIGO-2024-CKD-Guideline.pdf) · [html](https://www.kidney-international.org/article/S0085-2538(23)00766-4/fulltext)
 
+**Anki deck:** [Download just this guideline (.apkg)](https://github.com/cfu288/guidelines-flashcards/raw/main/build/decks/nephrology/ckd/2024-kdigo.apkg) — safe to import alongside the mega deck; GUIDs align so review history is preserved.
+
 # Summary
 
 KDIGO 2024 updates the 2012 CKD guideline with major changes including endorsement of eGFRcr-cys (creatinine + cystatin C) for accurate staging, race-free GFR estimation, validated risk equations (KFRE) to drive referral and modality decisions, and strong recommendations for SGLT2 inhibitors across diabetic and non-diabetic CKD. New emphasis on a holistic, multi-drug treatment paradigm (RASi + SGLT2i + statin + nonsteroidal MRA in T2D), risk-based rather than eGFR-only management, and structured drug stewardship/imaging guidance. Scope covers adults and children with non-dialysis, non-transplant CKD.

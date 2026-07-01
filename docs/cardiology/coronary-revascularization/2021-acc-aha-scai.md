@@ -8,6 +8,8 @@ permalink: /cardiology/coronary-revascularization/2021-acc-aha-scai/
 
 **Source:** [canonical](https://www.ahajournals.org/doi/10.1161/CIR.0000000000001038) · [html](https://www.ahajournals.org/doi/full/10.1161/CIR.0000000000001038) · [pdf](https://www.ahajournals.org/doi/pdf/10.1161/CIR.0000000000001038)
 
+**Anki deck:** [Download just this guideline (.apkg)](https://github.com/cfu288/guidelines-flashcards/raw/main/build/decks/cardiology/coronary-revascularization/2021-acc-aha-scai.apkg) — safe to import alongside the mega deck; GUIDs align so review history is preserved.
+
 # Summary
 
 Consolidated update of prior PCI, CABG, STEMI, NSTE-ACS, and SIHD revascularization guidelines into a single patient-centric document. Emphasizes Heart Team decision-making, shared decision-making, equity of care, radial access, radial artery conduit over saphenous vein for second target, shorter DAPT durations with P2Y12 monotherapy transition, staged non-culprit PCI in STEMI, and CABG preference for diabetics with multivessel disease. Downgrades CABG from Class I to Class 2b for 3-vessel SIHD with preserved EF based on ISCHEMIA and contemporary trials.

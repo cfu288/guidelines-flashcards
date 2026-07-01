@@ -8,6 +8,8 @@ permalink: /cardiology/thoracic-aortic-disease/2022-acc-aha/
 
 **Source:** [canonical](https://www.ahajournals.org/doi/10.1161/CIR.0000000000001106) · [html](https://www.ahajournals.org/doi/full/10.1161/CIR.0000000000001106) · [pdf](https://www.ahajournals.org/doi/pdf/10.1161/CIR.0000000000001106)
 
+**Anki deck:** [Download just this guideline (.apkg)](https://github.com/cfu288/guidelines-flashcards/raw/main/build/decks/cardiology/thoracic-aortic-disease/2022-acc-aha.apkg) — safe to import alongside the mega deck; GUIDs align so review history is preserved.
+
 # Summary
 
 Comprehensive update to ACC/AHA aortic disease guidance covering diagnosis, genetic evaluation, medical therapy, endovascular/surgical management, and surveillance of thoracic and abdominal aortic disease across asymptomatic, stable symptomatic, and acute presentations. Key changes include lowering the surgical threshold for sporadic root/ascending aneurysms from 5.5 cm to 5.0 cm at experienced Multidisciplinary Aortic Team centers, emphasis on indexed aortic measurements for small/large patients, expanded role of TEVAR in uncomplicated type B dissection, and routine first-degree relative screening for TAA/dissection.

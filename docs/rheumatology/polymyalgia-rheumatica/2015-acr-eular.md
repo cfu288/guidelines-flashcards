@@ -8,6 +8,8 @@ permalink: /rheumatology/polymyalgia-rheumatica/2015-acr-eular/
 
 **Source:** [canonical](https://pubmed.ncbi.nlm.nih.gov/26352874/) · [html](https://acrjournals.onlinelibrary.wiley.com/doi/10.1002/art.39333) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/26352874/)
 
+**Anki deck:** [Download just this guideline (.apkg)](https://github.com/cfu288/guidelines-flashcards/raw/main/build/decks/rheumatology/polymyalgia-rheumatica/2015-acr-eular.apkg) — safe to import alongside the mega deck; GUIDs align so review history is preserved.
+
 # Summary
 
 First joint EULAR/ACR recommendations for management of polymyalgia rheumatica, developed using GRADE methodology. Provides 8 overarching principles and 9 specific recommendations covering baseline workup, glucocorticoid dosing and tapering, IM methylprednisolone alternative, early methotrexate use, exclusion of TNF inhibitors, and exercise. Emphasizes individualized minimum-effective GC dosing and shared decision-making rather than fixed schedules.

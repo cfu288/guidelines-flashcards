@@ -8,6 +8,8 @@ permalink: /nephrology/bp-in-ckd/2021-kdigo/
 
 **Source:** [canonical](https://kdigo.org/wp-content/uploads/2016/10/KDIGO-2021-BP-GL.pdf) · [html](https://www.kidney-international.org/article/S0085-2538(20)31270-9/fulltext)
 
+**Anki deck:** [Download just this guideline (.apkg)](https://github.com/cfu288/guidelines-flashcards/raw/main/build/decks/nephrology/bp-in-ckd/2021-kdigo.apkg) — safe to import alongside the mega deck; GUIDs align so review history is preserved.
+
 # Summary
 
 Update to the 2012 KDIGO BP guideline covering BP measurement, lifestyle interventions, antihypertensive therapy in CKD (with/without diabetes), kidney transplant recipients, and children. Major changes from 2012: emphasis on standardized office BP measurement, lower SBP target of \<120 mm Hg for most adults with non-dialysis CKD (largely from SPRINT), and a unified target irrespective of diabetes, proteinuria, or older age. Renin-angiotensin system inhibitors remain first-line for CKD with albuminuria; dual RAS blockade is to be avoided.

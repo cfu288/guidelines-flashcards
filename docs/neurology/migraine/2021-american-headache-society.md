@@ -8,6 +8,8 @@ permalink: /neurology/migraine/2021-american-headache-society/
 
 **Source:** [canonical](https://headachejournal.onlinelibrary.wiley.com/doi/10.1111/head.14153) · [html](https://headachejournal.onlinelibrary.wiley.com/doi/10.1111/head.14153) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/34160823/)
 
+**Anki deck:** [Download just this guideline (.apkg)](https://github.com/cfu288/guidelines-flashcards/raw/main/build/decks/neurology/migraine/2021-american-headache-society.apkg) — safe to import alongside the mega deck; GUIDs align so review history is preserved.
+
 # Summary
 
 Updated AHS consensus on integrating newer acute and preventive migraine therapies into adult practice, building on the prior position statement without altering established treatment principles. New acute options covered include gepants (ubrogepant, rimegepant), the ditan lasmiditan, celecoxib oral solution, and remote electrical neuromodulation (REN); new preventive options include IV eptinezumab, with emerging dual-use gepants (rimegepant, atogepant). Recommendations specify when to escalate from triptans/established preventives to these newer agents and how to measure response.

@@ -8,6 +8,8 @@ permalink: /neurology/epilepsy/aan-aes/
 
 **Source:** [canonical](https://www.neurology.org/doi/10.1212/WNL.0000000000001487) · [html](https://www.neurology.org/doi/full/10.1212/WNL.0000000000001487) · [pdf](https://www.neurology.org/doi/pdf/10.1212/WNL.0000000000001487)
 
+**Anki deck:** [Download just this guideline (.apkg)](https://github.com/cfu288/guidelines-flashcards/raw/main/build/decks/neurology/epilepsy/aan-aes.apkg) — safe to import alongside the mega deck; GUIDs align so review history is preserved.
+
 # Summary
 
 Evidence-based AAN/AES guideline on management of an unprovoked first seizure in adults, addressing recurrence risk, the effect of immediate antiepileptic drug (AED) therapy on short- and long-term prognosis, and AED adverse-event rates. Immediate AED treatment reduces 2-year recurrence risk but does not improve long-term seizure remission or quality of life. Decisions should be individualized, weighing recurrence risk factors against AED adverse effects and patient preferences.

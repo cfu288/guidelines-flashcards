@@ -8,6 +8,8 @@ permalink: /hematology-oncology/vte-treatment/2021-chest/
 
 **Source:** [canonical](https://journal.chestnet.org/article/S0012-3692(21)01506-3/fulltext) · [html](https://journal.chestnet.org/article/S0012-3692(21)01506-3/fulltext) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/34352279/)
 
+**Anki deck:** [Download just this guideline (.apkg)](https://github.com/cfu288/guidelines-flashcards/raw/main/build/decks/hematology-oncology/vte-treatment/2021-chest.apkg) — safe to import alongside the mega deck; GUIDs align so review history is preserved.
+
 # Summary
 
 Second update to the CHEST 9th edition guidelines on antithrombotic therapy for VTE, providing 29 guidance statements (13 strong recommendations) across 17 PICO questions. Major changes from prior versions include a strong recommendation for DOACs over VKA as first-line treatment-phase therapy, a strong recommendation for oral Xa inhibitors over LMWH in cancer-associated thrombosis, new guidance on antiphospholipid syndrome favoring VKA over DOACs, and endorsement of reduced-dose DOACs for extended-phase therapy. Anticoagulation phases are formally defined as initiation (5-21 days), treatment (3 months), and extended (no preplanned stop date).

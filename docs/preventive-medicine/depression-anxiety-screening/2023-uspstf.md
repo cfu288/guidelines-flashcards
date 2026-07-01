@@ -8,6 +8,8 @@ permalink: /preventive-medicine/depression-anxiety-screening/2023-uspstf/
 
 **Source:** [canonical](https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/screening-depression-suicide-risk-adults) · [html](https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/screening-depression-suicide-risk-adults)
 
+**Anki deck:** [Download just this guideline (.apkg)](https://github.com/cfu288/guidelines-flashcards/raw/main/build/decks/preventive-medicine/depression-anxiety-screening/2023-uspstf.apkg) — safe to import alongside the mega deck; GUIDs align so review history is preserved.
+
 # Summary
 
 USPSTF 2023 recommends screening all adults ≥19 years, including pregnant/postpartum persons and older adults ≥65, for major depressive disorder (Grade B). Evidence remains insufficient to recommend for or against routine suicide risk screening in asymptomatic adults (I statement). Recommendation is consistent with prior 2016 (depression) and 2014 (suicide) statements; screening must be coupled with systems to ensure diagnosis, treatment, and follow-up.

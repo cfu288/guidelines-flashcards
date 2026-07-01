@@ -8,6 +8,8 @@ permalink: /pulmonary/ards/2023-ats-esicm-sccm/
 
 **Source:** [canonical](https://pmc.ncbi.nlm.nih.gov/articles/PMC10354163/)
 
+**Anki deck:** [Download just this guideline (.apkg)](https://github.com/cfu288/guidelines-flashcards/raw/main/build/decks/pulmonary/ards/2023-ats-esicm-sccm.apkg) — safe to import alongside the mega deck; GUIDs align so review history is preserved.
+
 # Summary
 
 2023 ESICM update of the 2017 ATS/ESICM/SCCM ARDS guideline covering adult patients and non-pharmacological respiratory support (plus neuromuscular blockade) for ARDS including COVID-19 ARDS. The guideline addresses 21 PICO questions across nine domains: definition, phenotyping, HFNO, NIV/CPAP, low tidal volume ventilation, PEEP and recruitment maneuvers, prone positioning, neuromuscular blockade, and extracorporeal life support. New since 2017: explicit recommendations for HFNO over conventional oxygen, awake prone positioning in COVID-19, against routine recruitment maneuvers, and stronger guidance on VV-ECMO in EOLIA-eligible patients.

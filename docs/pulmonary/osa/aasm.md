@@ -8,6 +8,8 @@ permalink: /pulmonary/osa/aasm/
 
 **Source:** [canonical](https://aasm.org/clinical-resources/practice-standards/practice-guidelines/)
 
+**Anki deck:** [Download just this guideline (.apkg)](https://github.com/cfu288/guidelines-flashcards/raw/main/build/decks/pulmonary/osa/aasm.apkg) — safe to import alongside the mega deck; GUIDs align so review history is preserved.
+
 # Summary
 
 This document is the Bylaws of the American Academy of Sleep Medicine (updated January 2025), governing the corporate structure of the AASM as a Minnesota nonprofit. It is an organizational/governance document — not a clinical practice guideline — and contains no clinical recommendations, drug dosing, or diagnostic thresholds for sleep disorders. Content covers membership categories, Board of Directors composition and elections, Officer roles, and committee structure.

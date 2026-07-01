@@ -8,6 +8,8 @@ permalink: /endocrinology/male-hypogonadism/2018-endocrine-society/
 
 **Source:** [canonical](https://academic.oup.com/jcem/article/103/5/1715/4939465) · [html](https://academic.oup.com/jcem/article/103/5/1715/4939465)
 
+**Anki deck:** [Download just this guideline (.apkg)](https://github.com/cfu288/guidelines-flashcards/raw/main/build/decks/endocrinology/male-hypogonadism/2018-endocrine-society.apkg) — safe to import alongside the mega deck; GUIDs align so review history is preserved.
+
 # Summary
 
 Endocrine Society 2018 update to the 2010 guideline on testosterone therapy in men with hypogonadism. Diagnosis requires both symptoms/signs of testosterone deficiency AND unequivocally low, repeated morning fasting total testosterone; free testosterone is reserved for borderline values or altered SHBG. T therapy is indicated only for symptomatic hypogonadal men to restore secondary sex characteristics and correct symptoms, with specific contraindications and a structured monitoring plan targeting mid-normal serum T concentrations.

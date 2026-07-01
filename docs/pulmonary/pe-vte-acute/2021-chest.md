@@ -8,6 +8,8 @@ permalink: /pulmonary/pe-vte-acute/2021-chest/
 
 **Source:** [canonical](https://journal.chestnet.org/article/S0012-3692(21)01506-3/fulltext) · [html](https://journal.chestnet.org/article/S0012-3692(21)01506-3/fulltext)
 
+**Anki deck:** [Download just this guideline (.apkg)](https://github.com/cfu288/guidelines-flashcards/raw/main/build/decks/pulmonary/pe-vte-acute/2021-chest.apkg) — safe to import alongside the mega deck; GUIDs align so review history is preserved.
+
 # Summary
 
 Second update to the 9th edition CHEST guideline on antithrombotic therapy for VTE, providing 29 guidance statements (13 strong) across 17 PICO questions covering initial management, treatment-phase anticoagulation, extended-phase secondary prevention, and PTS prevention. Major changes from 2016 include strong preference for DOACs over VKA for treatment phase, preference for oral Xa inhibitors over LMWH in cancer-associated thrombosis, new guidance on cerebral vein thrombosis, antiphospholipid syndrome, reduced-dose DOACs for extended phase, and superficial vein thrombosis. New nomenclature defines three phases: initiation (5-21 days), treatment (3 months), and extended (no preplanned stop date).

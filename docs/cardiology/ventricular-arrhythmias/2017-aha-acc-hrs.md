@@ -8,6 +8,8 @@ permalink: /cardiology/ventricular-arrhythmias/2017-aha-acc-hrs/
 
 **Source:** [canonical](https://www.ahajournals.org/doi/10.1161/CIR.0000000000000549) · [html](https://www.ahajournals.org/doi/full/10.1161/CIR.0000000000000549) · [pdf](https://www.ahajournals.org/doi/pdf/10.1161/CIR.0000000000000549)
 
+**Anki deck:** [Download just this guideline (.apkg)](https://github.com/cfu288/guidelines-flashcards/raw/main/build/decks/cardiology/ventricular-arrhythmias/2017-aha-acc-hrs.apkg) — safe to import alongside the mega deck; GUIDs align so review history is preserved.
+
 # Summary
 
 Comprehensive guideline for managing ventricular arrhythmias (VA) and preventing sudden cardiac death (SCD), superseding the 2006 ACC/AHA/ESC document and the ICD sections of the 2008 device guideline. Covers acute VA management, ICD indications (primary and secondary prevention) across ischemic and nonischemic cardiomyopathy, channelopathies, HCM, ARVC, sarcoidosis, congenital heart disease, and special populations. Emphasizes shared decision-making, GDMT optimization before primary prevention ICD, and the role of catheter ablation for recurrent VT.

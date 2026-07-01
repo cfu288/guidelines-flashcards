@@ -8,6 +8,8 @@ permalink: /infectious-diseases/hiv/2024-ias-usa/
 
 **Source:** [canonical](https://jamanetwork.com/journals/jama/fullarticle/2827545) · [html](https://jamanetwork.com/journals/jama/fullarticle/2827545) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/39616496/)
 
+**Anki deck:** [Download just this guideline (.apkg)](https://github.com/cfu288/guidelines-flashcards/raw/main/build/decks/infectious-diseases/hiv/2024-ias-usa.apkg) — safe to import alongside the mega deck; GUIDs align so review history is preserved.
+
 # Summary
 
 The IAS-USA 2024 panel updates recommendations for antiretroviral therapy and HIV prevention in adults. ART is recommended for all individuals with HIV, with bictegravir- or dolutegravir-based InSTI regimens plus 2 NRTIs (TXF/XTC) as preferred initial therapy; DTG/3TC is the only recommended 2-drug initial option. New elements include broader statin use for ASCVD primary prevention (per REPRIEVE), doxycycline PEP for bacterial STI prevention, long-acting cabotegravir for PrEP, and integrated management of substance use disorders, weight gain, and cardiometabolic comorbidities.

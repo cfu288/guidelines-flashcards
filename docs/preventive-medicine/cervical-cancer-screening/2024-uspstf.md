@@ -8,6 +8,8 @@ permalink: /preventive-medicine/cervical-cancer-screening/2024-uspstf/
 
 **Source:** [canonical](https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/cervical-cancer-screening) · [html](https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/cervical-cancer-screening)
 
+**Anki deck:** [Download just this guideline (.apkg)](https://github.com/cfu288/guidelines-flashcards/raw/main/build/decks/preventive-medicine/cervical-cancer-screening/2024-uspstf.apkg) — safe to import alongside the mega deck; GUIDs align so review history is preserved.
+
 # Summary
 
 USPSTF cervical cancer screening recommendation for asymptomatic individuals with a cervix. Screen women 21–29 with cytology every 3 years; screen women 30–65 with cytology every 3 years, primary hrHPV testing every 5 years, or hrHPV/cytology cotesting every 5 years (all Grade A). Do not screen women \<21, women >65 with adequate prior screening, or women post-hysterectomy with cervix removed and no prior high-grade lesion (Grade D). Major change from 2012: primary hrHPV testing every 5 years added as a stand-alone option for women ≥30.

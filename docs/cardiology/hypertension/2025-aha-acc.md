@@ -8,6 +8,8 @@ permalink: /cardiology/hypertension/2025-aha-acc/
 
 **Source:** [canonical](https://www.ahajournals.org/doi/10.1161/CIR.0000000000001356) · [html](https://www.ahajournals.org/doi/full/10.1161/CIR.0000000000001356) · [pdf](https://www.ahajournals.org/doi/pdf/10.1161/CIR.0000000000001356)
 
+**Anki deck:** [Download just this guideline (.apkg)](https://github.com/cfu288/guidelines-flashcards/raw/main/build/decks/cardiology/hypertension/2025-aha-acc.apkg) — safe to import alongside the mega deck; GUIDs align so review history is preserved.
+
 # Summary
 
 Multisociety update replacing the 2017 hypertension guideline, redefining BP categories, treatment thresholds, and goals using the PREVENT 10-year CVD risk equation rather than pooled cohort equations. Universal BP target is \<130/80 mm Hg, with risk-based initiation of pharmacotherapy at ≥130/80 mm Hg for high-risk patients and ≥140/90 mm Hg for all others. New recommendations address primary aldosteronism screening in resistant hypertension, potassium-based salt substitutes, pregnancy management (including aspirin prophylaxis), renal denervation, and management of acute ICH and stroke.

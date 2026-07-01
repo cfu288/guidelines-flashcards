@@ -8,6 +8,8 @@ permalink: /infectious-diseases/antimicrobial-stewardship/2016-idsa-shea/
 
 **Source:** [canonical](https://academic.oup.com/cid/article/62/10/e51/2462846) · [html](https://academic.oup.com/cid/article/62/10/e51/2462846) · [pmc](https://pmc.ncbi.nlm.nih.gov/articles/PMC5006285/)
 
+**Anki deck:** [Download just this guideline (.apkg)](https://github.com/cfu288/guidelines-flashcards/raw/main/build/decks/infectious-diseases/antimicrobial-stewardship/2016-idsa-shea.apkg) — safe to import alongside the mega deck; GUIDs align so review history is preserved.
+
 # Summary
 
 IDSA/SHEA 2016 guideline on implementing antibiotic stewardship programs (ASPs) in acute inpatient, long-term care, and ED settings. Provides 28 GRADE-rated recommendations across interventions, optimization, microbiology/diagnostics, measurement, and special populations. Emphasizes preauthorization and/or prospective audit and feedback as core ASP activities led by ID physicians with pharmacist partners.

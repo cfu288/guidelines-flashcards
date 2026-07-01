@@ -8,6 +8,8 @@ permalink: /nephrology/ckd-mbd/2017-kdigo/
 
 **Source:** [canonical](https://kdigo.org/wp-content/uploads/2017/02/2017-KDIGO-CKD-MBD-GL-Update.pdf)
 
+**Anki deck:** [Download just this guideline (.apkg)](https://github.com/cfu288/guidelines-flashcards/raw/main/build/decks/nephrology/ckd-mbd/2017-kdigo.apkg) — safe to import alongside the mega deck; GUIDs align so review history is preserved.
+
 # Summary
 
 Selective update of the 2009 KDIGO CKD-MBD guideline addressing diagnosis and treatment of mineral and bone disorders in CKD G3a–G5D and kidney transplant recipients. Key revisions: BMD testing is now recommended (rather than discouraged) because newer cohort data show DXA predicts fracture in CKD; phosphate-lowering therapy is reserved for overt/progressive hyperphosphatemia rather than preventive normalization; calcium-based phosphate binders should be restricted across all CKD stages (not only with hypercalcemia); routine calcitriol/vitamin D analogs are not recommended in CKD G3a–G5 non-dialysis due to hypercalcemia risk; and calcimimetics, calcitriol, or vitamin D analogs are all acceptable first-line PTH-lowering options in CKD G5D.

@@ -8,6 +8,8 @@ permalink: /cardiology/acs/2025-acc-aha-acep-naemsp-scai/
 
 **Source:** [canonical](https://www.ahajournals.org/doi/10.1161/CIR.0000000000001309) · [html](https://www.ahajournals.org/doi/full/10.1161/CIR.0000000000001309) · [pdf](https://www.ahajournals.org/doi/pdf/10.1161/CIR.0000000000001309)
 
+**Anki deck:** [Download just this guideline (.apkg)](https://github.com/cfu288/guidelines-flashcards/raw/main/build/decks/cardiology/acs/2025-acc-aha-acep-naemsp-scai.apkg) — safe to import alongside the mega deck; GUIDs align so review history is preserved.
+
 # Summary
 
 Comprehensive 2025 multisociety guideline for management of acute coronary syndromes (STEMI, NSTEMI, unstable angina), replacing the 2013 STEMI, 2014 NSTE-ACS, 2015 PPCI focused update, and 2016 DAPT duration focused update guidelines. Major updates include preference for ticagrelor/prasugrel over clopidogrel, ticagrelor monotherapy after 1 month of DAPT in select patients, more aggressive LDL-C targets (\<70 mg/dL, intensify if 55–\<70), complete revascularization (preferably single-setting) in STEMI, routine radial access, intracoronary imaging for complex PCI, microaxial flow pump for selected AMI cardiogenic shock, and a more liberal transfusion threshold (Hb ~10 g/dL) in ACS with anemia.

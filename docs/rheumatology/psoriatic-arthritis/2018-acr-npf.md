@@ -8,6 +8,8 @@ permalink: /rheumatology/psoriatic-arthritis/2018-acr-npf/
 
 **Source:** [canonical](https://assets.contentstack.io/v3/assets/bltee37abb6b278ab2c/blt62e279f29f7d5435/6332144ffef925355ad7b25a/psoriatic-arthritis-guideline-2018.pdf) · [html](https://acrjournals.onlinelibrary.wiley.com/doi/10.1002/acr.23789) · [pmc](https://pmc.ncbi.nlm.nih.gov/articles/PMC8218333/)
 
+**Anki deck:** [Download just this guideline (.apkg)](https://github.com/cfu288/guidelines-flashcards/raw/main/build/decks/rheumatology/psoriatic-arthritis/2018-acr-npf.apkg) — safe to import alongside the mega deck; GUIDs align so review history is preserved.
+
 # Summary
 
 First joint ACR/NPF guideline for treating active psoriatic arthritis (PsA), using GRADE methodology to address pharmacologic and nonpharmacologic management in treatment-naive patients, those failing prior therapy, and special populations (axial disease, enthesitis, IBD, diabetes, recurrent infections). Notably recommends TNF inhibitor biologics as first-line over oral small molecules (OSMs) in most treatment-naive patients with active PsA—a departure from EULAR/GRAPPA which preferred OSMs first. Endorses a treat-to-target strategy, smoking cessation, and vaccination considerations around biologic initiation. 94% of recommendations are conditional based on low/very-low-quality evidence.

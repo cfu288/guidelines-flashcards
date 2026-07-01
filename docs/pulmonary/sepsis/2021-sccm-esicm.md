@@ -8,6 +8,8 @@ permalink: /pulmonary/sepsis/2021-sccm-esicm/
 
 **Source:** [canonical](https://www.sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-guidelines-2021) · [html](https://journals.lww.com/ccmjournal/fulltext/2021/11000/surviving_sepsis_campaign__international.21.aspx) · [pmc](https://pmc.ncbi.nlm.nih.gov/articles/PMC8486643/)
 
+**Anki deck:** [Download just this guideline (.apkg)](https://github.com/cfu288/guidelines-flashcards/raw/main/build/decks/pulmonary/sepsis/2021-sccm-esicm.apkg) — safe to import alongside the mega deck; GUIDs align so review history is preserved.
+
 # Summary
 
 The 2021 Surviving Sepsis Campaign guidelines provide updated international recommendations for management of adults with sepsis and septic shock, covering screening, initial resuscitation, infection control, hemodynamic support, ventilation, adjunctive therapies, and long-term outcomes. Notable updates from 2016 include a strong recommendation against qSOFA as a sole screening tool, favoring balanced crystalloids over normal saline, suggesting peripheral vasopressor initiation, prolonged beta-lactam infusion, restrictive RRT timing, and new emphasis on post-sepsis recovery, peer support, and follow-up.

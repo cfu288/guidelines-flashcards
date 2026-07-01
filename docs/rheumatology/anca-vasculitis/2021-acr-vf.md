@@ -8,6 +8,8 @@ permalink: /rheumatology/anca-vasculitis/2021-acr-vf/
 
 **Source:** [canonical](https://assets.contentstack.io/v3/assets/bltee37abb6b278ab2c/blt9e4b7f8c646447ec/6331de84763d011cd3e9310e/anca-associated-vasculitis-guideline-2021.pdf) · [html](https://acrjournals.onlinelibrary.wiley.com/doi/10.1002/acr.24634) · [pmc](https://pmc.ncbi.nlm.nih.gov/articles/PMC12344527/)
 
+**Anki deck:** [Download just this guideline (.apkg)](https://github.com/cfu288/guidelines-flashcards/raw/main/build/decks/rheumatology/anca-vasculitis/2021-acr-vf.apkg) — safe to import alongside the mega deck; GUIDs align so review history is preserved.
+
 # Summary
 
 First ACR/Vasculitis Foundation guideline for management of ANCA-associated vasculitis (GPA, MPA, EGPA), providing 26 recommendations + 5 position statements for GPA/MPA and 15 recommendations + 5 position statements for EGPA. Key themes: rituximab preferred over cyclophosphamide for remission induction and maintenance in severe GPA/MPA, mepolizumab introduced for non-severe EGPA, reduced-dose glucocorticoid regimens favored, and routine plasma exchange not recommended. All recommendations are conditional due to limited high-quality evidence. Avacopan was not considered (post-search FDA approval).

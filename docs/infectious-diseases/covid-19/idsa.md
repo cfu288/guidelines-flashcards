@@ -8,6 +8,8 @@ permalink: /infectious-diseases/covid-19/idsa/
 
 **Source:** [canonical](https://www.idsociety.org/practice-guideline/covid-19-guideline-treatment-and-management/) · [html](https://www.idsociety.org/practice-guideline/covid-19-guideline-treatment-and-management/)
 
+**Anki deck:** [Download just this guideline (.apkg)](https://github.com/cfu288/guidelines-flashcards/raw/main/build/decks/infectious-diseases/covid-19/idsa.apkg) — safe to import alongside the mega deck; GUIDs align so review history is preserved.
+
 # Summary
 
 IDSA living guideline on pharmacologic treatment and prevention of COVID-19, updated through October 2025. Covers antiviral selection for mild-to-moderate disease (nirmatrelvir/ritonavir preferred, then remdesivir, then molnupiravir), immunomodulator selection for severe/critical hospitalized disease (corticosteroids plus baricitinib or tocilizumab; abatacept or infliximab as alternatives), and pre-exposure prophylaxis with pemivibart in immunocompromised hosts. Recommendations against hydroxychloroquine, lopinavir/ritonavir, ivermectin, colchicine, famotidine, and routine convalescent plasma in immunocompetent hospitalized patients.

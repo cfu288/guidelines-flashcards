@@ -8,6 +8,8 @@ permalink: /endocrinology/primary-aldosteronism/2016-endocrine-society/
 
 **Source:** [canonical](https://academic.oup.com/jcem/article/101/5/1889/2804729) · [html](https://academic.oup.com/jcem/article/101/5/1889/2804729)
 
+**Anki deck:** [Download just this guideline (.apkg)](https://github.com/cfu288/guidelines-flashcards/raw/main/build/decks/endocrinology/primary-aldosteronism/2016-endocrine-society.apkg) — safe to import alongside the mega deck; GUIDs align so review history is preserved.
+
 # Summary
 
 2016 Endocrine Society update on detection, diagnosis, and treatment of primary aldosteronism (PA), revising the 2008 version. Recommends screening high-risk hypertensive groups with aldosterone-to-renin ratio (ARR), confirmatory testing, adrenal CT plus adrenal venous sampling (AVS) for subtype classification, laparoscopic adrenalectomy for unilateral disease, and mineralocorticoid receptor (MR) antagonists for bilateral disease. New features include broadened screening criteria (BP >150/100), abbreviated workup for patients with spontaneous hypokalemia plus undetectable renin plus PAC >20 ng/dL, and incorporation of somatic/germline mutation data (KCNJ5, FH-III).

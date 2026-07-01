@@ -8,6 +8,8 @@ permalink: /neurology/acute-ischemic-stroke/2026-aha-asa/
 
 **Source:** [canonical](https://www.ahajournals.org/doi/10.1161/STR.0000000000000513) · [html](https://www.ahajournals.org/doi/full/10.1161/STR.0000000000000513) · [pdf](https://www.ahajournals.org/doi/pdf/10.1161/STR.0000000000000513)
 
+**Anki deck:** [Download just this guideline (.apkg)](https://github.com/cfu288/guidelines-flashcards/raw/main/build/decks/neurology/acute-ischemic-stroke/2026-aha-asa.apkg) — safe to import alongside the mega deck; GUIDs align so review history is preserved.
+
 # Summary
 
 The 2026 AHA/ASA guideline replaces the 2018 guideline and 2019 update for early management of acute ischemic stroke, spanning prehospital care through early in-hospital management. Major updates include endorsement of tenecteplase as equivalent to alteplase within 4.5 hours, expanded EVT eligibility (large cores, basilar occlusion to 24 h, selected pediatric patients), extended-window IVT (4.5–9 h with perfusion mismatch), abandonment of intensive glucose (80–130 mg/dL) and intensive post-EVT BP (\<140 mm Hg) targets, mobile stroke unit endorsement, and first-time pediatric EVT/IVT recommendations.

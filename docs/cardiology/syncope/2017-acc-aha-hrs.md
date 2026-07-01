@@ -8,6 +8,8 @@ permalink: /cardiology/syncope/2017-acc-aha-hrs/
 
 **Source:** [canonical](https://www.ahajournals.org/doi/10.1161/cir.0000000000000499) · [html](https://www.ahajournals.org/doi/full/10.1161/cir.0000000000000499) · [pdf](https://www.ahajournals.org/doi/pdf/10.1161/cir.0000000000000499)
 
+**Anki deck:** [Download just this guideline (.apkg)](https://github.com/cfu288/guidelines-flashcards/raw/main/build/decks/cardiology/syncope/2017-acc-aha-hrs.apkg) — safe to import alongside the mega deck; GUIDs align so review history is preserved.
+
 # Summary
 
 The 2017 ACC/AHA/HRS syncope guideline provides comprehensive recommendations for the evaluation and management of adult and pediatric patients with syncope, defined as abrupt transient loss of consciousness from cerebral hypoperfusion with rapid spontaneous recovery. Initial evaluation centers on detailed history, physical exam, and 12-lead ECG, with risk stratification directing disposition. The guideline addresses cardiac (arrhythmic, structural, inheritable channelopathies), reflex (vasovagal, carotid sinus, situational), and orthostatic causes, and gives population-specific guidance for pediatric, geriatric, athletic, ACHD patients, and drivers.

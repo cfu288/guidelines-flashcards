@@ -8,6 +8,8 @@ permalink: /gi-hepatology/portal-hypertension/2024-aasld/
 
 **Source:** [canonical](https://journals.lww.com/hep/fulltext/2024/05000/aasld_practice_guidance_on_risk_stratification_and.22.aspx) · [html](https://journals.lww.com/hep/fulltext/2024/05000/aasld_practice_guidance_on_risk_stratification_and.22.aspx)
 
+**Anki deck:** [Download just this guideline (.apkg)](https://github.com/cfu288/guidelines-flashcards/raw/main/build/decks/gi-hepatology/portal-hypertension/2024-aasld.apkg) — safe to import alongside the mega deck; GUIDs align so review history is preserved.
+
 # Summary
 
 AASLD 2024 Practice Guidance on risk stratification and management of portal hypertension and varices in cirrhosis updates the 2017 guidance and harmonizes with Baveno VII. Major changes include adoption of compensated advanced chronic liver disease (cACLD) as a noninvasive surrogate for cirrhosis, codification of noninvasive criteria (LSM + platelets, "Rule of Five") to identify clinically significant portal hypertension (CSPH), and a paradigm shift toward early nonselective beta-blocker (preferably carvedilol) therapy in CSPH to prevent first decompensation. New sections address preemptive TIPS in high-risk acute variceal hemorrhage, cardiofundal gastric varices, portal hypertensive gastropathy, and endoscopy prior to TEE/antineoplastic therapy.

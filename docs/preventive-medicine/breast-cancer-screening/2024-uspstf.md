@@ -8,6 +8,8 @@ permalink: /preventive-medicine/breast-cancer-screening/2024-uspstf/
 
 **Source:** [canonical](https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/breast-cancer-screening) · [html](https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/breast-cancer-screening)
 
+**Anki deck:** [Download just this guideline (.apkg)](https://github.com/cfu288/guidelines-flashcards/raw/main/build/decks/preventive-medicine/breast-cancer-screening/2024-uspstf.apkg) — safe to import alongside the mega deck; GUIDs align so review history is preserved.
+
 # Summary
 
 The 2024 USPSTF recommends biennial screening mammography for all women aged 40 to 74 years (Grade B), using either digital mammography or digital breast tomosynthesis. This updates the 2016 statement, which had recommended individualized decision-making for women in their 40s; universal screening starting at 40 was driven by rising breast cancer incidence in women 40-49 and modeling showing additional deaths averted, particularly for Black women. Evidence remains insufficient (I statement) for screening women ≥75 years and for supplemental ultrasound or MRI in women with dense breasts.

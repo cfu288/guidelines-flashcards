@@ -8,6 +8,8 @@ permalink: /gi-hepatology/cirrhosis-ascites/2021-aasld/
 
 **Source:** [canonical](https://onlinelibrary.wiley.com/doi/full/10.1002/hep.31884) · [html](https://onlinelibrary.wiley.com/doi/full/10.1002/hep.31884)
 
+**Anki deck:** [Download just this guideline (.apkg)](https://github.com/cfu288/guidelines-flashcards/raw/main/build/decks/gi-hepatology/cirrhosis-ascites/2021-aasld.apkg) — safe to import alongside the mega deck; GUIDs align so review history is preserved.
+
 # Summary
 
 AASLD 2021 practice guidance on diagnosis, evaluation, and management of ascites, spontaneous bacterial peritonitis (SBP), and hepatorenal syndrome (HRS) in chronic liver disease, replacing the 2012 guideline. Updates include expanded AKI/HRS-AKI terminology and algorithms, refined hyponatremia management with albumin, broader antibiotic guidance reflecting MDRO emergence, simultaneous liver-kidney transplant eligibility, and a new pediatric section. Recommendations are consensus-based given limited RCT evidence.

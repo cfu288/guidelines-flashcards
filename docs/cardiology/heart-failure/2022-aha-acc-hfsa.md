@@ -8,6 +8,8 @@ permalink: /cardiology/heart-failure/2022-aha-acc-hfsa/
 
 **Source:** [canonical](https://www.ahajournals.org/doi/10.1161/CIR.0000000000001063) · [html](https://www.ahajournals.org/doi/full/10.1161/CIR.0000000000001063) · [pdf](https://www.ahajournals.org/doi/pdf/10.1161/CIR.0000000000001063)
 
+**Anki deck:** [Download just this guideline (.apkg)](https://github.com/cfu288/guidelines-flashcards/raw/main/build/decks/cardiology/heart-failure/2022-aha-acc-hfsa.apkg) — safe to import alongside the mega deck; GUIDs align so review history is preserved.
+
 # Summary
 
 Comprehensive update replacing the 2013 and 2017 ACCF/AHA HF guidelines, covering prevention, diagnosis, staging, and management across the full spectrum of heart failure. Key changes include four-pillar GDMT for HFrEF with addition of SGLT2 inhibitors, new recommendations for HFpEF (SGLT2i Class 2a; MRA and ARNi Class 2b), revised stage terminology ("at-risk" stage A, "pre-HF" stage B), introduction of HFimpEF category, expanded cardiac amyloidosis diagnostic/treatment recommendations, and cost-value statements for selected therapies.

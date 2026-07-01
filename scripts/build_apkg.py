@@ -43,7 +43,7 @@ import json
 import re
 import sys
 from pathlib import Path
-from typing import Optional
+from typing import NamedTuple, Optional
 
 import genanki
 import yaml
@@ -59,6 +59,7 @@ def escape_field(s: str) -> str:
 
 INPUT_PATH = Path("build/cards.jsonl")
 OUTPUT_PATH = Path("build/guidelines.apkg")
+SUBDECK_ROOT = Path("build/decks")
 CLASSIFICATIONS_PATH = Path("build/card-classifications.jsonl")
 BUNDLE_ROOT = Path("references/guidelines")
 MANIFEST_PATH = Path("manifest.yaml")
@@ -136,6 +137,7 @@ CARD_TEMPLATE_BACK = """{{cloze:Text}}
   <div class="provenance">
     {{Society}}{{#Year}} &middot; {{Year}}{{/Year}} &middot; <span class="path">{{System}} / {{Topic}}</span>
   </div>
+  {{#Site}}<div class="site-link"><a href="{{Site}}">Read the summary &amp; open the guideline &rarr;</a></div>{{/Site}}
 </div>
 """
 
@@ -155,10 +157,22 @@ hr { border: 0; border-top: 1px solid #ddd; margin: 1em 0 0.5em; }
 .meta { font-size: 0.78em; color: #777; line-height: 1.4; }
 .source { margin-bottom: 0.25em; }
 .provenance .path { font-family: ui-monospace, SFMono-Regular, monospace; color: #999; }
+.site-link { margin-top: 0.5em; }
+.site-link a { color: #3182ce; text-decoration: none; }
+.site-link a:hover { text-decoration: underline; }
 """
 
 
 FRONTMATTER_RE = re.compile(r"^---\n(.*?)\n---\n?(.*)$", re.DOTALL)
+
+
+class Recipe(NamedTuple):
+    guid: str
+    deck_path: str
+    system_title_deck: str  # "Internal Medicine Guidelines::Cardiology"
+    concept_key: tuple[str, str, str]  # (system_slug, topic_slug, version_slug)
+    fields: list[str]
+    tags: list[str]
 
 
 def load_concept_frontmatter(system: str, topic: str, version: str) -> dict:
@@ -238,6 +252,10 @@ def build_model() -> genanki.Model:
             {"name": "Topic"},
             {"name": "Society"},
             {"name": "Year"},
+            # Appended field — safe on re-import because MODEL_ID is unchanged
+            # and Anki upgrades notes in place, populating existing rows with
+            # the new field's value on next import.
+            {"name": "Site"},
         ],
         templates=[
             {
@@ -290,17 +308,6 @@ def main() -> int:
             "dosing tag will not be applied (run `just qa-dosing` to generate)"
         )
 
-    # Parent deck included so its ID is preserved (migration from old single deck).
-    # Intermediate (per-system) decks are auto-created by Anki on import from the
-    # leaf deck names.
-    parent_deck = genanki.Deck(PARENT_DECK_ID, PARENT_DECK_NAME)
-    decks: dict[str, genanki.Deck] = {PARENT_DECK_NAME: parent_deck}
-
-    def get_deck(name: str) -> genanki.Deck:
-        if name not in decks:
-            decks[name] = genanki.Deck(deck_id_for(name), name)
-        return decks[name]
-
     fm_cache: dict[tuple[str, str, str], dict] = {}
 
     def get_fm(system: str, topic: str, version: str) -> dict:
@@ -309,8 +316,11 @@ def main() -> int:
             fm_cache[key] = load_concept_frontmatter(system, topic, version)
         return fm_cache[key]
 
+    # Phase 1: build note recipes so we can assemble the mega deck AND per-concept
+    # sub-decks from the same source-of-truth records. genanki.Note instances are
+    # bound to a single Deck, so we create fresh Notes in each output phase.
+    recipes: list[Recipe] = []
     n_rows = 0
-    n_added = 0
     seen_guids: set[str] = set()
     deck_card_counts: dict[str, int] = {}
 
@@ -337,13 +347,12 @@ def main() -> int:
             year_val: Optional[int] = fm.get("year")
             year = str(year_val) if year_val is not None else ""
 
-            # Resolve subdeck for this card
             deck_path = deck_name_for(system, topic, society, year_val, ctx)
-            target_deck = get_deck(deck_path)
             deck_card_counts[deck_path] = deck_card_counts.get(deck_path, 0) + 1
 
-            # Build tags: existing (minus old flat scheme we now supplant) +
-            # namespaced system/topic/society/year/status/high-yield.
+            sys_title = ctx["system_titles"].get(system, system)
+            system_title_deck = f"{PARENT_DECK_NAME}::{sys_title}"
+
             raw_tags = (row.get("tags") or "").split()
             tags = [t for t in raw_tags if not _is_supplanted_tag(t)]
             tag_set = set(tags)
@@ -365,40 +374,91 @@ def main() -> int:
                 add_tag(HIGH_YIELD_TAG)
             if guid in dosing_guids:
                 add_tag(DOSING_TAG)
-            # Supersession: this version is superseded if a later year exists from the same society
             max_year = ctx["max_year_for"].get((system, topic, society))
             if year_val is not None and max_year is not None and year_val < max_year:
                 add_tag(f"{TAG_ROOT}::status::superseded")
 
-            note = genanki.Note(
-                model=model,
+            # Deep-dive page URL for this card's concept. Kept as an absolute
+            # URL (not relative) so the link works when a card is reviewed
+            # inside Anki — the client renders HTML but has no baseurl context.
+            site_url = (
+                f"https://cfu288.github.io/guidelines-flashcards/"
+                f"{system}/{topic}/{version}/"
+                if system and topic and version
+                else ""
+            )
+
+            recipes.append(Recipe(
+                guid=guid,
+                deck_path=deck_path,
+                system_title_deck=system_title_deck,
+                concept_key=(system, topic, version),
                 fields=[
                     escape_field(row.get("text", "")),
-                    "",  # Back Extra — empty for now; reserved for future hand annotations
+                    "",  # Back Extra — empty for now
                     escape_field(row.get("extra", "")),
                     system,
                     topic,
                     escape_field(society),
                     year,
+                    site_url,
                 ],
                 tags=tags,
-                guid=guid,
+            ))
+
+    def make_note(r: Recipe) -> genanki.Note:
+        return genanki.Note(model=model, fields=r.fields, tags=r.tags, guid=r.guid)
+
+    # Phase 2a: mega deck — everything under one .apkg
+    mega_parent = genanki.Deck(PARENT_DECK_ID, PARENT_DECK_NAME)
+    mega_decks: dict[str, genanki.Deck] = {PARENT_DECK_NAME: mega_parent}
+    for r in recipes:
+        if r.system_title_deck not in mega_decks:
+            mega_decks[r.system_title_deck] = genanki.Deck(
+                deck_id_for(r.system_title_deck), r.system_title_deck
             )
-            target_deck.add_note(note)
-            n_added += 1
+        if r.deck_path not in mega_decks:
+            mega_decks[r.deck_path] = genanki.Deck(deck_id_for(r.deck_path), r.deck_path)
+        mega_decks[r.deck_path].add_note(make_note(r))
 
     OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
-    genanki.Package(list(decks.values())).write_to_file(str(OUTPUT_PATH))
+    genanki.Package(list(mega_decks.values())).write_to_file(str(OUTPUT_PATH))
 
+    # Phase 2b: per-concept sub-decks — one .apkg per (system, topic, version).
+    # Each carries the same stable IDs for parent + system + leaf so importing
+    # multiple sub-decks (or a sub-deck then the mega) merges cleanly on GUID
+    # for notes and on deck-ID for the hierarchy — no orphan trees, no dupe
+    # notes, FSRS history preserved.
+    by_concept: dict[tuple[str, str, str], list[Recipe]] = {}
+    for r in recipes:
+        by_concept.setdefault(r.concept_key, []).append(r)
+
+    n_subdecks = 0
+    for (system, topic, version), group in by_concept.items():
+        if not (system and topic and version):
+            continue
+        sub_parent = genanki.Deck(PARENT_DECK_ID, PARENT_DECK_NAME)
+        sub_system = genanki.Deck(
+            deck_id_for(group[0].system_title_deck), group[0].system_title_deck
+        )
+        sub_leaf = genanki.Deck(deck_id_for(group[0].deck_path), group[0].deck_path)
+        for r in group:
+            sub_leaf.add_note(make_note(r))
+        out = SUBDECK_ROOT / system / topic / f"{version}.apkg"
+        out.parent.mkdir(parents=True, exist_ok=True)
+        genanki.Package([sub_parent, sub_system, sub_leaf]).write_to_file(str(out))
+        n_subdecks += 1
+
+    n_added = len(recipes)
     dup_skipped = n_rows - n_added
-    n_leaf_decks = len(decks) - 1  # minus parent
+    n_leaf_decks = len(mega_decks) - 1  # minus parent (system intermediates counted)
     print(f"wrote {n_added} notes → {OUTPUT_PATH}")
     if dup_skipped:
         print(f"  (skipped {dup_skipped} rows with duplicate GUIDs)")
-    print(f"  model: {MODEL_NAME} (id={MODEL_ID}) · 7 fields · cloze")
+    print(f"  model: {MODEL_NAME} (id={MODEL_ID}) · 8 fields · cloze")
     print(f"  parent deck: {PARENT_DECK_NAME!r} (id={PARENT_DECK_ID})")
     print(f"  leaf decks:  {n_leaf_decks}")
-    # Show top-5 deck sizes for sanity
+    print(f"  per-concept sub-decks: {n_subdecks} → {SUBDECK_ROOT}/<sys>/<topic>/<version>.apkg")
     if deck_card_counts:
         top = sorted(deck_card_counts.items(), key=lambda kv: -kv[1])[:5]
         print(f"  largest decks:")

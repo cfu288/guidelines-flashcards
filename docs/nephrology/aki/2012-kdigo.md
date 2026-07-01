@@ -8,6 +8,8 @@ permalink: /nephrology/aki/2012-kdigo/
 
 **Source:** [canonical](https://kdigo.org/wp-content/uploads/2016/10/KDIGO-2012-AKI-Guideline-English.pdf) · [html](https://www.sciencedirect.com/journal/kidney-international-supplements/vol/2/issue/1)
 
+**Anki deck:** [Download just this guideline (.apkg)](https://github.com/cfu288/guidelines-flashcards/raw/main/build/decks/nephrology/aki/2012-kdigo.apkg) — safe to import alongside the mega deck; GUIDs align so review history is preserved.
+
 # Summary
 
 KDIGO's 2012 guideline establishes a unified definition and staging system for acute kidney injury (AKI) by merging RIFLE and AKIN criteria, and provides evidence-graded recommendations for risk assessment, prevention, pharmacologic management, contrast-induced AKI (CI-AKI), and renal replacement therapy (RRT). It emphasizes early recognition, hemodynamic optimization with crystalloids, avoidance of nephrotoxins, and stage-based management. Specific guidance is given for RRT timing, modality, anticoagulation, vascular access, dose, and buffer choice.
