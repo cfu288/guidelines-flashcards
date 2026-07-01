@@ -460,6 +460,109 @@ def render_version_page(
     return "\n".join(header_lines) + "\n" + body + "\n"
 
 
+def render_topic_index_page(
+    system_slug: str,
+    system_title: str,
+    topic_slug: str,
+    topic_block: dict,
+) -> str:
+    """Landing page for /<system>/<topic>/. Without this file the folder URL
+    404s (Jekyll only emits pages for .md files, and topic folders previously
+    contained only per-version files). Users who guess the folder URL, share
+    a folder-level link, or land on a stale reference now get a real page
+    listing the topic's versions with high-yield / society metadata and a
+    direct download for the current guideline's Anki sub-deck when enriched.
+
+    just-the-docs nav placement: parent is the system, so the topic sits in
+    the sidebar under its system. Per-version deep-dive pages remain
+    grandchildren of the system (they use `parent: <system_title>`), so the
+    sidebar tree stays two-deep — the topic index page inserts itself as a
+    peer of the version pages rather than as a new nav level, which keeps
+    the sidebar compact.
+    """
+    title = topic_block.get("title") or topic_slug
+    society = topic_block.get("society")
+    high_yield = topic_block.get("high_yield")
+    versions = topic_block.get("versions") or []
+
+    fm_title = f"{title} ⭐" if high_yield else title
+    lines: list[str] = [
+        "---",
+        f"title: {fm_title!r}",
+        f"parent: {system_title!r}",
+        f"permalink: /{system_slug}/{topic_slug}/",
+        "---",
+        "",
+        f"# {title}" + (" ⭐" if high_yield else ""),
+        "",
+    ]
+    meta_parts = [f"`{topic_slug}`"]
+    if society:
+        meta_parts.append(f"society: **{society}**")
+    if high_yield:
+        meta_parts.append("**high-yield**")
+    lines.append(" · ".join(meta_parts))
+    lines.append("")
+    lines.append(f"[← back to {system_title}]({system_link(system_slug)})")
+    lines.append("")
+
+    summary = reference_summary(system_slug, topic_slug, versions, society)
+    if summary:
+        lines.append("## Summary")
+        lines.append("")
+        lines.append(summary)
+        lines.append("")
+
+    # Direct sub-deck download for the current version, promoted above the
+    # version list so a reader who lands on the topic page and wants the
+    # Anki deck for "this topic, current guideline" doesn't have to scan.
+    dated = [v for v in versions if v.get("year") is not None]
+    current = (
+        max(dated, key=lambda v: v["year"]) if dated
+        else (versions[0] if versions else None)
+    )
+    if current is not None:
+        vslug = version_slug(current, society)
+        ref_path = REFERENCES / system_slug / topic_slug / f"{vslug}.md"
+        is_enriched = False
+        if ref_path.is_file():
+            body = ref_path.read_text()
+            m = FRONTMATTER_RE.match(body)
+            body_only = m.group(2) if m else body
+            if (
+                SKELETON_BODY_MARKER not in body_only
+                and "# Key Recommendations" in body_only
+            ):
+                is_enriched = True
+        if is_enriched:
+            subdeck_url = (
+                "https://github.com/cfu288/guidelines-flashcards/raw/main/"
+                f"build/decks/{system_slug}/{topic_slug}/{vslug}.apkg"
+            )
+            deep_link = site_url(f"/{system_slug}/{topic_slug}/{vslug}/")
+            cur_title = current.get("title") or fmt_year_society(
+                current.get("year"), current.get("society") or society
+            )
+            lines.append(
+                f"**Current guideline:** [{cur_title}]({deep_link}) · "
+                f"[{ANKI_ICON}download Anki sub-deck]({subdeck_url}) — "
+                "safe to import on its own or alongside the full deck. "
+                "Nothing gets duplicated and any reviews you've already "
+                "done stay intact."
+            )
+            lines.append("")
+
+    lines.append("## Versions")
+    lines.append("")
+    if not versions:
+        lines.append("_No versions listed._")
+    else:
+        for v in versions:
+            lines.extend(render_version(v, society, system_slug, topic_slug))
+    lines.append("")
+    return "\n".join(lines) + "\n"
+
+
 STUDY_GUIDE_DIR = REFERENCES / "study-guides"
 # Rewrite "](/sys/topic/)" → Liquid relative_url so the link resolves on both
 # project sites (https://user.github.io/repo/) and root-domain hosting.
@@ -521,6 +624,7 @@ def main():
         SYSTEM_NAV_ORDER[system_slug] = i
     n_systems = 0
     n_versions = 0
+    n_topic_indexes = 0
     for system_slug, sys_block in (manifest.get("systems") or {}).items():
         (DOCS / f"{system_slug}.md").write_text(render_system(system_slug, sys_block))
         n_systems += 1
@@ -528,6 +632,16 @@ def main():
         for topic_slug, topic_block in (sys_block.get("topics") or {}).items():
             topic_title = topic_block.get("title", topic_slug)
             topic_society = topic_block.get("society")
+            # Topic-level index.md so /<system>/<topic>/ resolves to a real
+            # page (was 404 previously — no file at the folder level).
+            topic_dir = DOCS / system_slug / topic_slug
+            topic_dir.mkdir(parents=True, exist_ok=True)
+            (topic_dir / "index.md").write_text(
+                render_topic_index_page(
+                    system_slug, system_title, topic_slug, topic_block
+                )
+            )
+            n_topic_indexes += 1
             for v in topic_block.get("versions") or []:
                 page = render_version_page(
                     system_slug, system_title, topic_slug, topic_title, v, topic_society
@@ -535,9 +649,7 @@ def main():
                 if page is None:
                     continue
                 vslug = version_slug(v, topic_society)
-                out_dir = DOCS / system_slug / topic_slug
-                out_dir.mkdir(parents=True, exist_ok=True)
-                (out_dir / f"{vslug}.md").write_text(page)
+                (topic_dir / f"{vslug}.md").write_text(page)
                 n_versions += 1
     n_sg = 0
     sg_out = DOCS / "study-guides"
@@ -555,6 +667,7 @@ def main():
         n_sg += 1
     print(
         f"wrote docs/index.md, {n_systems} per-system pages, "
+        f"{n_topic_indexes} per-topic index pages, "
         f"{n_versions} per-version deep-dive pages, {n_sg} study-guide pages"
     )
 
