@@ -132,11 +132,8 @@ def render_version(v: dict, topic_society: str | None) -> list[str]:
     title = v.get("title") or "(no title)"
     out.append(f"  - **{fmt_year_society(year, society)}** — {title}")
 
-    badges: list[str] = []
-    if v.get("needs_attention"):
-        badges.append(f"⚠️ needs attention: `{v['needs_attention']}`")
-    if badges:
-        out.append(f"    - {' · '.join(badges)}")
+    # needs_attention is a maintainer-only signal (surfaced in
+    # spec/manifest-needs-attention.md); not rendered on the public site.
 
     notes = v.get("notes")
     if notes:
@@ -224,9 +221,7 @@ def render_index(manifest: dict) -> str:
         "topics and per-society / per-year versions, with links to publisher pages."
     )
     lines.append("")
-    lines.append(
-        "⭐ marks topics flagged as high-yield (an attending will expect these on rounds)."
-    )
+    lines.append("⭐ marks topics flagged as high-yield.")
     lines.append("")
     lines.append("## Systems")
     lines.append("")
@@ -276,8 +271,8 @@ def render_index(manifest: dict) -> str:
         "**Notes → Suspend**."
     )
     lines.append(
-        f"2. **Suspend non-high-yield cards.** Start with the ~{total_hy} ⭐ topics an "
-        "attending will actually expect on rounds. Search "
+        f"2. **Suspend non-high-yield cards.** Start with the ~{total_hy} ⭐ topics. "
+        "Search "
         "`deck:\"Internal Medicine Guidelines\" -tag:im-guidelines::high-yield` → select "
         "all → **Notes → Suspend**."
     )

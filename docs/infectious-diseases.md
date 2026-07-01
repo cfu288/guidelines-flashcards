@@ -46,7 +46,6 @@ IDSA living guideline on pharmacologic treatment and prevention of COVID-19, upd
   - **IDSA** — IDSA COVID-19 Treatment Guidelines
     - [canonical](https://www.idsociety.org/practice-guideline/covid-19-guideline-treatment-and-management/) · [html](https://www.idsociety.org/practice-guideline/covid-19-guideline-treatment-and-management/)
   - **NIH** — NIH COVID-19 Treatment Guidelines
-    - ⚠️ needs attention: `download_failed: tiny_or_missing_file`
     - [canonical](https://files.covid19treatmentguidelines.nih.gov/guidelines/covid19treatmentguidelines.pdf)
 
 ### HIV (antiretroviral therapy) ⭐

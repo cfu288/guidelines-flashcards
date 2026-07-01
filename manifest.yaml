@@ -1800,7 +1800,7 @@ systems:
 study_guides:
   highest-yield-named-guidelines:
     title: Highest-yield named guidelines to know cold
-    description: The flagship guidelines an attending will expect on rounds.
+    description: Flagship guidelines to prioritize first.
     # entries: auto-derived at build time from topic.high_yield: true.
     # Do not add an `entries:` list here — it would be ignored and would drift
     # from the topic flags. The two are guaranteed aligned by construction.

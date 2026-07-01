@@ -4,7 +4,7 @@ permalink: /study-guides/highest-yield-named-guidelines/
 ---
 # Highest-yield named guidelines to know cold
 
-The flagship guidelines an attending will expect on rounds.
+Flagship guidelines to prioritize first.
 
 - [Hypertension]({{ '/cardiology/hypertension/' | relative_url }}) — `cardiology::hypertension`
 - [Dyslipidemia / cholesterol]({{ '/cardiology/dyslipidemia/' | relative_url }}) — `cardiology::dyslipidemia`

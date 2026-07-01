@@ -6,7 +6,7 @@ title: Home
 
 System-by-system index of current society guidelines for internal medicine practice. Click into a system to browse its topics and per-society / per-year versions, with links to publisher pages.
 
-⭐ marks topics flagged as high-yield (an attending will expect these on rounds).
+⭐ marks topics flagged as high-yield.
 
 ## Systems
 
@@ -32,10 +32,10 @@ _Totals: 10 systems · 103 topics · 132 versions · 36 high-yield_
 **Don't grind the whole deck dry.** It's broad on purpose (every topic above, every flagged recommendation), and front-loading the long tail will bury you. Suggested first pass:
 
 1. **Suspend dosing cards.** Specific drug doses are reference-lookup material, not spaced-repetition material. In the Anki browser, search `deck:"Internal Medicine Guidelines" tag:im-guidelines::dosing` → select all → **Notes → Suspend**.
-2. **Suspend non-high-yield cards.** Start with the ~36 ⭐ topics an attending will actually expect on rounds. Search `deck:"Internal Medicine Guidelines" -tag:im-guidelines::high-yield` → select all → **Notes → Suspend**.
+2. **Suspend non-high-yield cards.** Start with the ~36 ⭐ topics. Search `deck:"Internal Medicine Guidelines" -tag:im-guidelines::high-yield` → select all → **Notes → Suspend**.
 3. Unsuspend the rest as you encounter the underlying topics on service or in study blocks.
 
 ## Study guides
 
-- [Highest-yield named guidelines to know cold]({{ '/study-guides/highest-yield-named-guidelines/' | relative_url }}) — The flagship guidelines an attending will expect on rounds.
+- [Highest-yield named guidelines to know cold]({{ '/study-guides/highest-yield-named-guidelines/' | relative_url }}) — Flagship guidelines to prioritize first.
 

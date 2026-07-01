@@ -1,12 +1,12 @@
 ---
 type: Study Guide
 title: Highest-yield named guidelines to know cold
-description: The flagship guidelines an attending will expect on rounds.
+description: Flagship guidelines to prioritize first.
 ---
 
 # Highest-yield named guidelines to know cold
 
-The flagship guidelines an attending will expect on rounds.
+Flagship guidelines to prioritize first.
 
 - [Hypertension](/cardiology/hypertension/) — `cardiology::hypertension`
 - [Dyslipidemia / cholesterol](/cardiology/dyslipidemia/) — `cardiology::dyslipidemia`
