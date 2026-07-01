@@ -2,6 +2,7 @@
 title: 'Valvular heart disease'
 parent: 'Cardiology'
 permalink: /cardiology/valvular-heart-disease/
+has_children: true
 ---
 
 # Valvular heart disease

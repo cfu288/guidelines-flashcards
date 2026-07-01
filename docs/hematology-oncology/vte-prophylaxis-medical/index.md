@@ -2,6 +2,7 @@
 title: 'VTE prophylaxis (hospitalized medical patients)'
 parent: 'Hematology & Oncology'
 permalink: /hematology-oncology/vte-prophylaxis-medical/
+has_children: true
 ---
 
 # VTE prophylaxis (hospitalized medical patients)

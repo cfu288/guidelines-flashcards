@@ -2,6 +2,7 @@
 title: 'Heart failure ⭐'
 parent: 'Cardiology'
 permalink: /cardiology/heart-failure/
+has_children: true
 ---
 
 # Heart failure ⭐

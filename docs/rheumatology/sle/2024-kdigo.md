@@ -1,6 +1,7 @@
 ---
-title: '2024 · KDIGO — SLE / lupus nephritis'
-parent: 'Rheumatology'
+title: '2024 · KDIGO'
+parent: 'SLE / lupus nephritis'
+grand_parent: 'Rheumatology'
 permalink: /rheumatology/sle/2024-kdigo/
 ---
 

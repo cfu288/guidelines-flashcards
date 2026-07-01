@@ -1,6 +1,7 @@
 ---
-title: '2021 · CHEST — VTE treatment & prophylaxis'
-parent: 'Hematology & Oncology'
+title: '2021 · CHEST'
+parent: 'VTE treatment & prophylaxis'
+grand_parent: 'Hematology & Oncology'
 permalink: /hematology-oncology/vte-treatment/2021-chest/
 ---
 

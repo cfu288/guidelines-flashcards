@@ -2,6 +2,7 @@
 title: 'Ulcerative colitis'
 parent: 'Gastroenterology & Hepatology'
 permalink: /gi-hepatology/ulcerative-colitis/
+has_children: true
 ---
 
 # Ulcerative colitis

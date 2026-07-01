@@ -2,6 +2,7 @@
 title: 'Peripheral artery disease'
 parent: 'Cardiology'
 permalink: /cardiology/peripheral-artery-disease/
+has_children: true
 ---
 
 # Peripheral artery disease

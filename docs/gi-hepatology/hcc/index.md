@@ -2,6 +2,7 @@
 title: 'Hepatocellular carcinoma'
 parent: 'Gastroenterology & Hepatology'
 permalink: /gi-hepatology/hcc/
+has_children: true
 ---
 
 # Hepatocellular carcinoma

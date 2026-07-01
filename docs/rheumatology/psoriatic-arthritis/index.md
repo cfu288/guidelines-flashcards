@@ -2,6 +2,7 @@
 title: 'Psoriatic arthritis'
 parent: 'Rheumatology'
 permalink: /rheumatology/psoriatic-arthritis/
+has_children: true
 ---
 
 # Psoriatic arthritis

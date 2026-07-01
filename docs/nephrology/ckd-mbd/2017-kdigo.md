@@ -1,6 +1,7 @@
 ---
-title: '2017 · KDIGO — CKD-mineral & bone disorder'
-parent: 'Nephrology'
+title: '2017 · KDIGO'
+parent: 'CKD-mineral & bone disorder'
+grand_parent: 'Nephrology'
 permalink: /nephrology/ckd-mbd/2017-kdigo/
 ---
 

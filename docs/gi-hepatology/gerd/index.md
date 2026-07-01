@@ -2,6 +2,7 @@
 title: 'GERD'
 parent: 'Gastroenterology & Hepatology'
 permalink: /gi-hepatology/gerd/
+has_children: true
 ---
 
 # GERD

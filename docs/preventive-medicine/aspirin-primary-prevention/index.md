@@ -2,6 +2,7 @@
 title: 'Aspirin for primary prevention ⭐'
 parent: 'Preventive & Ambulatory Medicine'
 permalink: /preventive-medicine/aspirin-primary-prevention/
+has_children: true
 ---
 
 # Aspirin for primary prevention ⭐

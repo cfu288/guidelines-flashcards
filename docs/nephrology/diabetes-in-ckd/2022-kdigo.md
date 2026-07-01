@@ -1,6 +1,7 @@
 ---
-title: '2022 · KDIGO — Diabetes in CKD'
-parent: 'Nephrology'
+title: '2022 · KDIGO'
+parent: 'Diabetes in CKD'
+grand_parent: 'Nephrology'
 permalink: /nephrology/diabetes-in-ckd/2022-kdigo/
 ---
 

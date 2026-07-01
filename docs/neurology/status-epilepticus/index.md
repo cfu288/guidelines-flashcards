@@ -2,6 +2,7 @@
 title: 'Status epilepticus'
 parent: 'Neurology'
 permalink: /neurology/status-epilepticus/
+has_children: true
 ---
 
 # Status epilepticus

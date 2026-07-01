@@ -2,6 +2,7 @@
 title: 'HIV (antiretroviral therapy) ⭐'
 parent: 'Infectious Diseases'
 permalink: /infectious-diseases/hiv/
+has_children: true
 ---
 
 # HIV (antiretroviral therapy) ⭐

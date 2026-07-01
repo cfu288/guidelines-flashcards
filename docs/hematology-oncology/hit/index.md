@@ -2,6 +2,7 @@
 title: 'Heparin-induced thrombocytopenia (HIT)'
 parent: 'Hematology & Oncology'
 permalink: /hematology-oncology/hit/
+has_children: true
 ---
 
 # Heparin-induced thrombocytopenia (HIT)

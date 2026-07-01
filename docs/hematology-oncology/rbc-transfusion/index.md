@@ -2,6 +2,7 @@
 title: 'RBC transfusion thresholds ⭐'
 parent: 'Hematology & Oncology'
 permalink: /hematology-oncology/rbc-transfusion/
+has_children: true
 ---
 
 # RBC transfusion thresholds ⭐

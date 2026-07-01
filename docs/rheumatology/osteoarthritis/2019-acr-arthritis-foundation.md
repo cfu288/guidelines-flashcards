@@ -1,6 +1,7 @@
 ---
-title: '2019 · ACR/Arthritis Foundation — Osteoarthritis'
-parent: 'Rheumatology'
+title: '2019 · ACR/Arthritis Foundation'
+parent: 'Osteoarthritis'
+grand_parent: 'Rheumatology'
 permalink: /rheumatology/osteoarthritis/2019-acr-arthritis-foundation/
 ---
 

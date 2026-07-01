@@ -2,6 +2,7 @@
 title: 'Iron-deficiency anemia (GI evaluation)'
 parent: 'Hematology & Oncology'
 permalink: /hematology-oncology/ida-gi-evaluation/
+has_children: true
 ---
 
 # Iron-deficiency anemia (GI evaluation)

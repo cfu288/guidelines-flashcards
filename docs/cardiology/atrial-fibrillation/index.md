@@ -2,6 +2,7 @@
 title: 'Atrial fibrillation ⭐'
 parent: 'Cardiology'
 permalink: /cardiology/atrial-fibrillation/
+has_children: true
 ---
 
 # Atrial fibrillation ⭐

@@ -1,6 +1,7 @@
 ---
-title: '2020 · NTCA/CDC — Tuberculosis (active / latent)'
-parent: 'Infectious Diseases'
+title: '2020 · NTCA/CDC'
+parent: 'Tuberculosis (active / latent)'
+grand_parent: 'Infectious Diseases'
 permalink: /infectious-diseases/tuberculosis/2020-ntca-cdc/
 ---
 

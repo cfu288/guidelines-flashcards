@@ -1,6 +1,7 @@
 ---
-title: '2023 · ACC/AHA/ACCP/HRS — Atrial fibrillation'
-parent: 'Cardiology'
+title: '2023 · ACC/AHA/ACCP/HRS'
+parent: 'Atrial fibrillation'
+grand_parent: 'Cardiology'
 permalink: /cardiology/atrial-fibrillation/2023-acc-aha-accp-hrs/
 ---
 

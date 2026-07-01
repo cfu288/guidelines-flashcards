@@ -2,6 +2,7 @@
 title: 'Primary prevention of CVD'
 parent: 'Cardiology'
 permalink: /cardiology/primary-prevention-cvd/
+has_children: true
 ---
 
 # Primary prevention of CVD

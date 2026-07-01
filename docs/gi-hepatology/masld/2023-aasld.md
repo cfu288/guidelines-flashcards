@@ -1,6 +1,7 @@
 ---
-title: '2023 · AASLD — MASLD (formerly NAFLD)'
-parent: 'Gastroenterology & Hepatology'
+title: '2023 · AASLD'
+parent: 'MASLD (formerly NAFLD)'
+grand_parent: 'Gastroenterology & Hepatology'
 permalink: /gi-hepatology/masld/2023-aasld/
 ---
 

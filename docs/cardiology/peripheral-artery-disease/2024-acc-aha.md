@@ -1,6 +1,7 @@
 ---
-title: '2024 · ACC/AHA — Peripheral artery disease'
-parent: 'Cardiology'
+title: '2024 · ACC/AHA'
+parent: 'Peripheral artery disease'
+grand_parent: 'Cardiology'
 permalink: /cardiology/peripheral-artery-disease/2024-acc-aha/
 ---
 

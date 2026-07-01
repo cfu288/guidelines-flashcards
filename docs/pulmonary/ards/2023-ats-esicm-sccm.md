@@ -1,6 +1,7 @@
 ---
-title: '2023 · ATS/ESICM/SCCM — ARDS'
-parent: 'Pulmonary & Critical Care'
+title: '2023 · ATS/ESICM/SCCM'
+parent: 'ARDS'
+grand_parent: 'Pulmonary & Critical Care'
 permalink: /pulmonary/ards/2023-ats-esicm-sccm/
 ---
 

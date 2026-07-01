@@ -2,6 +2,7 @@
 title: 'Adult immunization ⭐'
 parent: 'Infectious Diseases'
 permalink: /infectious-diseases/adult-immunization/
+has_children: true
 ---
 
 # Adult immunization ⭐

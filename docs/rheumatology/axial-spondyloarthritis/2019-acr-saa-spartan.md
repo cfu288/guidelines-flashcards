@@ -1,6 +1,7 @@
 ---
-title: '2019 · ACR/SAA/SPARTAN — Axial spondyloarthritis'
-parent: 'Rheumatology'
+title: '2019 · ACR/SAA/SPARTAN'
+parent: 'Axial spondyloarthritis'
+grand_parent: 'Rheumatology'
 permalink: /rheumatology/axial-spondyloarthritis/2019-acr-saa-spartan/
 ---
 

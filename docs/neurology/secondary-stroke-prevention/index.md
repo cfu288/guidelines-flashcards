@@ -2,6 +2,7 @@
 title: 'Secondary stroke prevention'
 parent: 'Neurology'
 permalink: /neurology/secondary-stroke-prevention/
+has_children: true
 ---
 
 # Secondary stroke prevention

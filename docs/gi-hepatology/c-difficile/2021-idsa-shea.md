@@ -1,6 +1,7 @@
 ---
-title: '2021 · IDSA/SHEA — C. difficile infection'
-parent: 'Gastroenterology & Hepatology'
+title: '2021 · IDSA/SHEA'
+parent: 'C. difficile infection'
+grand_parent: 'Gastroenterology & Hepatology'
 permalink: /gi-hepatology/c-difficile/2021-idsa-shea/
 ---
 

@@ -1,6 +1,7 @@
 ---
-title: '2016 · IDSA/SHEA — Antimicrobial stewardship'
-parent: 'Infectious Diseases'
+title: '2016 · IDSA/SHEA'
+parent: 'Antimicrobial stewardship'
+grand_parent: 'Infectious Diseases'
 permalink: /infectious-diseases/antimicrobial-stewardship/2016-idsa-shea/
 ---
 

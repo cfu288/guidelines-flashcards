@@ -1,6 +1,7 @@
 ---
-title: '2023 · AHA/ACC — Chronic coronary disease (stable IHD)'
-parent: 'Cardiology'
+title: '2023 · AHA/ACC'
+parent: 'Chronic coronary disease (stable IHD)'
+grand_parent: 'Cardiology'
 permalink: /cardiology/chronic-coronary-disease/2023-aha-acc/
 ---
 

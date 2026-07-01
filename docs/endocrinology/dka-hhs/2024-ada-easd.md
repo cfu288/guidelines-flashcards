@@ -1,6 +1,7 @@
 ---
-title: '2024 · ADA/EASD — Hyperglycemic crises (DKA / HHS)'
-parent: 'Endocrinology'
+title: '2024 · ADA/EASD'
+parent: 'Hyperglycemic crises (DKA / HHS)'
+grand_parent: 'Endocrinology'
 permalink: /endocrinology/dka-hhs/2024-ada-easd/
 ---
 

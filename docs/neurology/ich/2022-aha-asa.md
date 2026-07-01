@@ -1,6 +1,7 @@
 ---
-title: '2022 · AHA/ASA — Intracerebral hemorrhage'
-parent: 'Neurology'
+title: '2022 · AHA/ASA'
+parent: 'Intracerebral hemorrhage'
+grand_parent: 'Neurology'
 permalink: /neurology/ich/2022-aha-asa/
 ---
 

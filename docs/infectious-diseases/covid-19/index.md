@@ -2,6 +2,7 @@
 title: 'COVID-19'
 parent: 'Infectious Diseases'
 permalink: /infectious-diseases/covid-19/
+has_children: true
 ---
 
 # COVID-19

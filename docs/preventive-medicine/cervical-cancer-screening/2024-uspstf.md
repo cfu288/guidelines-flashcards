@@ -1,6 +1,7 @@
 ---
-title: '2024 · USPSTF — Cervical cancer screening'
-parent: 'Preventive & Ambulatory Medicine'
+title: '2024 · USPSTF'
+parent: 'Cervical cancer screening'
+grand_parent: 'Preventive & Ambulatory Medicine'
 permalink: /preventive-medicine/cervical-cancer-screening/2024-uspstf/
 ---
 

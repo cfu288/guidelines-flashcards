@@ -50,6 +50,9 @@ Anki creates one card per distinct cloze number. So `{{c1::A}} ... {{c2::B}}` ma
 3. **Mutually-exclusive list members**: c1 and c2 are two items of a 2- or 3-item list where the stem makes elimination trivial.
 4. **Paired single-fact split**: c1 + c2 are two halves of one inseparable rule ("SBP >180 mmHg or DBP >110 mmHg" as ONE contraindication; "vasoreactivity: ≥10 mmHg AND ≤40 mmHg" as ONE criterion).
 5. **Grammar tell**: visible "a" before a vowel-starting answer or "an" before a consonant.
+6. **Contrast-pair leak**: the visible text asserts something *about* the hidden term via a demonstrative ("this recommendation", "this drug", "this criterion", "this threshold") or via an explicit "X applies in A; not in B" contrast that reveals what the hidden term is or what it does. Example: `{{c1::Awake prone positioning}} is suggested in non-intubated COVID-19 AHRF; there is insufficient evidence to make this recommendation in non-COVID AHRF.` — the second clause tells the learner c1 is a recommendation restricted to COVID AHRF. Fix: same cN across both halves, or split into separate atomic cards.
+7. **Repeated-term inconsistency**: the hidden term (or an unambiguous coreference) appears again elsewhere in the same card outside a cloze. Both occurrences should share the same cN (hide together) or the card should be split.
+8. **Partial enumeration**: a card lists parallel OR/AND diagnostic criteria (e.g., EOLIA VV-ECMO thresholds) and clozes a proper subset while leaving the rest visible. Either every criterion should be atomic (its own card) or the whole list should be hidden under one cN.
 
 # What is NOT a spoiler (don't flag)
 
@@ -62,7 +65,7 @@ Anki creates one card per distinct cloze number. So `{{c1::A}} ... {{c2::B}}` ma
 
 For each input card, emit JSON with either:
 - `{"guid": "...", "ok": true}` if no spoiler
-- `{"guid": "...", "issue": "<concise reason>", "kind": "<one of: numeric_boundary | literal_repetition | list_elimination | paired_single_fact | grammar_tell | other>"}` if spoiled
+- `{"guid": "...", "issue": "<concise reason>", "kind": "<one of: numeric_boundary | literal_repetition | list_elimination | paired_single_fact | grammar_tell | contrast_pair | repeated_term | partial_enumeration | other>"}` if spoiled
 
 Be conservative. When in doubt, OK. Only flag clear spoilers.
 

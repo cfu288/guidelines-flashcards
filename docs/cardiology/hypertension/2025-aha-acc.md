@@ -1,6 +1,7 @@
 ---
-title: '2025 · AHA/ACC — Hypertension'
-parent: 'Cardiology'
+title: '2025 · AHA/ACC'
+parent: 'Hypertension'
+grand_parent: 'Cardiology'
 permalink: /cardiology/hypertension/2025-aha-acc/
 ---
 

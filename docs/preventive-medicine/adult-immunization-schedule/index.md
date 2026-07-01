@@ -2,6 +2,7 @@
 title: 'Adult immunization schedule ⭐'
 parent: 'Preventive & Ambulatory Medicine'
 permalink: /preventive-medicine/adult-immunization-schedule/
+has_children: true
 ---
 
 # Adult immunization schedule ⭐

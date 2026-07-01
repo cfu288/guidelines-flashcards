@@ -2,6 +2,7 @@
 title: 'Hyponatremia'
 parent: 'Nephrology'
 permalink: /nephrology/hyponatremia/
+has_children: true
 ---
 
 # Hyponatremia

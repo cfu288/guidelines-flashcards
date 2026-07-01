@@ -2,6 +2,7 @@
 title: 'Community-acquired pneumonia ⭐'
 parent: 'Pulmonary & Critical Care'
 permalink: /pulmonary/cap/
+has_children: true
 ---
 
 # Community-acquired pneumonia ⭐

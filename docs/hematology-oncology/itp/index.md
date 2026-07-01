@@ -2,6 +2,7 @@
 title: 'Immune thrombocytopenia (ITP)'
 parent: 'Hematology & Oncology'
 permalink: /hematology-oncology/itp/
+has_children: true
 ---
 
 # Immune thrombocytopenia (ITP)

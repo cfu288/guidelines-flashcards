@@ -2,6 +2,7 @@
 title: 'Lung cancer screening ⭐'
 parent: 'Preventive & Ambulatory Medicine'
 permalink: /preventive-medicine/lung-cancer-screening/
+has_children: true
 ---
 
 # Lung cancer screening ⭐

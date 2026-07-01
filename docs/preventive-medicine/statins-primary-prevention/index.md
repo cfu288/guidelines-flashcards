@@ -2,6 +2,7 @@
 title: 'Statins / lipid screening (primary prevention) ⭐'
 parent: 'Preventive & Ambulatory Medicine'
 permalink: /preventive-medicine/statins-primary-prevention/
+has_children: true
 ---
 
 # Statins / lipid screening (primary prevention) ⭐

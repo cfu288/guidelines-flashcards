@@ -2,6 +2,7 @@
 title: 'Coronary revascularization'
 parent: 'Cardiology'
 permalink: /cardiology/coronary-revascularization/
+has_children: true
 ---
 
 # Coronary revascularization

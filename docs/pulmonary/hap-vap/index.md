@@ -2,6 +2,7 @@
 title: 'Hospital-acquired / ventilator-associated pneumonia'
 parent: 'Pulmonary & Critical Care'
 permalink: /pulmonary/hap-vap/
+has_children: true
 ---
 
 # Hospital-acquired / ventilator-associated pneumonia

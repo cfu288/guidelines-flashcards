@@ -2,6 +2,7 @@
 title: 'Thyroid nodules & differentiated cancer'
 parent: 'Endocrinology'
 permalink: /endocrinology/thyroid-nodules/
+has_children: true
 ---
 
 # Thyroid nodules & differentiated cancer

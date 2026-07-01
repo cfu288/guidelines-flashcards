@@ -2,6 +2,7 @@
 title: 'Prostate cancer screening ⭐'
 parent: 'Preventive & Ambulatory Medicine'
 permalink: /preventive-medicine/prostate-cancer-screening/
+has_children: true
 ---
 
 # Prostate cancer screening ⭐

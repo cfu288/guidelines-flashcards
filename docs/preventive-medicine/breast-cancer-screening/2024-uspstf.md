@@ -1,6 +1,7 @@
 ---
-title: '2024 · USPSTF — Breast cancer screening'
-parent: 'Preventive & Ambulatory Medicine'
+title: '2024 · USPSTF'
+parent: 'Breast cancer screening'
+grand_parent: 'Preventive & Ambulatory Medicine'
 permalink: /preventive-medicine/breast-cancer-screening/2024-uspstf/
 ---
 

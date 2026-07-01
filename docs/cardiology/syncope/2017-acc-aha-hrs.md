@@ -1,6 +1,7 @@
 ---
-title: '2017 · ACC/AHA/HRS — Syncope'
-parent: 'Cardiology'
+title: '2017 · ACC/AHA/HRS'
+parent: 'Syncope'
+grand_parent: 'Cardiology'
 permalink: /cardiology/syncope/2017-acc-aha-hrs/
 ---
 

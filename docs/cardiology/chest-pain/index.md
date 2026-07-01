@@ -2,6 +2,7 @@
 title: 'Chest pain evaluation'
 parent: 'Cardiology'
 permalink: /cardiology/chest-pain/
+has_children: true
 ---
 
 # Chest pain evaluation

@@ -2,6 +2,7 @@
 title: 'SLE / lupus nephritis'
 parent: 'Rheumatology'
 permalink: /rheumatology/sle/
+has_children: true
 ---
 
 # SLE / lupus nephritis

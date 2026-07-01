@@ -2,6 +2,7 @@
 title: 'Hypothyroidism ⭐'
 parent: 'Endocrinology'
 permalink: /endocrinology/hypothyroidism/
+has_children: true
 ---
 
 # Hypothyroidism ⭐

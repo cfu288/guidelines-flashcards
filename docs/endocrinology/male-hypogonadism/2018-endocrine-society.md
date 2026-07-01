@@ -1,6 +1,7 @@
 ---
-title: '2018 · Endocrine Society — Male hypogonadism'
-parent: 'Endocrinology'
+title: '2018 · Endocrine Society'
+parent: 'Male hypogonadism'
+grand_parent: 'Endocrinology'
 permalink: /endocrinology/male-hypogonadism/2018-endocrine-society/
 ---
 

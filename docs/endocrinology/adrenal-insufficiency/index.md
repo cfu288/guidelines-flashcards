@@ -2,6 +2,7 @@
 title: 'Adrenal insufficiency'
 parent: 'Endocrinology'
 permalink: /endocrinology/adrenal-insufficiency/
+has_children: true
 ---
 
 # Adrenal insufficiency

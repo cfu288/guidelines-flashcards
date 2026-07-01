@@ -1,6 +1,7 @@
 ---
-title: '2024 · IAS-USA — HIV (antiretroviral therapy)'
-parent: 'Infectious Diseases'
+title: '2024 · IAS-USA'
+parent: 'HIV (antiretroviral therapy)'
+grand_parent: 'Infectious Diseases'
 permalink: /infectious-diseases/hiv/2024-ias-usa/
 ---
 

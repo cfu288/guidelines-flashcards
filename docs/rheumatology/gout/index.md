@@ -2,6 +2,7 @@
 title: 'Gout ⭐'
 parent: 'Rheumatology'
 permalink: /rheumatology/gout/
+has_children: true
 ---
 
 # Gout ⭐

@@ -2,6 +2,7 @@
 title: 'ARDS'
 parent: 'Pulmonary & Critical Care'
 permalink: /pulmonary/ards/
+has_children: true
 ---
 
 # ARDS

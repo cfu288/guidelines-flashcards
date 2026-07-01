@@ -2,6 +2,7 @@
 title: 'VTE treatment & prophylaxis ⭐'
 parent: 'Hematology & Oncology'
 permalink: /hematology-oncology/vte-treatment/
+has_children: true
 ---
 
 # VTE treatment & prophylaxis ⭐

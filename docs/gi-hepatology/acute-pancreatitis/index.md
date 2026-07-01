@@ -2,6 +2,7 @@
 title: 'Acute pancreatitis'
 parent: 'Gastroenterology & Hepatology'
 permalink: /gi-hepatology/acute-pancreatitis/
+has_children: true
 ---
 
 # Acute pancreatitis

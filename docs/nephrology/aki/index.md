@@ -2,6 +2,7 @@
 title: 'Acute kidney injury ⭐'
 parent: 'Nephrology'
 permalink: /nephrology/aki/
+has_children: true
 ---
 
 # Acute kidney injury ⭐

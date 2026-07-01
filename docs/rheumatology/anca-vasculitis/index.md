@@ -2,6 +2,7 @@
 title: 'ANCA-associated vasculitis'
 parent: 'Rheumatology'
 permalink: /rheumatology/anca-vasculitis/
+has_children: true
 ---
 
 # ANCA-associated vasculitis

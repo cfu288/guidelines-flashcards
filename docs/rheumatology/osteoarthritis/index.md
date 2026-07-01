@@ -2,6 +2,7 @@
 title: 'Osteoarthritis'
 parent: 'Rheumatology'
 permalink: /rheumatology/osteoarthritis/
+has_children: true
 ---
 
 # Osteoarthritis

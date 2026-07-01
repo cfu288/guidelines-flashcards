@@ -2,6 +2,7 @@
 title: 'Infective endocarditis'
 parent: 'Infectious Diseases'
 permalink: /infectious-diseases/infective-endocarditis/
+has_children: true
 ---
 
 # Infective endocarditis

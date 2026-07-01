@@ -1,6 +1,7 @@
 ---
-title: '2021 · USPSTF — Lung cancer screening'
-parent: 'Preventive & Ambulatory Medicine'
+title: '2021 · USPSTF'
+parent: 'Lung cancer screening'
+grand_parent: 'Preventive & Ambulatory Medicine'
 permalink: /preventive-medicine/lung-cancer-screening/2021-uspstf/
 ---
 

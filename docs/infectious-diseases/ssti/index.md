@@ -2,6 +2,7 @@
 title: 'Skin & soft tissue infections'
 parent: 'Infectious Diseases'
 permalink: /infectious-diseases/ssti/
+has_children: true
 ---
 
 # Skin & soft tissue infections

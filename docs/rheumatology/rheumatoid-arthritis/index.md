@@ -2,6 +2,7 @@
 title: 'Rheumatoid arthritis ⭐'
 parent: 'Rheumatology'
 permalink: /rheumatology/rheumatoid-arthritis/
+has_children: true
 ---
 
 # Rheumatoid arthritis ⭐

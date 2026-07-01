@@ -1,6 +1,7 @@
 ---
-title: '2021 · ACC/AHA/SCAI — Coronary revascularization'
-parent: 'Cardiology'
+title: '2021 · ACC/AHA/SCAI'
+parent: 'Coronary revascularization'
+grand_parent: 'Cardiology'
 permalink: /cardiology/coronary-revascularization/2021-acc-aha-scai/
 ---
 

@@ -2,6 +2,7 @@
 title: 'COPD ⭐'
 parent: 'Pulmonary & Critical Care'
 permalink: /pulmonary/copd/
+has_children: true
 ---
 
 # COPD ⭐

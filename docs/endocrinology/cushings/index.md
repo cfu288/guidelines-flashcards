@@ -2,6 +2,7 @@
 title: "Cushing's syndrome"
 parent: 'Endocrinology'
 permalink: /endocrinology/cushings/
+has_children: true
 ---
 
 # Cushing's syndrome

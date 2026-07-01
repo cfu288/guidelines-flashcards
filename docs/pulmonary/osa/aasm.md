@@ -1,6 +1,7 @@
 ---
-title: 'AASM — Obstructive sleep apnea'
-parent: 'Pulmonary & Critical Care'
+title: 'AASM'
+parent: 'Obstructive sleep apnea'
+grand_parent: 'Pulmonary & Critical Care'
 permalink: /pulmonary/osa/aasm/
 ---
 

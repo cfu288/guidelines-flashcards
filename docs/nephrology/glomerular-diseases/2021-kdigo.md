@@ -1,6 +1,7 @@
 ---
-title: '2021 · KDIGO — Glomerular diseases'
-parent: 'Nephrology'
+title: '2021 · KDIGO'
+parent: 'Glomerular diseases'
+grand_parent: 'Nephrology'
 permalink: /nephrology/glomerular-diseases/2021-kdigo/
 ---
 

@@ -1,6 +1,7 @@
 ---
-title: '2021 · CHEST — Pulmonary embolism / VTE (acute)'
-parent: 'Pulmonary & Critical Care'
+title: '2021 · CHEST'
+parent: 'Pulmonary embolism / VTE (acute)'
+grand_parent: 'Pulmonary & Critical Care'
 permalink: /pulmonary/pe-vte-acute/2021-chest/
 ---
 

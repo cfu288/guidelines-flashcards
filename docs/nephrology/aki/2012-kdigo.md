@@ -1,6 +1,7 @@
 ---
-title: '2012 · KDIGO — Acute kidney injury'
-parent: 'Nephrology'
+title: '2012 · KDIGO'
+parent: 'Acute kidney injury'
+grand_parent: 'Nephrology'
 permalink: /nephrology/aki/2012-kdigo/
 ---
 

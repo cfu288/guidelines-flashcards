@@ -2,6 +2,7 @@
 title: 'Idiopathic pulmonary fibrosis'
 parent: 'Pulmonary & Critical Care'
 permalink: /pulmonary/ipf/
+has_children: true
 ---
 
 # Idiopathic pulmonary fibrosis

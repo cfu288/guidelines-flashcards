@@ -2,6 +2,7 @@
 title: 'Sickle cell disease'
 parent: 'Hematology & Oncology'
 permalink: /hematology-oncology/sickle-cell/
+has_children: true
 ---
 
 # Sickle cell disease

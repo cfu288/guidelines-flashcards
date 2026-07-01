@@ -2,6 +2,7 @@
 title: 'Hyperthyroidism / thyrotoxicosis ⭐'
 parent: 'Endocrinology'
 permalink: /endocrinology/hyperthyroidism/
+has_children: true
 ---
 
 # Hyperthyroidism / thyrotoxicosis ⭐

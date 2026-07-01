@@ -1,6 +1,7 @@
 ---
-title: '2019 · ACC/AHA — Primary prevention of CVD'
-parent: 'Cardiology'
+title: '2019 · ACC/AHA'
+parent: 'Primary prevention of CVD'
+grand_parent: 'Cardiology'
 permalink: /cardiology/primary-prevention-cvd/2019-acc-aha/
 ---
 

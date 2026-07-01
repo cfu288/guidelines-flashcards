@@ -1,6 +1,7 @@
 ---
-title: '2016 · IDSA/ATS — Hospital-acquired / ventilator-associated pneumonia'
-parent: 'Pulmonary & Critical Care'
+title: '2016 · IDSA/ATS'
+parent: 'Hospital-acquired / ventilator-associated pneumonia'
+grand_parent: 'Pulmonary & Critical Care'
 permalink: /pulmonary/hap-vap/2016-idsa-ats/
 ---
 

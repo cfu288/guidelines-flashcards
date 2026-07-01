@@ -2,6 +2,7 @@
 title: 'Glucocorticoid-induced osteoporosis'
 parent: 'Rheumatology'
 permalink: /rheumatology/glucocorticoid-induced-osteoporosis/
+has_children: true
 ---
 
 # Glucocorticoid-induced osteoporosis

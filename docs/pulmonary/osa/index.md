@@ -2,6 +2,7 @@
 title: 'Obstructive sleep apnea'
 parent: 'Pulmonary & Critical Care'
 permalink: /pulmonary/osa/
+has_children: true
 ---
 
 # Obstructive sleep apnea

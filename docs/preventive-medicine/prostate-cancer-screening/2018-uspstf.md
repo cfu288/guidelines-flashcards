@@ -1,6 +1,7 @@
 ---
-title: '2018 · USPSTF — Prostate cancer screening'
-parent: 'Preventive & Ambulatory Medicine'
+title: '2018 · USPSTF'
+parent: 'Prostate cancer screening'
+grand_parent: 'Preventive & Ambulatory Medicine'
 permalink: /preventive-medicine/prostate-cancer-screening/2018-uspstf/
 ---
 

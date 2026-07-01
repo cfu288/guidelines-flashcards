@@ -1,6 +1,7 @@
 ---
-title: '2023 · USPSTF — Depression / anxiety screening'
-parent: 'Preventive & Ambulatory Medicine'
+title: '2023 · USPSTF'
+parent: 'Depression / anxiety screening'
+grand_parent: 'Preventive & Ambulatory Medicine'
 permalink: /preventive-medicine/depression-anxiety-screening/2023-uspstf/
 ---
 

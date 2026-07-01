@@ -2,6 +2,7 @@
 title: 'Cervical cancer screening ⭐'
 parent: 'Preventive & Ambulatory Medicine'
 permalink: /preventive-medicine/cervical-cancer-screening/
+has_children: true
 ---
 
 # Cervical cancer screening ⭐

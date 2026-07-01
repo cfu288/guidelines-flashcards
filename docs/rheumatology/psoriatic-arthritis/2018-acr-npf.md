@@ -1,6 +1,7 @@
 ---
-title: '2018 · ACR/NPF — Psoriatic arthritis'
-parent: 'Rheumatology'
+title: '2018 · ACR/NPF'
+parent: 'Psoriatic arthritis'
+grand_parent: 'Rheumatology'
 permalink: /rheumatology/psoriatic-arthritis/2018-acr-npf/
 ---
 

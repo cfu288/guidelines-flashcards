@@ -1,6 +1,7 @@
 ---
-title: 'AAN/AES — Epilepsy / first seizure'
-parent: 'Neurology'
+title: 'AAN/AES'
+parent: 'Epilepsy / first seizure'
+grand_parent: 'Neurology'
 permalink: /neurology/epilepsy/aan-aes/
 ---
 

@@ -1,6 +1,7 @@
 ---
-title: '2022 · USPSTF — Aspirin for primary prevention'
-parent: 'Preventive & Ambulatory Medicine'
+title: '2022 · USPSTF'
+parent: 'Aspirin for primary prevention'
+grand_parent: 'Preventive & Ambulatory Medicine'
 permalink: /preventive-medicine/aspirin-primary-prevention/2022-uspstf/
 ---
 

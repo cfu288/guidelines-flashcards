@@ -2,6 +2,7 @@
 title: 'Depression / anxiety screening ⭐'
 parent: 'Preventive & Ambulatory Medicine'
 permalink: /preventive-medicine/depression-anxiety-screening/
+has_children: true
 ---
 
 # Depression / anxiety screening ⭐

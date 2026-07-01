@@ -1,6 +1,7 @@
 ---
-title: '2021 · ACR/VF — Giant cell arteritis / Takayasu'
-parent: 'Rheumatology'
+title: '2021 · ACR/VF'
+parent: 'Giant cell arteritis / Takayasu'
+grand_parent: 'Rheumatology'
 permalink: /rheumatology/large-vessel-vasculitis/2021-acr-vf/
 ---
 

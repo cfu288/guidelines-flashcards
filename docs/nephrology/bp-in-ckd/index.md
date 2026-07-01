@@ -2,6 +2,7 @@
 title: 'Blood pressure in CKD'
 parent: 'Nephrology'
 permalink: /nephrology/bp-in-ckd/
+has_children: true
 ---
 
 # Blood pressure in CKD

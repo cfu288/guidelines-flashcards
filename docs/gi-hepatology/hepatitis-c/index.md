@@ -2,6 +2,7 @@
 title: 'Hepatitis C'
 parent: 'Gastroenterology & Hepatology'
 permalink: /gi-hepatology/hepatitis-c/
+has_children: true
 ---
 
 # Hepatitis C

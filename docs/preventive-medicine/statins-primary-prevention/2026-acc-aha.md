@@ -1,6 +1,7 @@
 ---
-title: '2026 · ACC/AHA — Statins / lipid screening (primary prevention)'
-parent: 'Preventive & Ambulatory Medicine'
+title: '2026 · ACC/AHA'
+parent: 'Statins / lipid screening (primary prevention)'
+grand_parent: 'Preventive & Ambulatory Medicine'
 permalink: /preventive-medicine/statins-primary-prevention/2026-acc-aha/
 ---
 

@@ -1,6 +1,7 @@
 ---
-title: '2022 · ACC/AHA — Thoracic aortic disease'
-parent: 'Cardiology'
+title: '2022 · ACC/AHA'
+parent: 'Thoracic aortic disease'
+grand_parent: 'Cardiology'
 permalink: /cardiology/thoracic-aortic-disease/2022-acc-aha/
 ---
 

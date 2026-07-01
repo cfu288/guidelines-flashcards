@@ -1,6 +1,7 @@
 ---
-title: '2026 · ACC/AHA — Dyslipidemia / cholesterol'
-parent: 'Cardiology'
+title: '2026 · ACC/AHA'
+parent: 'Dyslipidemia / cholesterol'
+grand_parent: 'Cardiology'
 permalink: /cardiology/dyslipidemia/2026-acc-aha/
 ---
 

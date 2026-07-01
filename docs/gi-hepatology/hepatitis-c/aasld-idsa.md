@@ -1,6 +1,7 @@
 ---
-title: 'AASLD/IDSA — Hepatitis C'
-parent: 'Gastroenterology & Hepatology'
+title: 'AASLD/IDSA'
+parent: 'Hepatitis C'
+grand_parent: 'Gastroenterology & Hepatology'
 permalink: /gi-hepatology/hepatitis-c/aasld-idsa/
 ---
 

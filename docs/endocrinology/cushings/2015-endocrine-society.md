@@ -1,6 +1,7 @@
 ---
-title: "2015 · Endocrine Society — Cushing's syndrome"
-parent: 'Endocrinology'
+title: '2015 · Endocrine Society'
+parent: "Cushing's syndrome"
+grand_parent: 'Endocrinology'
 permalink: /endocrinology/cushings/2015-endocrine-society/
 ---
 

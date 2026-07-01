@@ -1,6 +1,7 @@
 ---
-title: '2021 · American Headache Society — Migraine'
-parent: 'Neurology'
+title: '2021 · American Headache Society'
+parent: 'Migraine'
+grand_parent: 'Neurology'
 permalink: /neurology/migraine/2021-american-headache-society/
 ---
 

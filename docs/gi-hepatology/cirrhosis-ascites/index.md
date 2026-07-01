@@ -2,6 +2,7 @@
 title: 'Cirrhosis — ascites / SBP / HRS ⭐'
 parent: 'Gastroenterology & Hepatology'
 permalink: /gi-hepatology/cirrhosis-ascites/
+has_children: true
 ---
 
 # Cirrhosis — ascites / SBP / HRS ⭐

@@ -2,6 +2,7 @@
 title: 'CKD-mineral & bone disorder'
 parent: 'Nephrology'
 permalink: /nephrology/ckd-mbd/
+has_children: true
 ---
 
 # CKD-mineral & bone disorder

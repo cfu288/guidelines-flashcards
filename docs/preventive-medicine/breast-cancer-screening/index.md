@@ -2,6 +2,7 @@
 title: 'Breast cancer screening ⭐'
 parent: 'Preventive & Ambulatory Medicine'
 permalink: /preventive-medicine/breast-cancer-screening/
+has_children: true
 ---
 
 # Breast cancer screening ⭐

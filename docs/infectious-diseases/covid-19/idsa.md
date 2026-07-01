@@ -1,6 +1,7 @@
 ---
-title: 'IDSA — COVID-19'
-parent: 'Infectious Diseases'
+title: 'IDSA'
+parent: 'COVID-19'
+grand_parent: 'Infectious Diseases'
 permalink: /infectious-diseases/covid-19/idsa/
 ---
 

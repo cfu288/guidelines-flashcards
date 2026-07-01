@@ -2,6 +2,7 @@
 title: 'Tuberculosis (active / latent)'
 parent: 'Infectious Diseases'
 permalink: /infectious-diseases/tuberculosis/
+has_children: true
 ---
 
 # Tuberculosis (active / latent)

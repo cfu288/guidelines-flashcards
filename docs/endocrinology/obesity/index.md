@@ -2,6 +2,7 @@
 title: 'Obesity'
 parent: 'Endocrinology'
 permalink: /endocrinology/obesity/
+has_children: true
 ---
 
 # Obesity

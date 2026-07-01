@@ -1,6 +1,7 @@
 ---
-title: '2023 · AASLD — Hepatocellular carcinoma'
-parent: 'Gastroenterology & Hepatology'
+title: '2023 · AASLD'
+parent: 'Hepatocellular carcinoma'
+grand_parent: 'Gastroenterology & Hepatology'
 permalink: /gi-hepatology/hcc/2023-aasld/
 ---
 

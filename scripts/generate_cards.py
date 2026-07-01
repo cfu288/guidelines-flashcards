@@ -114,6 +114,9 @@ Before calling `submit_cards`, mentally render each multi-cloze card with each c
 2. **Literal repetition**: does the hidden answer's word appear verbatim elsewhere in the visible text?
 3. **List elimination**: if the card lists N items and you've hidden 1, does the remaining N-1 give it away?
 4. **Grammar tell**: does the visible "a" / "an" before the cloze betray the answer's starting letter?
+5. **Contrast-pair leak**: does the visible text assert something *about* the hidden term via a demonstrative ("this recommendation", "this drug", "this criterion", "this threshold") or an explicit "X applies in A; not in B" contrast that reveals what the hidden term is or what it does? Example spoiler: `{{c1::Awake prone positioning}} is suggested in non-intubated COVID-19 AHRF; there is insufficient evidence to make this recommendation in non-COVID AHRF.` — the second clause tells the learner c1 is a recommendation restricted to COVID AHRF.
+6. **Repeated term**: does the hidden term (or an unambiguous coreference) appear again elsewhere in the card outside a cloze? If so, either wrap both occurrences under the SAME cN (so both hide together) or split into separate atomic cards.
+7. **Parallel enumerated criteria**: for OR/AND lists of parallel diagnostic thresholds (e.g., EOLIA VV-ECMO criteria: `PaO2/FiO2 <50 for >3h OR PaO2/FiO2 <80 for >6h OR pH <7.25 …`), do NOT cloze a proper subset while leaving the rest visible — that both leaks structure and creates inconsistent hiding. Either emit one atomic card per criterion, or hide the entire list under a single cN.
 
 If ANY of those apply, either change the offending clozes to the SAME cN (so they hide together) or rephrase to remove the leak. Then re-audit.
 

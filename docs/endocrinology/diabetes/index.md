@@ -2,6 +2,7 @@
 title: 'Diabetes mellitus ⭐'
 parent: 'Endocrinology'
 permalink: /endocrinology/diabetes/
+has_children: true
 ---
 
 # Diabetes mellitus ⭐

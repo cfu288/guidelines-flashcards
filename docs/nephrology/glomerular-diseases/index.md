@@ -2,6 +2,7 @@
 title: 'Glomerular diseases'
 parent: 'Nephrology'
 permalink: /nephrology/glomerular-diseases/
+has_children: true
 ---
 
 # Glomerular diseases

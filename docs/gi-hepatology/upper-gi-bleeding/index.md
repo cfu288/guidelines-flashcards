@@ -2,6 +2,7 @@
 title: 'Upper GI bleeding ⭐'
 parent: 'Gastroenterology & Hepatology'
 permalink: /gi-hepatology/upper-gi-bleeding/
+has_children: true
 ---
 
 # Upper GI bleeding ⭐

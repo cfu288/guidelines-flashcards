@@ -2,6 +2,7 @@
 title: 'Dyslipidemia / cholesterol ⭐'
 parent: 'Cardiology'
 permalink: /cardiology/dyslipidemia/
+has_children: true
 ---
 
 # Dyslipidemia / cholesterol ⭐

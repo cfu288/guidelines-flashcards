@@ -2,6 +2,7 @@
 title: 'Bradycardia / conduction delay'
 parent: 'Cardiology'
 permalink: /cardiology/bradycardia/
+has_children: true
 ---
 
 # Bradycardia / conduction delay

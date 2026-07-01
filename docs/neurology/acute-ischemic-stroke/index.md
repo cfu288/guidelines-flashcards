@@ -2,6 +2,7 @@
 title: 'Acute ischemic stroke (early management) ⭐'
 parent: 'Neurology'
 permalink: /neurology/acute-ischemic-stroke/
+has_children: true
 ---
 
 # Acute ischemic stroke (early management) ⭐

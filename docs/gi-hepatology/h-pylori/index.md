@@ -2,6 +2,7 @@
 title: 'H. pylori / peptic ulcer'
 parent: 'Gastroenterology & Hepatology'
 permalink: /gi-hepatology/h-pylori/
+has_children: true
 ---
 
 # H. pylori / peptic ulcer

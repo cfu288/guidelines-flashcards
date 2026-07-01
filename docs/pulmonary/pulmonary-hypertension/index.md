@@ -2,6 +2,7 @@
 title: 'Pulmonary hypertension'
 parent: 'Pulmonary & Critical Care'
 permalink: /pulmonary/pulmonary-hypertension/
+has_children: true
 ---
 
 # Pulmonary hypertension

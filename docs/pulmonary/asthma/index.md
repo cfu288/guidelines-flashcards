@@ -2,6 +2,7 @@
 title: 'Asthma ⭐'
 parent: 'Pulmonary & Critical Care'
 permalink: /pulmonary/asthma/
+has_children: true
 ---
 
 # Asthma ⭐

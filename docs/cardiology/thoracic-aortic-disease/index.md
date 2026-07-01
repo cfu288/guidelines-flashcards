@@ -2,6 +2,7 @@
 title: 'Thoracic aortic disease'
 parent: 'Cardiology'
 permalink: /cardiology/thoracic-aortic-disease/
+has_children: true
 ---
 
 # Thoracic aortic disease

@@ -1,6 +1,7 @@
 ---
-title: '2021 · AHA/ACC — Chest pain evaluation'
-parent: 'Cardiology'
+title: '2021 · AHA/ACC'
+parent: 'Chest pain evaluation'
+grand_parent: 'Cardiology'
 permalink: /cardiology/chest-pain/2021-aha-acc/
 ---
 

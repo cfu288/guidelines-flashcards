@@ -1,6 +1,7 @@
 ---
-title: '2022 · ESC/ERS — Pulmonary hypertension'
-parent: 'Pulmonary & Critical Care'
+title: '2022 · ESC/ERS'
+parent: 'Pulmonary hypertension'
+grand_parent: 'Pulmonary & Critical Care'
 permalink: /pulmonary/pulmonary-hypertension/2022-esc-ers/
 ---
 

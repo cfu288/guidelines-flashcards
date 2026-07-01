@@ -2,6 +2,7 @@
 title: 'Portal hypertension / varices'
 parent: 'Gastroenterology & Hepatology'
 permalink: /gi-hepatology/portal-hypertension/
+has_children: true
 ---
 
 # Portal hypertension / varices

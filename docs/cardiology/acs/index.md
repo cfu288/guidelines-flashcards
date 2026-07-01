@@ -2,6 +2,7 @@
 title: 'Acute coronary syndrome (STEMI + NSTE-ACS) ⭐'
 parent: 'Cardiology'
 permalink: /cardiology/acs/
+has_children: true
 ---
 
 # Acute coronary syndrome (STEMI + NSTE-ACS) ⭐

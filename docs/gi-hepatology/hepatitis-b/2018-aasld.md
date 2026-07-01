@@ -1,6 +1,7 @@
 ---
-title: '2018 · AASLD — Hepatitis B'
-parent: 'Gastroenterology & Hepatology'
+title: '2018 · AASLD'
+parent: 'Hepatitis B'
+grand_parent: 'Gastroenterology & Hepatology'
 permalink: /gi-hepatology/hepatitis-b/2018-aasld/
 ---
 

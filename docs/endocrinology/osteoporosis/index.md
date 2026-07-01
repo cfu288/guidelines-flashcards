@@ -2,6 +2,7 @@
 title: 'Osteoporosis'
 parent: 'Endocrinology'
 permalink: /endocrinology/osteoporosis/
+has_children: true
 ---
 
 # Osteoporosis

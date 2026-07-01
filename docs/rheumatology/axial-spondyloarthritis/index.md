@@ -2,6 +2,7 @@
 title: 'Axial spondyloarthritis'
 parent: 'Rheumatology'
 permalink: /rheumatology/axial-spondyloarthritis/
+has_children: true
 ---
 
 # Axial spondyloarthritis

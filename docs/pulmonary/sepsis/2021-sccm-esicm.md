@@ -1,6 +1,7 @@
 ---
-title: '2021 · SCCM/ESICM — Sepsis & septic shock'
-parent: 'Pulmonary & Critical Care'
+title: '2021 · SCCM/ESICM'
+parent: 'Sepsis & septic shock'
+grand_parent: 'Pulmonary & Critical Care'
 permalink: /pulmonary/sepsis/2021-sccm-esicm/
 ---
 

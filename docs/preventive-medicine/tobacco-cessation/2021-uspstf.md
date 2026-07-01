@@ -1,6 +1,7 @@
 ---
-title: '2021 · USPSTF — Tobacco cessation'
-parent: 'Preventive & Ambulatory Medicine'
+title: '2021 · USPSTF'
+parent: 'Tobacco cessation'
+grand_parent: 'Preventive & Ambulatory Medicine'
 permalink: /preventive-medicine/tobacco-cessation/2021-uspstf/
 ---
 

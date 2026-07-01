@@ -2,6 +2,7 @@
 title: 'Ventricular arrhythmias / SCD'
 parent: 'Cardiology'
 permalink: /cardiology/ventricular-arrhythmias/
+has_children: true
 ---
 
 # Ventricular arrhythmias / SCD

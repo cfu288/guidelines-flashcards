@@ -2,6 +2,7 @@
 title: 'Pulmonary embolism / VTE (acute)'
 parent: 'Pulmonary & Critical Care'
 permalink: /pulmonary/pe-vte-acute/
+has_children: true
 ---
 
 # Pulmonary embolism / VTE (acute)

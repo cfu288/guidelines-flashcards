@@ -1,6 +1,7 @@
 ---
-title: '2021 · AHA/ASA — Secondary stroke prevention'
-parent: 'Neurology'
+title: '2021 · AHA/ASA'
+parent: 'Secondary stroke prevention'
+grand_parent: 'Neurology'
 permalink: /neurology/secondary-stroke-prevention/2021-aha-asa/
 ---
 

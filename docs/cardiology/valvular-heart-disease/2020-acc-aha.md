@@ -1,6 +1,7 @@
 ---
-title: '2020 · ACC/AHA — Valvular heart disease'
-parent: 'Cardiology'
+title: '2020 · ACC/AHA'
+parent: 'Valvular heart disease'
+grand_parent: 'Cardiology'
 permalink: /cardiology/valvular-heart-disease/2020-acc-aha/
 ---
 

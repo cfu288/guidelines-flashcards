@@ -2,6 +2,7 @@
 title: 'Urinary tract infection ⭐'
 parent: 'Infectious Diseases'
 permalink: /infectious-diseases/uti/
+has_children: true
 ---
 
 # Urinary tract infection ⭐

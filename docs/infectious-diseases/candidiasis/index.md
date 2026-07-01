@@ -2,6 +2,7 @@
 title: 'Candidiasis'
 parent: 'Infectious Diseases'
 permalink: /infectious-diseases/candidiasis/
+has_children: true
 ---
 
 # Candidiasis

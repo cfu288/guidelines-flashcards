@@ -2,6 +2,7 @@
 title: 'MASLD (formerly NAFLD)'
 parent: 'Gastroenterology & Hepatology'
 permalink: /gi-hepatology/masld/
+has_children: true
 ---
 
 # MASLD (formerly NAFLD)

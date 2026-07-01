@@ -2,6 +2,7 @@
 title: 'Chronic coronary disease (stable IHD)'
 parent: 'Cardiology'
 permalink: /cardiology/chronic-coronary-disease/
+has_children: true
 ---
 
 # Chronic coronary disease (stable IHD)

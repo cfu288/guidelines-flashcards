@@ -2,6 +2,7 @@
 title: 'Epilepsy / first seizure'
 parent: 'Neurology'
 permalink: /neurology/epilepsy/
+has_children: true
 ---
 
 # Epilepsy / first seizure

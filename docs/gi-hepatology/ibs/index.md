@@ -2,6 +2,7 @@
 title: 'Irritable bowel syndrome'
 parent: 'Gastroenterology & Hepatology'
 permalink: /gi-hepatology/ibs/
+has_children: true
 ---
 
 # Irritable bowel syndrome

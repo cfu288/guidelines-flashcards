@@ -2,6 +2,7 @@
 title: 'Primary aldosteronism'
 parent: 'Endocrinology'
 permalink: /endocrinology/primary-aldosteronism/
+has_children: true
 ---
 
 # Primary aldosteronism

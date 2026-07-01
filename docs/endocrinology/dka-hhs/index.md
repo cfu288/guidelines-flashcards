@@ -2,6 +2,7 @@
 title: 'Hyperglycemic crises (DKA / HHS) ⭐'
 parent: 'Endocrinology'
 permalink: /endocrinology/dka-hhs/
+has_children: true
 ---
 
 # Hyperglycemic crises (DKA / HHS) ⭐

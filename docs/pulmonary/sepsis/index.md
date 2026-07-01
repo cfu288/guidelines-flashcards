@@ -2,6 +2,7 @@
 title: 'Sepsis & septic shock ⭐'
 parent: 'Pulmonary & Critical Care'
 permalink: /pulmonary/sepsis/
+has_children: true
 ---
 
 # Sepsis & septic shock ⭐

@@ -1,6 +1,7 @@
 ---
-title: 'Neurocritical Care Society — Status epilepticus'
-parent: 'Neurology'
+title: 'Neurocritical Care Society'
+parent: 'Status epilepticus'
+grand_parent: 'Neurology'
 permalink: /neurology/status-epilepticus/neurocritical-care-society/
 ---
 

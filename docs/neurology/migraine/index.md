@@ -2,6 +2,7 @@
 title: 'Migraine'
 parent: 'Neurology'
 permalink: /neurology/migraine/
+has_children: true
 ---
 
 # Migraine

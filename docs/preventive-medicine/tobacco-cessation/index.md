@@ -2,6 +2,7 @@
 title: 'Tobacco cessation ⭐'
 parent: 'Preventive & Ambulatory Medicine'
 permalink: /preventive-medicine/tobacco-cessation/
+has_children: true
 ---
 
 # Tobacco cessation ⭐

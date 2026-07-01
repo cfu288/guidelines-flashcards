@@ -2,6 +2,7 @@
 title: 'Syncope'
 parent: 'Cardiology'
 permalink: /cardiology/syncope/
+has_children: true
 ---
 
 # Syncope

@@ -2,6 +2,7 @@
 title: 'Colorectal cancer screening ⭐'
 parent: 'Preventive & Ambulatory Medicine'
 permalink: /preventive-medicine/colorectal-cancer-screening/
+has_children: true
 ---
 
 # Colorectal cancer screening ⭐

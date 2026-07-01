@@ -2,6 +2,7 @@
 title: 'Cancer-associated thrombosis'
 parent: 'Hematology & Oncology'
 permalink: /hematology-oncology/cancer-associated-thrombosis/
+has_children: true
 ---
 
 # Cancer-associated thrombosis

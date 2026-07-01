@@ -2,6 +2,7 @@
 title: 'Intracerebral hemorrhage'
 parent: 'Neurology'
 permalink: /neurology/ich/
+has_children: true
 ---
 
 # Intracerebral hemorrhage

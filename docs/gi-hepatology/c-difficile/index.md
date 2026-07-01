@@ -2,6 +2,7 @@
 title: 'C. difficile infection ⭐'
 parent: 'Gastroenterology & Hepatology'
 permalink: /gi-hepatology/c-difficile/
+has_children: true
 ---
 
 # C. difficile infection ⭐

@@ -2,6 +2,7 @@
 title: 'Antimicrobial stewardship'
 parent: 'Infectious Diseases'
 permalink: /infectious-diseases/antimicrobial-stewardship/
+has_children: true
 ---
 
 # Antimicrobial stewardship

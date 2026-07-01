@@ -2,6 +2,7 @@
 title: 'Hypertension ⭐'
 parent: 'Cardiology'
 permalink: /cardiology/hypertension/
+has_children: true
 ---
 
 # Hypertension ⭐

@@ -1,6 +1,7 @@
 ---
-title: '2017 · AHA/ACC/HRS — Ventricular arrhythmias / SCD'
-parent: 'Cardiology'
+title: '2017 · AHA/ACC/HRS'
+parent: 'Ventricular arrhythmias / SCD'
+grand_parent: 'Cardiology'
 permalink: /cardiology/ventricular-arrhythmias/2017-aha-acc-hrs/
 ---
 

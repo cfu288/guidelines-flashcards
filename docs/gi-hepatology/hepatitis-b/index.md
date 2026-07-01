@@ -2,6 +2,7 @@
 title: 'Hepatitis B'
 parent: 'Gastroenterology & Hepatology'
 permalink: /gi-hepatology/hepatitis-b/
+has_children: true
 ---
 
 # Hepatitis B

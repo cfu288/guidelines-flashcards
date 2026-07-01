@@ -1,6 +1,7 @@
 ---
-title: '2025 · ATS/IDSA — Community-acquired pneumonia'
-parent: 'Pulmonary & Critical Care'
+title: '2025 · ATS/IDSA'
+parent: 'Community-acquired pneumonia'
+grand_parent: 'Pulmonary & Critical Care'
 permalink: /pulmonary/cap/2025-ats-idsa/
 ---
 

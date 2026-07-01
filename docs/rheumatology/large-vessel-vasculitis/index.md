@@ -2,6 +2,7 @@
 title: 'Giant cell arteritis / Takayasu'
 parent: 'Rheumatology'
 permalink: /rheumatology/large-vessel-vasculitis/
+has_children: true
 ---
 
 # Giant cell arteritis / Takayasu

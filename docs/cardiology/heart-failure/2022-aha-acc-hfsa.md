@@ -1,6 +1,7 @@
 ---
-title: '2022 · AHA/ACC/HFSA — Heart failure'
-parent: 'Cardiology'
+title: '2022 · AHA/ACC/HFSA'
+parent: 'Heart failure'
+grand_parent: 'Cardiology'
 permalink: /cardiology/heart-failure/2022-aha-acc-hfsa/
 ---
 

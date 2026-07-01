@@ -2,6 +2,7 @@
 title: 'Sexually transmitted infections'
 parent: 'Infectious Diseases'
 permalink: /infectious-diseases/sti/
+has_children: true
 ---
 
 # Sexually transmitted infections

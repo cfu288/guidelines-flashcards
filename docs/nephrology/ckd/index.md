@@ -2,6 +2,7 @@
 title: 'Chronic kidney disease ⭐'
 parent: 'Nephrology'
 permalink: /nephrology/ckd/
+has_children: true
 ---
 
 # Chronic kidney disease ⭐

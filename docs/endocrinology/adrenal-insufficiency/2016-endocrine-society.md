@@ -1,6 +1,7 @@
 ---
-title: '2016 · Endocrine Society — Adrenal insufficiency'
-parent: 'Endocrinology'
+title: '2016 · Endocrine Society'
+parent: 'Adrenal insufficiency'
+grand_parent: 'Endocrinology'
 permalink: /endocrinology/adrenal-insufficiency/2016-endocrine-society/
 ---
 

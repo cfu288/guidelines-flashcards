@@ -2,6 +2,7 @@
 title: 'Polymyalgia rheumatica'
 parent: 'Rheumatology'
 permalink: /rheumatology/polymyalgia-rheumatica/
+has_children: true
 ---
 
 # Polymyalgia rheumatica

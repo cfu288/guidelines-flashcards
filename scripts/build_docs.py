@@ -426,13 +426,16 @@ def render_version_page(
     if v.get("pmid"):
         url_links.append(f"[PubMed](https://pubmed.ncbi.nlm.nih.gov/{v['pmid']}/)")
 
-    # just-the-docs uses parent (the system title) to place this in the sidebar
-    # under its system. Deep-dive pages are 2 levels deep in nav.
+    # just-the-docs nesting: version pages sit under their topic index page,
+    # which sits under the system. Without grand_parent, both topic and version
+    # pages collapse into the same sidebar level and the system page renders
+    # two parallel lists of children (topics AND versions).
     header_lines = [
         "---",
         # YAML titles can contain colons / quotes — quote to be safe.
-        "title: " + repr(f"{subtitle} — {topic_title}"),
-        f"parent: {system_title!r}",
+        "title: " + repr(subtitle),
+        f"parent: {topic_title!r}",
+        f"grand_parent: {system_title!r}",
         f"permalink: /{system_slug}/{topic_slug}/{vslug}/",
         "---",
         "",
@@ -473,12 +476,10 @@ def render_topic_index_page(
     listing the topic's versions with high-yield / society metadata and a
     direct download for the current guideline's Anki sub-deck when enriched.
 
-    just-the-docs nav placement: parent is the system, so the topic sits in
-    the sidebar under its system. Per-version deep-dive pages remain
-    grandchildren of the system (they use `parent: <system_title>`), so the
-    sidebar tree stays two-deep — the topic index page inserts itself as a
-    peer of the version pages rather than as a new nav level, which keeps
-    the sidebar compact.
+    just-the-docs nav placement: parent is the system and has_children: true,
+    so version deep-dive pages nest under this topic (via `grand_parent`) and
+    the system sidebar shows only topics, not the flat cross-product of topics
+    and versions.
     """
     title = topic_block.get("title") or topic_slug
     society = topic_block.get("society")
@@ -491,6 +492,7 @@ def render_topic_index_page(
         f"title: {fm_title!r}",
         f"parent: {system_title!r}",
         f"permalink: /{system_slug}/{topic_slug}/",
+        "has_children: true",
         "---",
         "",
         f"# {title}" + (" ⭐" if high_yield else ""),

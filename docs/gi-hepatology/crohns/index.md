@@ -2,6 +2,7 @@
 title: "Crohn's disease"
 parent: 'Gastroenterology & Hepatology'
 permalink: /gi-hepatology/crohns/
+has_children: true
 ---
 
 # Crohn's disease

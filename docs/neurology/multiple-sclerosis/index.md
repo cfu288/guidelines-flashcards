@@ -2,6 +2,7 @@
 title: 'Multiple sclerosis (DMTs)'
 parent: 'Neurology'
 permalink: /neurology/multiple-sclerosis/
+has_children: true
 ---
 
 # Multiple sclerosis (DMTs)

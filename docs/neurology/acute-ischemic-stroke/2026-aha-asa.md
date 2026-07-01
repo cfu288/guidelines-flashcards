@@ -1,6 +1,7 @@
 ---
-title: '2026 · AHA/ASA — Acute ischemic stroke (early management)'
-parent: 'Neurology'
+title: '2026 · AHA/ASA'
+parent: 'Acute ischemic stroke (early management)'
+grand_parent: 'Neurology'
 permalink: /neurology/acute-ischemic-stroke/2026-aha-asa/
 ---
 

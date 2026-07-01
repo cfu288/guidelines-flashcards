@@ -1,6 +1,7 @@
 ---
-title: 'CDC/ACIP — Adult immunization'
-parent: 'Infectious Diseases'
+title: 'CDC/ACIP'
+parent: 'Adult immunization'
+grand_parent: 'Infectious Diseases'
 permalink: /infectious-diseases/adult-immunization/cdc-acip/
 ---
 

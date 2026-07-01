@@ -1,6 +1,7 @@
 ---
-title: '2015 · ACR/EULAR — Polymyalgia rheumatica'
-parent: 'Rheumatology'
+title: '2015 · ACR/EULAR'
+parent: 'Polymyalgia rheumatica'
+grand_parent: 'Rheumatology'
 permalink: /rheumatology/polymyalgia-rheumatica/2015-acr-eular/
 ---
 

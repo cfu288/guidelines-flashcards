@@ -2,6 +2,7 @@
 title: 'Male hypogonadism'
 parent: 'Endocrinology'
 permalink: /endocrinology/male-hypogonadism/
+has_children: true
 ---
 
 # Male hypogonadism

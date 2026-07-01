@@ -1,6 +1,7 @@
 ---
-title: '2018 · ACC/AHA/HRS — Bradycardia / conduction delay'
-parent: 'Cardiology'
+title: '2018 · ACC/AHA/HRS'
+parent: 'Bradycardia / conduction delay'
+grand_parent: 'Cardiology'
 permalink: /cardiology/bradycardia/2018-acc-aha-hrs/
 ---
 

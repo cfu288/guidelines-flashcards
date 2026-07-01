@@ -2,6 +2,7 @@
 title: 'Celiac disease'
 parent: 'Gastroenterology & Hepatology'
 permalink: /gi-hepatology/celiac/
+has_children: true
 ---
 
 # Celiac disease

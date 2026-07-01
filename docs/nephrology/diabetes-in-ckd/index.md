@@ -2,6 +2,7 @@
 title: 'Diabetes in CKD'
 parent: 'Nephrology'
 permalink: /nephrology/diabetes-in-ckd/
+has_children: true
 ---
 
 # Diabetes in CKD
