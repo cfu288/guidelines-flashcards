@@ -8,7 +8,7 @@ permalink: /pulmonary/hap-vap/2016-idsa-ats/
 
 **Source:** [canonical](https://www.thoracic.org/statements/resources/tb-opi/hap-vap-guidelines-2016.pdf) · [html](https://academic.oup.com/cid/article/63/5/e61/2237650)
 
-**Anki deck:** [Download just this guideline (.apkg)](https://github.com/cfu288/guidelines-flashcards/raw/main/build/decks/pulmonary/hap-vap/2016-idsa-ats.apkg) — safe to import alongside the mega deck; GUIDs align so review history is preserved.
+**Anki deck:** [Download just this guideline (.apkg)](https://github.com/cfu288/guidelines-flashcards/raw/main/build/decks/pulmonary/hap-vap/2016-idsa-ats.apkg) — safe to import on its own or alongside the full deck. Nothing gets duplicated and any reviews you've already done stay intact.
 
 # Summary
 

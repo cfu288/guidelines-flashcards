@@ -8,7 +8,7 @@ permalink: /infectious-diseases/tuberculosis/2020-ntca-cdc/
 
 **Source:** [canonical](https://www.cdc.gov/mmwr/volumes/69/rr/pdfs/rr6901a1-H.pdf) · [html](https://www.cdc.gov/mmwr/volumes/69/rr/rr6901a1.htm) · [pmc](https://pmc.ncbi.nlm.nih.gov/articles/PMC7041302/)
 
-**Anki deck:** [Download just this guideline (.apkg)](https://github.com/cfu288/guidelines-flashcards/raw/main/build/decks/infectious-diseases/tuberculosis/2020-ntca-cdc.apkg) — safe to import alongside the mega deck; GUIDs align so review history is preserved.
+**Anki deck:** [Download just this guideline (.apkg)](https://github.com/cfu288/guidelines-flashcards/raw/main/build/decks/infectious-diseases/tuberculosis/2020-ntca-cdc.apkg) — safe to import on its own or alongside the full deck. Nothing gets duplicated and any reviews you've already done stay intact.
 
 # Summary
 

@@ -8,7 +8,7 @@ permalink: /gi-hepatology/c-difficile/2021-idsa-shea/
 
 **Source:** [canonical](https://www.idsociety.org/globalassets/idsa/practice-guidelines/cdi-2021-focused-update.pdf) · [html](https://academic.oup.com/cid/article/73/5/e1029/6298219)
 
-**Anki deck:** [Download just this guideline (.apkg)](https://github.com/cfu288/guidelines-flashcards/raw/main/build/decks/gi-hepatology/c-difficile/2021-idsa-shea.apkg) — safe to import alongside the mega deck; GUIDs align so review history is preserved.
+**Anki deck:** [Download just this guideline (.apkg)](https://github.com/cfu288/guidelines-flashcards/raw/main/build/decks/gi-hepatology/c-difficile/2021-idsa-shea.apkg) — safe to import on its own or alongside the full deck. Nothing gets duplicated and any reviews you've already done stay intact.
 
 # Summary
 

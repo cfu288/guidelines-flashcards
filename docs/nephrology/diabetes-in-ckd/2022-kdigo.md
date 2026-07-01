@@ -8,7 +8,7 @@ permalink: /nephrology/diabetes-in-ckd/2022-kdigo/
 
 **Source:** [canonical](https://kdigo.org/wp-content/uploads/2022/10/KDIGO-2022-Clinical-Practice-Guideline-for-Diabetes-Management-in-CKD.pdf)
 
-**Anki deck:** [Download just this guideline (.apkg)](https://github.com/cfu288/guidelines-flashcards/raw/main/build/decks/nephrology/diabetes-in-ckd/2022-kdigo.apkg) — safe to import alongside the mega deck; GUIDs align so review history is preserved.
+**Anki deck:** [Download just this guideline (.apkg)](https://github.com/cfu288/guidelines-flashcards/raw/main/build/decks/nephrology/diabetes-in-ckd/2022-kdigo.apkg) — safe to import on its own or alongside the full deck. Nothing gets duplicated and any reviews you've already done stay intact.
 
 # Summary
 

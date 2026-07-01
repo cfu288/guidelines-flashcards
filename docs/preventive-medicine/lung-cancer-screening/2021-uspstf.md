@@ -8,7 +8,7 @@ permalink: /preventive-medicine/lung-cancer-screening/2021-uspstf/
 
 **Source:** [canonical](https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/lung-cancer-screening) · [html](https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/lung-cancer-screening)
 
-**Anki deck:** [Download just this guideline (.apkg)](https://github.com/cfu288/guidelines-flashcards/raw/main/build/decks/preventive-medicine/lung-cancer-screening/2021-uspstf.apkg) — safe to import alongside the mega deck; GUIDs align so review history is preserved.
+**Anki deck:** [Download just this guideline (.apkg)](https://github.com/cfu288/guidelines-flashcards/raw/main/build/decks/preventive-medicine/lung-cancer-screening/2021-uspstf.apkg) — safe to import on its own or alongside the full deck. Nothing gets duplicated and any reviews you've already done stay intact.
 
 # Summary
 

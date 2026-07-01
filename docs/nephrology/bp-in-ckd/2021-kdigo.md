@@ -8,7 +8,7 @@ permalink: /nephrology/bp-in-ckd/2021-kdigo/
 
 **Source:** [canonical](https://kdigo.org/wp-content/uploads/2016/10/KDIGO-2021-BP-GL.pdf) · [html](https://www.kidney-international.org/article/S0085-2538(20)31270-9/fulltext)
 
-**Anki deck:** [Download just this guideline (.apkg)](https://github.com/cfu288/guidelines-flashcards/raw/main/build/decks/nephrology/bp-in-ckd/2021-kdigo.apkg) — safe to import alongside the mega deck; GUIDs align so review history is preserved.
+**Anki deck:** [Download just this guideline (.apkg)](https://github.com/cfu288/guidelines-flashcards/raw/main/build/decks/nephrology/bp-in-ckd/2021-kdigo.apkg) — safe to import on its own or alongside the full deck. Nothing gets duplicated and any reviews you've already done stay intact.
 
 # Summary
 

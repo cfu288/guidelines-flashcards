@@ -8,7 +8,7 @@ permalink: /infectious-diseases/covid-19/idsa/
 
 **Source:** [canonical](https://www.idsociety.org/practice-guideline/covid-19-guideline-treatment-and-management/) · [html](https://www.idsociety.org/practice-guideline/covid-19-guideline-treatment-and-management/)
 
-**Anki deck:** [Download just this guideline (.apkg)](https://github.com/cfu288/guidelines-flashcards/raw/main/build/decks/infectious-diseases/covid-19/idsa.apkg) — safe to import alongside the mega deck; GUIDs align so review history is preserved.
+**Anki deck:** [Download just this guideline (.apkg)](https://github.com/cfu288/guidelines-flashcards/raw/main/build/decks/infectious-diseases/covid-19/idsa.apkg) — safe to import on its own or alongside the full deck. Nothing gets duplicated and any reviews you've already done stay intact.
 
 # Summary
 

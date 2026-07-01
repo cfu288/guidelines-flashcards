@@ -8,7 +8,7 @@ permalink: /pulmonary/cap/2025-ats-idsa/
 
 **Source:** [canonical](https://academic.oup.com/ajrccm/article/212/1/24/8435770) · [html](https://academic.oup.com/ajrccm/article/212/1/24/8435770)
 
-**Anki deck:** [Download just this guideline (.apkg)](https://github.com/cfu288/guidelines-flashcards/raw/main/build/decks/pulmonary/cap/2025-ats-idsa.apkg) — safe to import alongside the mega deck; GUIDs align so review history is preserved.
+**Anki deck:** [Download just this guideline (.apkg)](https://github.com/cfu288/guidelines-flashcards/raw/main/build/decks/pulmonary/cap/2025-ats-idsa.apkg) — safe to import on its own or alongside the full deck. Nothing gets duplicated and any reviews you've already done stay intact.
 
 # Summary
 

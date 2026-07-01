@@ -8,7 +8,7 @@ permalink: /cardiology/primary-prevention-cvd/2019-acc-aha/
 
 **Source:** [canonical](https://www.ahajournals.org/doi/10.1161/CIR.0000000000000678) · [html](https://www.ahajournals.org/doi/full/10.1161/CIR.0000000000000678) · [pdf](https://www.ahajournals.org/doi/pdf/10.1161/CIR.0000000000000678)
 
-**Anki deck:** [Download just this guideline (.apkg)](https://github.com/cfu288/guidelines-flashcards/raw/main/build/decks/cardiology/primary-prevention-cvd/2019-acc-aha.apkg) — safe to import alongside the mega deck; GUIDs align so review history is preserved.
+**Anki deck:** [Download just this guideline (.apkg)](https://github.com/cfu288/guidelines-flashcards/raw/main/build/decks/cardiology/primary-prevention-cvd/2019-acc-aha.apkg) — safe to import on its own or alongside the full deck. Nothing gets duplicated and any reviews you've already done stay intact.
 
 # Summary
 

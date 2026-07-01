@@ -28,10 +28,10 @@ _Totals: 10 systems · 103 topics · 132 versions · 36 high-yield_
 
 ## Anki deck
 
-Two ways in — pick one or mix them, whatever fits your study block. Both use stable card IDs, so re-importing a newer build or a different subset updates notes in place and preserves your FSRS review history.
+Two ways to get started — pick one now, add more later. Every download stays in sync: cards you've already reviewed keep your progress, and nothing gets duplicated when you import an updated or additional deck.
 
-- **Everything** — [`guidelines.apkg`](https://github.com/cfu288/guidelines-flashcards/raw/main/build/guidelines.apkg) (132 guidelines, 103 topics).
-- **Just one guideline** — open any guideline page from the sidebar and click **Download just this guideline (.apkg)**. Safe to import alongside the mega deck later; the two merge cleanly on card ID with no duplicates.
+- **Everything at once** — [`guidelines.apkg`](https://github.com/cfu288/guidelines-flashcards/raw/main/build/guidelines.apkg) (132 guidelines, 103 topics).
+- **One guideline at a time** — open any system from the left sidebar, then click the **Anki deck** link next to the guideline you want.
 
 In Anki: **File → Import**.
 

@@ -8,7 +8,7 @@ permalink: /endocrinology/dka-hhs/2024-ada-easd/
 
 **Source:** [canonical](https://diabetesjournals.org/care/article/47/8/1257/156808/Hyperglycemic-Crises-in-Adults-With-Diabetes-A) · [html](https://diabetesjournals.org/care/article/47/8/1257/156808/Hyperglycemic-Crises-in-Adults-With-Diabetes-A) · [pmc](https://pmc.ncbi.nlm.nih.gov/articles/PMC11272983/)
 
-**Anki deck:** [Download just this guideline (.apkg)](https://github.com/cfu288/guidelines-flashcards/raw/main/build/decks/endocrinology/dka-hhs/2024-ada-easd.apkg) — safe to import alongside the mega deck; GUIDs align so review history is preserved.
+**Anki deck:** [Download just this guideline (.apkg)](https://github.com/cfu288/guidelines-flashcards/raw/main/build/decks/endocrinology/dka-hhs/2024-ada-easd.apkg) — safe to import on its own or alongside the full deck. Nothing gets duplicated and any reviews you've already done stay intact.
 
 # Summary
 

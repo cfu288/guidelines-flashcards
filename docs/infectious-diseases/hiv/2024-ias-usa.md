@@ -8,7 +8,7 @@ permalink: /infectious-diseases/hiv/2024-ias-usa/
 
 **Source:** [canonical](https://jamanetwork.com/journals/jama/fullarticle/2827545) · [html](https://jamanetwork.com/journals/jama/fullarticle/2827545) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/39616496/)
 
-**Anki deck:** [Download just this guideline (.apkg)](https://github.com/cfu288/guidelines-flashcards/raw/main/build/decks/infectious-diseases/hiv/2024-ias-usa.apkg) — safe to import alongside the mega deck; GUIDs align so review history is preserved.
+**Anki deck:** [Download just this guideline (.apkg)](https://github.com/cfu288/guidelines-flashcards/raw/main/build/decks/infectious-diseases/hiv/2024-ias-usa.apkg) — safe to import on its own or alongside the full deck. Nothing gets duplicated and any reviews you've already done stay intact.
 
 # Summary
 

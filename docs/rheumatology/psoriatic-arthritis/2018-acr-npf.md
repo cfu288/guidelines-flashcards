@@ -8,7 +8,7 @@ permalink: /rheumatology/psoriatic-arthritis/2018-acr-npf/
 
 **Source:** [canonical](https://assets.contentstack.io/v3/assets/bltee37abb6b278ab2c/blt62e279f29f7d5435/6332144ffef925355ad7b25a/psoriatic-arthritis-guideline-2018.pdf) · [html](https://acrjournals.onlinelibrary.wiley.com/doi/10.1002/acr.23789) · [pmc](https://pmc.ncbi.nlm.nih.gov/articles/PMC8218333/)
 
-**Anki deck:** [Download just this guideline (.apkg)](https://github.com/cfu288/guidelines-flashcards/raw/main/build/decks/rheumatology/psoriatic-arthritis/2018-acr-npf.apkg) — safe to import alongside the mega deck; GUIDs align so review history is preserved.
+**Anki deck:** [Download just this guideline (.apkg)](https://github.com/cfu288/guidelines-flashcards/raw/main/build/decks/rheumatology/psoriatic-arthritis/2018-acr-npf.apkg) — safe to import on its own or alongside the full deck. Nothing gets duplicated and any reviews you've already done stay intact.
 
 # Summary
 

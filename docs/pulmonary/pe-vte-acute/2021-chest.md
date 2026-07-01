@@ -8,7 +8,7 @@ permalink: /pulmonary/pe-vte-acute/2021-chest/
 
 **Source:** [canonical](https://journal.chestnet.org/article/S0012-3692(21)01506-3/fulltext) · [html](https://journal.chestnet.org/article/S0012-3692(21)01506-3/fulltext)
 
-**Anki deck:** [Download just this guideline (.apkg)](https://github.com/cfu288/guidelines-flashcards/raw/main/build/decks/pulmonary/pe-vte-acute/2021-chest.apkg) — safe to import alongside the mega deck; GUIDs align so review history is preserved.
+**Anki deck:** [Download just this guideline (.apkg)](https://github.com/cfu288/guidelines-flashcards/raw/main/build/decks/pulmonary/pe-vte-acute/2021-chest.apkg) — safe to import on its own or alongside the full deck. Nothing gets duplicated and any reviews you've already done stay intact.
 
 # Summary
 

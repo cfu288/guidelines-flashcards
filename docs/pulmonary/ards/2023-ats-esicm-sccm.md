@@ -8,7 +8,7 @@ permalink: /pulmonary/ards/2023-ats-esicm-sccm/
 
 **Source:** [canonical](https://pmc.ncbi.nlm.nih.gov/articles/PMC10354163/)
 
-**Anki deck:** [Download just this guideline (.apkg)](https://github.com/cfu288/guidelines-flashcards/raw/main/build/decks/pulmonary/ards/2023-ats-esicm-sccm.apkg) — safe to import alongside the mega deck; GUIDs align so review history is preserved.
+**Anki deck:** [Download just this guideline (.apkg)](https://github.com/cfu288/guidelines-flashcards/raw/main/build/decks/pulmonary/ards/2023-ats-esicm-sccm.apkg) — safe to import on its own or alongside the full deck. Nothing gets duplicated and any reviews you've already done stay intact.
 
 # Summary
 

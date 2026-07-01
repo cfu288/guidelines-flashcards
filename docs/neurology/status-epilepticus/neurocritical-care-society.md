@@ -8,7 +8,7 @@ permalink: /neurology/status-epilepticus/neurocritical-care-society/
 
 **Source:** [canonical](https://link.springer.com/article/10.1007/s12028-012-9695-z) · [html](https://link.springer.com/article/10.1007/s12028-012-9695-z)
 
-**Anki deck:** [Download just this guideline (.apkg)](https://github.com/cfu288/guidelines-flashcards/raw/main/build/decks/neurology/status-epilepticus/neurocritical-care-society.apkg) — safe to import alongside the mega deck; GUIDs align so review history is preserved.
+**Anki deck:** [Download just this guideline (.apkg)](https://github.com/cfu288/guidelines-flashcards/raw/main/build/decks/neurology/status-epilepticus/neurocritical-care-society.apkg) — safe to import on its own or alongside the full deck. Nothing gets duplicated and any reviews you've already done stay intact.
 
 # Summary
 

@@ -8,7 +8,7 @@ permalink: /preventive-medicine/cervical-cancer-screening/2024-uspstf/
 
 **Source:** [canonical](https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/cervical-cancer-screening) · [html](https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/cervical-cancer-screening)
 
-**Anki deck:** [Download just this guideline (.apkg)](https://github.com/cfu288/guidelines-flashcards/raw/main/build/decks/preventive-medicine/cervical-cancer-screening/2024-uspstf.apkg) — safe to import alongside the mega deck; GUIDs align so review history is preserved.
+**Anki deck:** [Download just this guideline (.apkg)](https://github.com/cfu288/guidelines-flashcards/raw/main/build/decks/preventive-medicine/cervical-cancer-screening/2024-uspstf.apkg) — safe to import on its own or alongside the full deck. Nothing gets duplicated and any reviews you've already done stay intact.
 
 # Summary
 

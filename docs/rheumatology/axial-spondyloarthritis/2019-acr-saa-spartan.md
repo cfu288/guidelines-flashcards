@@ -8,7 +8,7 @@ permalink: /rheumatology/axial-spondyloarthritis/2019-acr-saa-spartan/
 
 **Source:** [canonical](https://assets.contentstack.io/v3/assets/bltee37abb6b278ab2c/blt74558fbe6f37b611/6328a49019c64564c313f918/axial-spa-guideline-2019.pdf) · [html](https://acrjournals.onlinelibrary.wiley.com/doi/10.1002/acr.24025) · [pmc](https://pmc.ncbi.nlm.nih.gov/articles/PMC6764857/)
 
-**Anki deck:** [Download just this guideline (.apkg)](https://github.com/cfu288/guidelines-flashcards/raw/main/build/decks/rheumatology/axial-spondyloarthritis/2019-acr-saa-spartan.apkg) — safe to import alongside the mega deck; GUIDs align so review history is preserved.
+**Anki deck:** [Download just this guideline (.apkg)](https://github.com/cfu288/guidelines-flashcards/raw/main/build/decks/rheumatology/axial-spondyloarthritis/2019-acr-saa-spartan.apkg) — safe to import on its own or alongside the full deck. Nothing gets duplicated and any reviews you've already done stay intact.
 
 # Summary
 

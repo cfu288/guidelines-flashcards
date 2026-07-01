@@ -8,7 +8,7 @@ permalink: /endocrinology/male-hypogonadism/2018-endocrine-society/
 
 **Source:** [canonical](https://academic.oup.com/jcem/article/103/5/1715/4939465) · [html](https://academic.oup.com/jcem/article/103/5/1715/4939465)
 
-**Anki deck:** [Download just this guideline (.apkg)](https://github.com/cfu288/guidelines-flashcards/raw/main/build/decks/endocrinology/male-hypogonadism/2018-endocrine-society.apkg) — safe to import alongside the mega deck; GUIDs align so review history is preserved.
+**Anki deck:** [Download just this guideline (.apkg)](https://github.com/cfu288/guidelines-flashcards/raw/main/build/decks/endocrinology/male-hypogonadism/2018-endocrine-society.apkg) — safe to import on its own or alongside the full deck. Nothing gets duplicated and any reviews you've already done stay intact.
 
 # Summary
 

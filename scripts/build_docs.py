@@ -149,6 +149,8 @@ def render_version(
     # the Key Recommendations / Thresholds & Doses / Citations sections).
     # Non-enriched versions render as plain text — no dead links.
     link_title = title
+    is_enriched = False
+    vslug = None
     if system_slug and topic_slug:
         vslug = version_slug(v, topic_society)
         ref_path = REFERENCES / system_slug / topic_slug / f"{vslug}.md"
@@ -160,6 +162,7 @@ def render_version(
                 SKELETON_BODY_MARKER not in body_only
                 and "# Key Recommendations" in body_only
             ):
+                is_enriched = True
                 href = site_url(f"/{system_slug}/{topic_slug}/{vslug}/")
                 link_title = f"[{title}]({href})"
     out.append(f"  - **{fmt_year_society(year, society)}** — {link_title}")
@@ -183,6 +186,14 @@ def render_version(
                 url_links.append(f"[{fmt}]({entry['url']})")
     if v.get("pmid"):
         url_links.append(f"[PubMed](https://pubmed.ncbi.nlm.nih.gov/{v['pmid']}/)")
+    # Anki sub-deck download alongside the publisher links — only when the
+    # version is enriched (which means build_apkg.py emitted a matching .apkg).
+    if is_enriched and vslug and system_slug and topic_slug:
+        subdeck_url = (
+            "https://github.com/cfu288/guidelines-flashcards/raw/main/build/decks/"
+            f"{system_slug}/{topic_slug}/{vslug}.apkg"
+        )
+        url_links.append(f"[Anki deck]({subdeck_url})")
     if url_links:
         out.append(f"    - {' · '.join(url_links)}")
     return out
@@ -293,20 +304,19 @@ def render_index(manifest: dict) -> str:
     lines.append("## Anki deck")
     lines.append("")
     lines.append(
-        "Two ways in — pick one or mix them, whatever fits your study block. Both use "
-        "stable card IDs, so re-importing a newer build or a different subset updates "
-        "notes in place and preserves your FSRS review history."
+        "Two ways to get started — pick one now, add more later. Every download stays "
+        "in sync: cards you've already reviewed keep your progress, and nothing gets "
+        "duplicated when you import an updated or additional deck."
     )
     lines.append("")
     lines.append(
-        "- **Everything** — "
+        "- **Everything at once** — "
         "[`guidelines.apkg`](https://github.com/cfu288/guidelines-flashcards/raw/main/build/guidelines.apkg) "
         f"({total_versions} guidelines, {total_topics} topics)."
     )
     lines.append(
-        "- **Just one guideline** — open any guideline page from the sidebar and click "
-        "**Download just this guideline (.apkg)**. Safe to import alongside the mega "
-        "deck later; the two merge cleanly on card ID with no duplicates."
+        "- **One guideline at a time** — open any system from the left sidebar, then "
+        "click the **Anki deck** link next to the guideline you want."
     )
     lines.append("")
     lines.append("In Anki: **File → Import**.")
@@ -415,7 +425,8 @@ def render_version_page(
     )
     header_lines.append(
         f"**Anki deck:** [Download just this guideline (.apkg)]({subdeck_url}) — "
-        "safe to import alongside the mega deck; GUIDs align so review history is preserved."
+        "safe to import on its own or alongside the full deck. Nothing gets "
+        "duplicated and any reviews you've already done stay intact."
     )
     header_lines.append("")
     # Extra "\n" gives a blank line between the header block and the body so

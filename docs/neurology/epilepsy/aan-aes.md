@@ -8,7 +8,7 @@ permalink: /neurology/epilepsy/aan-aes/
 
 **Source:** [canonical](https://www.neurology.org/doi/10.1212/WNL.0000000000001487) · [html](https://www.neurology.org/doi/full/10.1212/WNL.0000000000001487) · [pdf](https://www.neurology.org/doi/pdf/10.1212/WNL.0000000000001487)
 
-**Anki deck:** [Download just this guideline (.apkg)](https://github.com/cfu288/guidelines-flashcards/raw/main/build/decks/neurology/epilepsy/aan-aes.apkg) — safe to import alongside the mega deck; GUIDs align so review history is preserved.
+**Anki deck:** [Download just this guideline (.apkg)](https://github.com/cfu288/guidelines-flashcards/raw/main/build/decks/neurology/epilepsy/aan-aes.apkg) — safe to import on its own or alongside the full deck. Nothing gets duplicated and any reviews you've already done stay intact.
 
 # Summary
 

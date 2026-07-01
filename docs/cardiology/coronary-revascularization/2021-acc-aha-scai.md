@@ -8,7 +8,7 @@ permalink: /cardiology/coronary-revascularization/2021-acc-aha-scai/
 
 **Source:** [canonical](https://www.ahajournals.org/doi/10.1161/CIR.0000000000001038) · [html](https://www.ahajournals.org/doi/full/10.1161/CIR.0000000000001038) · [pdf](https://www.ahajournals.org/doi/pdf/10.1161/CIR.0000000000001038)
 
-**Anki deck:** [Download just this guideline (.apkg)](https://github.com/cfu288/guidelines-flashcards/raw/main/build/decks/cardiology/coronary-revascularization/2021-acc-aha-scai.apkg) — safe to import alongside the mega deck; GUIDs align so review history is preserved.
+**Anki deck:** [Download just this guideline (.apkg)](https://github.com/cfu288/guidelines-flashcards/raw/main/build/decks/cardiology/coronary-revascularization/2021-acc-aha-scai.apkg) — safe to import on its own or alongside the full deck. Nothing gets duplicated and any reviews you've already done stay intact.
 
 # Summary
 

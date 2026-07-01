@@ -8,7 +8,7 @@ permalink: /cardiology/dyslipidemia/2026-acc-aha/
 
 **Source:** [canonical](https://www.ahajournals.org/doi/10.1161/CIR.0000000000001423) · [html](https://www.ahajournals.org/doi/full/10.1161/CIR.0000000000001423) · [pdf](https://www.ahajournals.org/doi/pdf/10.1161/CIR.0000000000001423)
 
-**Anki deck:** [Download just this guideline (.apkg)](https://github.com/cfu288/guidelines-flashcards/raw/main/build/decks/cardiology/dyslipidemia/2026-acc-aha.apkg) — safe to import alongside the mega deck; GUIDs align so review history is preserved.
+**Anki deck:** [Download just this guideline (.apkg)](https://github.com/cfu288/guidelines-flashcards/raw/main/build/decks/cardiology/dyslipidemia/2026-acc-aha.apkg) — safe to import on its own or alongside the full deck. Nothing gets duplicated and any reviews you've already done stay intact.
 
 # Summary
 

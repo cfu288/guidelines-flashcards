@@ -8,7 +8,7 @@ permalink: /pulmonary/sepsis/2021-sccm-esicm/
 
 **Source:** [canonical](https://www.sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-guidelines-2021) · [html](https://journals.lww.com/ccmjournal/fulltext/2021/11000/surviving_sepsis_campaign__international.21.aspx) · [pmc](https://pmc.ncbi.nlm.nih.gov/articles/PMC8486643/)
 
-**Anki deck:** [Download just this guideline (.apkg)](https://github.com/cfu288/guidelines-flashcards/raw/main/build/decks/pulmonary/sepsis/2021-sccm-esicm.apkg) — safe to import alongside the mega deck; GUIDs align so review history is preserved.
+**Anki deck:** [Download just this guideline (.apkg)](https://github.com/cfu288/guidelines-flashcards/raw/main/build/decks/pulmonary/sepsis/2021-sccm-esicm.apkg) — safe to import on its own or alongside the full deck. Nothing gets duplicated and any reviews you've already done stay intact.
 
 # Summary
 
