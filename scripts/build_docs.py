@@ -125,12 +125,44 @@ def system_link(slug: str) -> str:
     return site_url(f"/{slug}/")
 
 
-def render_version(v: dict, topic_society: str | None) -> list[str]:
+def version_slug(v: dict, topic_society: str | None) -> str:
+    """Filename slug for a version. Mirrors scripts/build_references.py:version_slug
+    so docs deep-dive URLs align with references/ filenames."""
+    society = v.get("society") or topic_society
+    soc_part = slugify_society(society) if society else "unknown"
+    year = v.get("year")
+    return f"{year}-{soc_part}" if year is not None else soc_part
+
+
+def render_version(
+    v: dict,
+    topic_society: str | None,
+    system_slug: str | None = None,
+    topic_slug: str | None = None,
+) -> list[str]:
     out: list[str] = []
     year = v.get("year")
     society = v.get("society") or topic_society
     title = v.get("title") or "(no title)"
-    out.append(f"  - **{fmt_year_society(year, society)}** — {title}")
+    # Wrap the title in a link to the version's deep-dive page when we have
+    # an enriched body on disk for it (i.e. an enrichment run has produced
+    # the Key Recommendations / Thresholds & Doses / Citations sections).
+    # Non-enriched versions render as plain text — no dead links.
+    link_title = title
+    if system_slug and topic_slug:
+        vslug = version_slug(v, topic_society)
+        ref_path = REFERENCES / system_slug / topic_slug / f"{vslug}.md"
+        if ref_path.is_file():
+            body = ref_path.read_text()
+            m = FRONTMATTER_RE.match(body)
+            body_only = m.group(2) if m else body
+            if (
+                SKELETON_BODY_MARKER not in body_only
+                and "# Key Recommendations" in body_only
+            ):
+                href = site_url(f"/{system_slug}/{topic_slug}/{vslug}/")
+                link_title = f"[{title}]({href})"
+    out.append(f"  - **{fmt_year_society(year, society)}** — {link_title}")
 
     # needs_attention is a maintainer-only signal (surfaced in
     # spec/manifest-needs-attention.md); not rendered on the public site.
@@ -180,7 +212,7 @@ def render_topic(system_slug: str, topic_slug: str, topic_block: dict) -> list[s
         out.append(summary)
         out.append("")
     for v in topic_block.get("versions", []):
-        out.extend(render_version(v, society))
+        out.extend(render_version(v, society, system_slug, topic_slug))
     out.append("")
     return out
 
@@ -296,6 +328,67 @@ def render_index(manifest: dict) -> str:
     return "\n".join(lines) + "\n"
 
 
+def render_version_page(
+    system_slug: str,
+    system_title: str,
+    topic_slug: str,
+    topic_title: str,
+    v: dict,
+    topic_society: str | None,
+) -> str | None:
+    """Publish the enriched body of a version as its own deep-dive page under
+    /{system}/{topic}/{version_slug}/. Returns None when the reference file
+    doesn't exist or is still a skeleton (so we don't publish empty pages)."""
+    vslug = version_slug(v, topic_society)
+    ref = REFERENCES / system_slug / topic_slug / f"{vslug}.md"
+    if not ref.is_file():
+        return None
+    text = ref.read_text()
+    m = FRONTMATTER_RE.match(text)
+    body = (m.group(2) if m else text).strip()
+    if SKELETON_BODY_MARKER in body or "# Key Recommendations" not in body:
+        return None
+
+    year = v.get("year")
+    society = v.get("society") or topic_society
+    title = v.get("title") or f"{topic_title} — {vslug}"
+    subtitle = fmt_year_society(year, society)
+
+    # Publisher links row — same set the system-page bullet has, promoted to
+    # first-class on the deep-dive header since this page is where a reader
+    # who wants the primary source would jump out.
+    url_links: list[str] = []
+    if v.get("url"):
+        url_links.append(f"[canonical]({v['url']})")
+    src = v.get("source") or {}
+    if isinstance(src, dict):
+        for fmt in ("html", "pdf", "epub", "pmc", "xml"):
+            entry = src.get(fmt)
+            if isinstance(entry, dict) and entry.get("url"):
+                url_links.append(f"[{fmt}]({entry['url']})")
+    if v.get("pmid"):
+        url_links.append(f"[PubMed](https://pubmed.ncbi.nlm.nih.gov/{v['pmid']}/)")
+
+    header_lines = [
+        "---",
+        # YAML titles can contain colons / quotes — quote to be safe.
+        "title: " + repr(title),
+        f"permalink: /{system_slug}/{topic_slug}/{vslug}/",
+        "---",
+        "",
+        f"[← {system_title}]({site_url(f'/{system_slug}/')})",
+        "",
+        f"**{subtitle}** · {topic_title}",
+        "",
+    ]
+    if url_links:
+        header_lines.append("**Source:** " + " · ".join(url_links))
+        header_lines.append("")
+    # Extra "\n" gives a blank line between the header block and the body so
+    # kramdown renders "# Summary" as its own paragraph, not text-flow.
+    return "\n".join(header_lines) + "\n" + body + "\n"
+
+
 STUDY_GUIDE_DIR = REFERENCES / "study-guides"
 # Rewrite "](/sys/topic/)" → Liquid relative_url so the link resolves on both
 # project sites (https://user.github.io/repo/) and root-domain hosting.
@@ -331,9 +424,25 @@ def main():
     DOCS.mkdir(parents=True, exist_ok=True)
     (DOCS / "index.md").write_text(render_index(manifest))
     n_systems = 0
+    n_versions = 0
     for system_slug, sys_block in (manifest.get("systems") or {}).items():
         (DOCS / f"{system_slug}.md").write_text(render_system(system_slug, sys_block))
         n_systems += 1
+        system_title = sys_block.get("title", system_slug)
+        for topic_slug, topic_block in (sys_block.get("topics") or {}).items():
+            topic_title = topic_block.get("title", topic_slug)
+            topic_society = topic_block.get("society")
+            for v in topic_block.get("versions") or []:
+                page = render_version_page(
+                    system_slug, system_title, topic_slug, topic_title, v, topic_society
+                )
+                if page is None:
+                    continue
+                vslug = version_slug(v, topic_society)
+                out_dir = DOCS / system_slug / topic_slug
+                out_dir.mkdir(parents=True, exist_ok=True)
+                (out_dir / f"{vslug}.md").write_text(page)
+                n_versions += 1
     n_sg = 0
     sg_out = DOCS / "study-guides"
     for slug, body in (manifest.get("study_guides") or {}).items():
@@ -343,7 +452,10 @@ def main():
         sg_out.mkdir(parents=True, exist_ok=True)
         (sg_out / f"{slug}.md").write_text(page)
         n_sg += 1
-    print(f"wrote docs/index.md, {n_systems} per-system pages, {n_sg} study-guide pages")
+    print(
+        f"wrote docs/index.md, {n_systems} per-system pages, "
+        f"{n_versions} per-version deep-dive pages, {n_sg} study-guide pages"
+    )
 
 
 if __name__ == "__main__":
