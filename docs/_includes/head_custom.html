@@ -1,0 +1,17 @@
+<style>
+  /*
+   * Inject the anki.png icon in front of the "Download Anki Deck" aux-nav
+   * button. just-the-docs renders aux_links as plain <a class="site-button">
+   * with no per-button identifier, so we target by href suffix — the button
+   * is the only one whose URL ends in .apkg.
+   */
+  .aux-nav-list-item .site-button[href$=".apkg"]::before {
+    content: "";
+    display: inline-block;
+    width: 1.1em;
+    height: 1.1em;
+    background: url("{{ '/assets/anki.png' | relative_url }}") no-repeat center / contain;
+    vertical-align: -0.2em;
+    margin-right: 0.35em;
+  }
+</style>
