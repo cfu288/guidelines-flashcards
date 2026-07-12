@@ -9,7 +9,7 @@ source:
     local: /sources/pulmonary/pe-vte-acute/2021-chest.pdf
   html:
     url: https://journal.chestnet.org/article/S0012-3692(21)01506-3/fulltext
-card_eligible: true
+card_eligible: false
 _source_hash: 5acdab8c08c2101ebf2d605118feb658430c2f9701034de945b92a2de7279c21
 ---
 

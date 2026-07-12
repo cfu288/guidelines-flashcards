@@ -24,13 +24,13 @@ System-by-system index of current society guidelines for internal medicine pract
 
 ---
 
-_Totals: 10 systems · 103 topics · 132 versions · 36 high-yield_
+_Totals: 10 systems · 103 topics · 133 versions · 36 high-yield_
 
 ## Anki deck
 
 Two ways to get started — pick one now, add more later. Every download stays in sync: cards you've already reviewed keep your progress, and nothing gets duplicated when you import an updated or additional deck.
 
-- **Everything at once** — [<img src="{{ '/assets/anki.png' | relative_url }}" alt="" style="height:1.1em;vertical-align:-0.2em;margin-right:0.25em">`im-rec-deck.apkg`](https://github.com/cfu288/im-rec-deck/raw/main/build/im-rec-deck.apkg) (132 guidelines, 103 topics).
+- **Everything at once** — [<img src="{{ '/assets/anki.png' | relative_url }}" alt="" style="height:1.1em;vertical-align:-0.2em;margin-right:0.25em">`im-rec-deck.apkg`](https://github.com/cfu288/im-rec-deck/raw/main/build/im-rec-deck.apkg) (133 guidelines, 103 topics).
 - **One guideline at a time** — open any system from the left sidebar, then click the **<img src="{{ '/assets/anki.png' | relative_url }}" alt="" style="height:1.1em;vertical-align:-0.2em;margin-right:0.25em">Anki deck** link next to the guideline you want.
 
 In Anki: **File → Import**.

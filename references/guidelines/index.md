@@ -3,7 +3,7 @@ type: Knowledge Bundle
 title: IMRecDeck
 description: System-by-system index of current society guidelines for internal medicine practice.
 okf_version: '0.1'
-timestamp: '2026-06-30'
+timestamp: '2026-07-12'
 ---
 
 # IMRecDeck

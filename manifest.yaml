@@ -395,6 +395,19 @@ systems:
       pe-vte-acute:
         title: Pulmonary embolism / VTE (acute)
         versions:
+          - year: 2026
+            society: AHA/ACC
+            title: 2026 AHA/ACC Acute Pulmonary Embolism Guideline
+            notes: Risk stratification (massive/submassive), reperfusion (systemic vs catheter-directed), PERT, anticoagulation.
+            url: https://www.ahajournals.org/doi/10.1161/CIR.0000000000001415
+            source:
+              pdf:
+                local: /sources/pulmonary/pe-vte-acute/2026-aha-acc.pdf
+                url: https://www.ahajournals.org/doi/pdf/10.1161/CIR.0000000000001415
+              html:
+                url: https://www.ahajournals.org/doi/full/10.1161/CIR.0000000000001415
+              epub:
+                local: /sources/pulmonary/pe-vte-acute/2026-aha-acc.epub
           - year: 2021
             society: CHEST
             title: CHEST 2021 Antithrombotic Therapy for VTE
